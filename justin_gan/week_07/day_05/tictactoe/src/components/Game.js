@@ -54,9 +54,15 @@ class Game extends PureComponent {
 
       const moveDesc = getSquareColRow( step.squarePlayed );
 
+      let classes = '';
+      console.log( move, this.state.stepNumber );
+      if ( move === this.state.stepNumber ) {
+        classes += 'current-selection';
+      }
+
       return (
         <li key={ move }>
-          <button onClick={ this._jumpTo.bind( this, move ) }>{ desc }</button>
+          <button className={ classes } onClick={ this._jumpTo.bind( this, move ) }>{ desc }</button>
           <span> { moveDesc }</span>
         </li>
       );
