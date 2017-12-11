@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-// import Clickr from './Clickr';
-import HistoryEraser from './HistoryEraser';
-
+import FlickrSearch from './FlickrSearch';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HistoryEraser />
+        <FlickrSearch />
       </div>
     );
   }

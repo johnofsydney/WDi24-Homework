@@ -13,6 +13,7 @@ class Clickr extends PureComponent {
 
   _incrementClicks () {
     this.setState({ clicks: this.state.clicks + 1 })
+    this.props.everyClick(this.state.clicks);
   }
 
   render() {
@@ -22,5 +23,6 @@ class Clickr extends PureComponent {
 
   }
 }
+
 
 export default Clickr;
