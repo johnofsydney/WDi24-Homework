@@ -1,0 +1,16 @@
+
+<h2>sail the seven seas..</h2>
+
+<div class="container">
+
+  <div class="homepage">
+    <% @oceans.each do |ocean| %>
+      <p><%= link_to ocean.name, ocean_path(ocean.id) %></p>
+    <% end %>
+  </div>
+
+  <%= image_tag "ocean.jpg" %>
+
+</div>
+
+<a href="https://www.livescience.com/27663-seven-seas.html"> Some more info</a>

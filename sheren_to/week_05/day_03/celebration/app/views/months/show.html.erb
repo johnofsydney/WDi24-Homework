@@ -1,0 +1,16 @@
+<h1><%= @month.name %></h1>
+
+<%= image_tag(@month.image, :class => 'feature') %>
+
+<ul>
+  <li>How many days: <%= @month.days %></li>
+</ul>
+
+<% @month.events.each do |event| %>
+  <%= link_to image_tag(work.image, :class => 'thumb'), work %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit month', edit_month_path(@month) %>
+  <%= link_to 'Delete month', @month, :method => 'delete', :data => {:confirm 'You sure'} %>
+</div>

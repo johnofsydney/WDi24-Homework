@@ -1,0 +1,29 @@
+
+<%= form_for @event do |f| %>
+
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :days %>
+    <%= f.text_field :days %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :month_id %>
+    <%= f.select :month_id, Month.pluck(:name, :id), :include_blank => true %>
+  </fieldset>
+
+  <fieldset>
+    <label></label>
+    <%= f.submit %>
+  </fieldset>
+
+  <% end %>

@@ -1,0 +1,16 @@
+
+
+<h2><%= @travel['city']%></h2>
+<h3><%= @travel['country']%></h3>
+
+<div class="container">
+
+  <% unless @travel['image'].nil? %>
+    <img class="globe" src="<%= @travel['image'] %>" alt="<%= @travel['city']%>">
+  <% end %>
+</div>
+
+<div class="changes">
+  <a href="/travel/<%= @travel['id'] %>/delete">Don't want to go there anymore..</a>
+  <a href="/travel/<%= @travel['id'] %>/delete">Changes to the plan..</a>
+</div>

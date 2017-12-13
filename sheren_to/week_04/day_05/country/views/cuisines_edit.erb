@@ -1,0 +1,12 @@
+
+<h2>Edit cuisine list</h2>
+
+<form action="/cuisines/<%= @cuisine['id']" method="post">
+
+  <input type="text" name="food" placeholder="Name of food" value="<%= @cuisine['food'] %>">
+  <input type="text" name="type" placeholder="Type of food" value="<%= @cuisine['type'] %>">
+  <input type="url" name="image" placeholder="http://..." value="<%= @cuisine['image'] %>">
+
+  <button>Edit cuisine list</button>
+
+</form>

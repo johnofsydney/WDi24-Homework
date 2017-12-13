@@ -1,0 +1,200 @@
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMonths (20171122161811)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "months" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "days" text, "image" text)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122161811"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateEvents (20171122161823)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "days" text, "image" text)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122161823"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-22 16:22:02.817873"], ["updated_at", "2017-11-22 16:22:02.817873"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (11.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-11-23 03:40:13 +1100
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sheren/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sheren/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 218ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 06:28:55 +1100
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (11.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 1503ms (Views: 1453.7ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 07:10:02 +1100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (11.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 253ms (Views: 117.1ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-11-23 07:10:05 +1100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[35m (14.3ms)[0m  [1m[34mSELECT "months"."name", "months"."id" FROM "months"[0m
+  Rendered events/_form.html.erb (281.1ms)
+  Rendered events/new.html.erb within layouts/application (311.4ms)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 15.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `month_id' for #<Event id: nil, name: nil, days: nil, image: nil>
+Did you mean?  month):
+    18: 
+    19:   <fieldset>
+    20:     <%= f.label :month_id %>
+    21:     <%= f.select :month_id, Month.pluck(:name, :id), :include_blank => true %>
+    22:   </fieldset>
+    23: 
+    24:   <fieldset>
+  
+app/views/events/_form.html.erb:21:in `block in _app_views_events__form_html_erb__1424977692462886772_70347937438820'
+app/views/events/_form.html.erb:2:in `_app_views_events__form_html_erb__1424977692462886772_70347937438820'
+app/views/events/new.html.erb:2:in `_app_views_events_new_html_erb__165766684594602361_70347887764260'
+Started GET "/events/new" for 127.0.0.1 at 2017-11-23 07:11:51 +1100
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "months"."name", "months"."id" FROM "months"[0m
+  Rendered events/_form.html.erb (20.1ms)
+  Rendered events/new.html.erb within layouts/application (39.9ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `month_id' for #<Event id: nil, name: nil, days: nil, image: nil>
+Did you mean?  month):
+    18: 
+    19:   <fieldset>
+    20:     <%= f.label :month_id %>
+    21:     <%= f.select :month_id, Month.pluck(:name, :id), :include_blank => true %>
+    22:   </fieldset>
+    23: 
+    24:   <fieldset>
+  
+app/views/events/_form.html.erb:21:in `block in _app_views_events__form_html_erb__1424977692462886772_70347940361980'
+app/views/events/_form.html.erb:2:in `_app_views_events__form_html_erb__1424977692462886772_70347940361980'
+app/views/events/new.html.erb:2:in `_app_views_events_new_html_erb__165766684594602361_70347940327100'
+Started GET "/" for 127.0.0.1 at 2017-11-23 07:13:06 +1100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 161ms (Views: 135.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-11-23 07:13:09 +1100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-11-23 07:13:14 +1100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/months" for 127.0.0.1 at 2017-11-23 07:13:16 +1100
+Processing by MonthsController#index as HTML
+  Rendering months/index.html.erb within layouts/application
+  Rendered months/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/index.html.erb:4: syntax error, unexpected tSYMBEG, expecting '('
+nd=( image_tag(artist.image. :class => 'thumb') );@output_bu
+                              ^
+/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/index.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+st.image. :class => 'thumb') );@output_buffer.safe_append='
+                              ^
+/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/index.html.erb:14: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/months/index.html.erb:4: syntax error, unexpected tSYMBEG, expecting '('
+app/views/months/index.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/months/index.html.erb:14: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/events" for 127.0.0.1 at 2017-11-23 07:13:27 +1100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/months/new" for 127.0.0.1 at 2017-11-23 07:13:29 +1100
+Processing by MonthsController#new as HTML
+  Rendering months/new.html.erb within layouts/application
+  Rendered months/_form.html.erb (7.2ms)
+  Rendered months/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 65ms (Views: 40.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/months/new" for 127.0.0.1 at 2017-11-23 07:14:41 +1100
+Processing by MonthsController#new as HTML
+  Rendering months/new.html.erb within layouts/application
+  Rendered months/_form.html.erb (10.5ms)
+  Rendered months/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 284ms (Views: 260.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/months" for 127.0.0.1 at 2017-11-23 07:15:32 +1100
+Processing by MonthsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhh/XdTJexN9/xRmGTu3RsTjhV4B8wa5vCpCmQfSKfcCH/d9G1KTPmKH+rlVMCUUu4U2ZgaBoEOpgnRTNqGBcg==", "month"=>{"name"=>"January", "days"=>"31", "image"=>"https://christinthecity.files.wordpress.com/2016/01/january-img.jpg"}, "commit"=>"Create Month"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (52.5ms)[0m  [1m[32mINSERT INTO "months" ("name", "days", "image") VALUES (?, ?, ?)[0m  [["name", "January"], ["days", "31"], ["image", "https://christinthecity.files.wordpress.com/2016/01/january-img.jpg"]]
+  [1m[35m (39.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/months/1
+Completed 302 Found in 113ms (ActiveRecord: 93.2ms)
+
+
+Started GET "/months/1" for 127.0.0.1 at 2017-11-23 07:15:33 +1100
+Processing by MonthsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMonth Load (0.6ms)[0m  [1m[34mSELECT  "months".* FROM "months" WHERE "months"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering months/show.html.erb within layouts/application
+  Rendered months/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/show.html.erb:15: syntax error, unexpected tSTRING_BEG, expecting =>
+'delete', :data => {:confirm 'You sure'} );@output_buffer.sa
+                              ^
+/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/show.html.erb:15: syntax error, unexpected '}', expecting ')'
+:data => {:confirm 'You sure'} );@output_buffer.safe_append=
+                              ^
+/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/sheren/Projects/WDi24-Homework/sheren_to/week_05/day_03/celebration/app/views/months/show.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/months/show.html.erb:15: syntax error, unexpected tSTRING_BEG, expecting =>
+app/views/months/show.html.erb:15: syntax error, unexpected '}', expecting ')'
+app/views/months/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/months/show.html.erb:21: syntax error, unexpected keyword_end, expecting ')'

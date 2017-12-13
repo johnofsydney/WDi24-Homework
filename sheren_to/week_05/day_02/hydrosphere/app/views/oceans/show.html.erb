@@ -1,0 +1,26 @@
+
+<h2><%= @ocean.name%></h2>
+
+<div class="icon">
+
+  <% @images.each do |image| %>
+  <%= image_tag "antarctic/#{image.split('/').last}" %>
+  <% end %>
+  <!-- <% @ocean.each do |ocean| %>
+    <%= image_tag(@ocean.image) %>
+  <% end %> -->
+
+  <!-- <%= image_tag(@ocean.image, :class => 'feature1') unless @ocean.image.blank? %>
+  <%= image_tag(@ocean.image, :class => 'feature2') unless @ocean.image.blank? %>
+  <%= image_tag(@ocean.image, :class => 'feature3') unless @ocean.image.blank? %> -->
+</div>
+
+  <div class="info">
+    <p>Surface Area: <%= @ocean.area %></p>
+    <p>Average Depth: <%= @ocean.depth %></p>
+  </div>
+
+
+
+<%= link_to 'Edit ocean', ocean_edit_path(@ocean.id) %>
+<%= button_to 'Destroy ocean', ocean_path(@ocean.id), :method => 'delete' %>

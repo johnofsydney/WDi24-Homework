@@ -1,0 +1,13 @@
+<h1><%= @event.name %></h1>
+<%= image_tag @event.image, :class => 'feature' %>
+<ul>
+  <% unless @event.month.nil? %>
+    <li><%= link_to @event.month.name, @event.month %></li>
+  <% end %>
+  <li><%= @event.days %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit event', edit_event_path(@event) %>
+  <%= link_to 'Delete event', @event, :method => 'delete', :data => { :confirm => 'You sure?' } %>
+</div>
