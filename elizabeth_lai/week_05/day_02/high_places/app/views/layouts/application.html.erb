@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HighPlaces</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|PT+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- <container> -->
+    <div class="container">
+    <nav>
+      <%= link_to 'All parks', root_path %>
+      <%= link_to 'New parks', parks_new_path %>
+    </nav>
+    <%= yield %>
+
+  </div>
+    <!-- </container -->
+  </body>
+</html>

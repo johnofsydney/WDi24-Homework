@@ -1,0 +1,10 @@
+<h2>Edit park</h2>
+
+<form action="<%= park_path(@park.id) %>" method='post'>
+  Name: <input type="text" name="name" value="<%=  @park.name %>" autofocus>
+  State: <input type="text" name="state" value="<%= @park.state %>">
+  Nearest city: <input type="text" name="nearest_city" value="<%= @park.nearest_city %>">
+  Size: <input type="number" name="size" value="<%= @park.size %>">
+  Image: <input type="url" name="image" value="<%= @park.image %>">
+  <button>Add park</button>
+</form>
