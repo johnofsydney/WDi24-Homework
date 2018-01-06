@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Celebration</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav>
+    <%= link_to 'All events', events_path %>
+    <%= link_to 'New events', new_event_path %>
+    |
+    <%= link_to 'All months', months_path %>
+    <%= link_to 'New month', new_month_path %>
+  </nav>
+
+    <%= yield %>
+  </body>
+</html>

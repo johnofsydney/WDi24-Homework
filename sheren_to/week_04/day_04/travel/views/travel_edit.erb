@@ -1,0 +1,11 @@
+<h2>Change of plans..</h2>
+
+<form action="/travel/<% @travel['id'] %>" method="post">
+
+  <input type="text" name="city" placeholder="city name" value="<%= @travel['city']%>">
+  <input type="text" name="country" placeholder="country name" value="<%= @travel['country']%>">
+  <input type="text" name="image" placeholder="url of image http://..." value="<%= @travel['image']%>">
+
+  <button>Update travel list</button>
+  
+</form>

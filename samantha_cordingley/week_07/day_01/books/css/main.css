@@ -12,7 +12,8 @@ body {
   margin-top:0vh;
 }
 
-input.searchField {
+input#query {
+  display: inline-block;
   width: 400px;
   height: 100px;
   margin-top: 10px;

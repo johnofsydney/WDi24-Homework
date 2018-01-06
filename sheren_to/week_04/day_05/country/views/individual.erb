@@ -1,0 +1,12 @@
+
+<h2><%= @place['country'] %></h2>
+<h3><%= @place['city'] %></h3>
+
+<% unless @place['image'].nil? || @place['image'].empty? %>
+  <img class="feature" src="<%= @place['image'] %>" alt="<%= @place['country'] %>">
+<% end %>
+
+<div class="changes">
+  <a href="/places/<%= @place['id'] %>/delete">Delete country on list</a>
+  <a href="/places/<%= @place['id'] %>/edit">Edit country list</a>
+</div>
