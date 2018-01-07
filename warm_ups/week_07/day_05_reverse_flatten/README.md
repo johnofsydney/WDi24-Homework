@@ -6,6 +6,8 @@ The goal of this exercise is to manipulate arrays by creating a function that ca
   - reverse
   - flatten
 
+
+
 ```js
 reverse( [1, 2, 3, 4] );
 // => [ 4, 3, 2, 1 ]
