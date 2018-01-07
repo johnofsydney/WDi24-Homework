@@ -29,13 +29,13 @@ def raindrops num
   #   str += "Pling"
   # end
 
-  # str += "Plang" if num % 5 == 0
+  str += "Plang" if num % 5 == 0
 
   # if num % 5 == 0
   #   str += "Plang"
   # end
 
-  # str += "Plong" if num % 7 == 0
+  str += "Plong" if num % 7 == 0
 
   # if num % 7 == 0
   #   str += "Plong"
