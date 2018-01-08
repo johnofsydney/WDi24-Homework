@@ -1037,3 +1037,123 @@ Migrating to CreateTweets (20180108032956)
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "中国・ロシア・北朝鮮に対する圧倒的な優位性を確保するため、米国は局地攻撃を想定した低爆発力の小型核の開発を検討する。核兵器使用のハードルを下げる方針https://t.co/qFo80pQ2Lh　2016年、トランプはアドバイザー… https://t.co/vZnNfHKhvo"], ["created_at", "2018-01-08 08:00:31.585429"], ["updated_at", "2018-01-08 08:00:31.585429"]]
   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mTweet Load (1.0ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "@WELT_Politik Die geistige Stabilität ist Trump schon vor dem Einzug ins Weiße Haus verloren gegangen. (Seinen Wähl… https://t.co/NTC9ygZwyR"], ["created_at", "2018-01-08 08:08:12.791385"], ["updated_at", "2018-01-08 08:08:12.791385"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @Achgut_com: Who, the f…, is Michael Wolff? - (Henryk M. Broder) Von Henryk M. Broder. In den USA erscheint ein Buch über Donald Trump.…"], ["created_at", "2018-01-08 08:08:12.802758"], ["updated_at", "2018-01-08 08:08:12.802758"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Und täglich grüsst das Murmeltier! Dann hat die #SRF für heute Abend in den Nachrichten wieder ein Trump Thema!… https://t.co/sVpZaJakkp"], ["created_at", "2018-01-08 08:08:12.804668"], ["updated_at", "2018-01-08 08:08:12.804668"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "oprah jetzt töten und nicht den selben fehler wie mit trump machen"], ["created_at", "2018-01-08 08:08:12.806460"], ["updated_at", "2018-01-08 08:08:12.806460"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:24.187656"], ["updated_at", "2018-01-08 08:09:24.187656"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:24.198598"], ["updated_at", "2018-01-08 08:09:24.198598"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.563526"], ["updated_at", "2018-01-08 08:09:49.563526"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.573039"], ["updated_at", "2018-01-08 08:09:49.573039"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.574776"], ["updated_at", "2018-01-08 08:09:49.574776"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.576518"], ["updated_at", "2018-01-08 08:09:49.576518"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.578327"], ["updated_at", "2018-01-08 08:09:49.578327"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.580059"], ["updated_at", "2018-01-08 08:09:49.580059"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.581934"], ["updated_at", "2018-01-08 08:09:49.581934"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.583540"], ["updated_at", "2018-01-08 08:09:49.583540"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.585217"], ["updated_at", "2018-01-08 08:09:49.585217"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "RT @ScotCuthbertson: #Trump is a genius. Total genius. https://t.co/ozwV5zxc43"], ["created_at", "2018-01-08 08:09:49.586687"], ["updated_at", "2018-01-08 08:09:49.586687"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets"[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 174]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets"[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 173]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 172]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 171]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 170]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 169]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 168]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 167]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 166]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 165]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 164]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 163]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" ORDER BY "tweets"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 162]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-08 19:15:01 +1100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered pages/home.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 403ms (Views: 386.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-08 19:15:24 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
