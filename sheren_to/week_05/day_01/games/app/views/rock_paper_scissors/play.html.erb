@@ -1,0 +1,26 @@
+
+
+<p>You selected: <%= @player %> </p>
+
+<p>Challenger played: <%= @challenger %> </p>
+
+<p>
+
+  <% if @player == @challenger %>
+    It's a tie!
+  <% elsif @player == 'rock' && @challenger == 'scissors' %>
+    You win
+  <% elsif @challenger == 'rock' && @player == 'scissors' %>
+    You lose
+  <% elsif @player == 'paper' && @challenger == 'rock' %>
+    You win
+  <% elsif @challenger == 'paper' && @player == 'rock' %>
+    You lose
+  <% elsif @player == 'scissors' && @challenger == 'paper' %>
+    You win
+  <% elsif @challeger == 'scissors' && @player == 'paper' %>
+
+
+  <% end %>
+
+</p>

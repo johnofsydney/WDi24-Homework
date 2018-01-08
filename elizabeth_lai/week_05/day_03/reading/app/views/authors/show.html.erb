@@ -1,0 +1,12 @@
+<h2><%= @author.first_name %> | <%= @author.last_name %></h2>
+
+<ul>
+  <li><%= @author.hometown %></li>
+  <li><%= @author.dob.strftime '%A, %B %e %Y' unless @author.dob.nil? %></li>
+</ul>
+
+
+<div class="controls">
+  <%= link_to 'Edit author', edit_author_path(@author) %>
+  <%= button_to 'Delete author', @author, :method => 'delete', :data => { :confirm => 'You sure?'} %>
+</div>

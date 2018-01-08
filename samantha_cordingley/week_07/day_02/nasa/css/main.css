@@ -1,0 +1,78 @@
+/** {
+  border: 1px green solid;
+}*/
+
+body {
+  background-color: #010111;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.siteHeading {
+  font-size: 70px;
+  z-index: 2;
+  font-weight: 600;
+}
+
+h2 {
+  display: inline-block;
+}
+
+button#wherenow {
+  z-index: 2;
+  display: inline-block;
+  width: 300px;
+  height: 97px;
+  font-size: 23px;
+  font-weight: 400;
+  background-color: white;
+  border: none;
+  color: red;
+  margin-top: -17px;
+}
+
+div#container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+}
+
+div#map {
+  width: 1200;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+  margin-top: -339px;
+}
+
+footer {
+  position: fixed;
+  vertical-align:bottom;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .3rem;
+  color: #030331;
+  font-weight: 600;
+  background-color: white;
+  text-align: center;
+  font-weight: 400;
+}
+
+#coordinates {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#pipes {
+  font-weight: 300;
+  color: red;
+}

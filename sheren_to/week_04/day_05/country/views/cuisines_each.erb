@@ -1,0 +1,12 @@
+
+<h2><%= @cuisine['food'] %></h2>
+<h3><%= @cuisine['type'] %></h3>
+
+<% unless @cuisine['image'].nil? || @cuisine['image'].empty? %>
+  <img class="feature" src="<%= @cuisine['image'] %>" alt="<%= @cuisine['food'] %>">
+<% end %>
+
+<div class="changes">
+  <a href="/cuisines/<%= @cuisine['id'] %>/delete">Delete cuisine on list</a>
+  <a href="/cuisines/<%= @cuisine['id'] %>/edit">Edit cuisine list</a>
+</div>

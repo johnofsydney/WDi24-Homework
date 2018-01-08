@@ -1,0 +1,5 @@
+<h1> Oceans of the world </h1>
+
+<% @oceans.each do |ocean| %>
+  <p><%= link_to ocean.name, ocean_path(ocean.id) %> has a maximum depth of <%= number_to_human(ocean.maxdepth) %></p>
+  <% end  %>

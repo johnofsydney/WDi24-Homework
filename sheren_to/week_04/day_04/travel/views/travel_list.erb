@@ -1,0 +1,13 @@
+<h2>Travel list..</h2>
+
+<ul>
+  <% @travel.each do |travel| %>
+  <li>
+    <a href="/travel/<%= travel['id']%>">
+    <%= travel['city'] %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+<img class="luggages" src="../images/luggage.jpg">

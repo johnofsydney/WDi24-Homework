@@ -1,0 +1,43 @@
+
+body {
+
+}
+
+li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  font-family: Ariel, serif;
+}
+
+.logo {
+
+}
+
+.socialmedia {
+
+}
+
+.banner {
+  margin: 0 auto;
+}
+
+.shadow {
+  margin-top: 0;
+}
+
+p {
+  display: inline-block;
+  height: 100px;
+  position: relative;
+}
+.column {
+  width: 100%;
+  column-count: 3;
+  column-gap: 20px;
+  column-fill: balance;
+}
+
+.homebox1 {
+
+}

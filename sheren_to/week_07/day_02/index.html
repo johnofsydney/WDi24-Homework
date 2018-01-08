@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 60vh;
+      width: 70vw;
+      margin: 60px auto;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      margin: 40px auto;
+      text-align: center;
+    }
+  </style>
+
+
+  <title>google places</title>
+</head>
+<body>
+
+  <form id="place-search">
+    <label>where or what you would like to search:</label><br>
+      <input type="search" class="form-control" id="query" placeholder="">
+      <button type="submit">search!</button>
+  </form>
+
+  <div id="map"></div>
+  <script src="js/jquery.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9jCQyBy9GVlbnZOyuTyRv57EznuBqRDc&libraries=places" async defer></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

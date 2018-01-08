@@ -1,0 +1,6 @@
+<h1>Authors</h1>
+
+<% @authors.each do |author|%>
+
+<%= link_to author.first_name, author %> <%= link_to author.last_name, author %>
+<% end %>

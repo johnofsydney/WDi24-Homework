@@ -1,0 +1,683 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "oceans" ("name", "totalarea", "maxdepth", "shorelength") VALUES (?, ?, ?, ?)[0m  [["name", "Atlantic"], ["totalarea", 106460000.0], ["maxdepth", 8486.0], ["shorelength", 111866.0]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "oceans" ("name", "totalarea", "maxdepth", "shorelength") VALUES (?, ?, ?, ?)[0m  [["name", "Artic"], ["totalarea", 14056000.0], ["maxdepth", 4500.0], ["shorelength", 45390.0]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "oceans" ("name", "totalarea", "maxdepth", "shorelength") VALUES (?, ?, ?, ?)[0m  [["name", "Pacific"], ["totalarea", 165000000.0], ["maxdepth", 10911.0], ["shorelength", 135663.0]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "oceans" ("name", "totalarea", "maxdepth", "shorelength") VALUES (?, ?, ?, ?)[0m  [["name", "Indian"], ["totalarea", 73556000.0], ["maxdepth", 3890.0], ["shorelength", 0.0]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-11-21 21:05:00 +1100
+  
+LoadError (Unable to autoload constant OceansController, expected /Users/cassandraessex/Documents/wdi-24/WDi24-Homework/cassandra_essex/week_05/day_02/oceans/app/controllers/oceans_controller.rb to define it):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+activesupport (5.1.4) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.4) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.1.4) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 21:06:17 +1100
+Processing by OceansController#index as HTML
+Completed 500 Internal Server Error in 106ms
+
+
+  
+NameError (uninitialized constant OceansController::Planet):
+  
+app/controllers/oceans_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2017-11-21 21:06:45 +1100
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  Rendered oceans/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 39ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> coming soon </h1>
+    2: 
+    3: <% @oceans.each do |ocean| %>
+    4:   <p><%= link_to ocean.name, ocean_path(ocean.id) %> has a maximum depth of <%= number_to_human(ocean.maxdepth) %></p>
+    5:   <% end  %>
+  
+app/views/oceans/index.html.erb:3:in `_app_views_oceans_index_html_erb___1029895156301333302_70269242191720'
+Started GET "/oceans" for 127.0.0.1 at 2017-11-21 21:09:42 +1100
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  Rendered oceans/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> coming soon </h1>
+    2: 
+    3: <% @oceans.each do |ocean| %>
+    4:   <p><%= link_to ocean.name, ocean_path(ocean.id) %> has a maximum depth of <%= number_to_human(ocean.maxdepth) %></p>
+    5:   <% end  %>
+  
+app/views/oceans/index.html.erb:3:in `_app_views_oceans_index_html_erb___1029895156301333302_70269240786820'
+Started GET "/" for 127.0.0.1 at 2017-11-22 09:26:30 +1100
+Processing by OceanController#index as HTML
+Completed 406 Not Acceptable in 226ms
+
+
+  
+ActionController::UnknownFormat (OceanController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-22 09:26:56 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  Rendered ocean/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 19ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> coming soon </h1>
+    2: 
+    3: <% @oceans.each do |ocean| %>
+    4:   <p><%= link_to ocean.name, ocean_path(ocean.id) %> has a maximum depth of <%= number_to_human(ocean.maxdepth) %></p>
+    5:   <% end  %>
+  
+app/views/ocean/index.html.erb:3:in `_app_views_ocean_index_html_erb__2416554580728361081_70228325207740'
+Started GET "/" for 127.0.0.1 at 2017-11-22 09:27:40 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (2.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 234ms (Views: 230.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/ocean.1" for 127.0.0.1 at 2017-11-22 09:27:44 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/ocean.1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/ocean/1" for 127.0.0.1 at 2017-11-22 09:27:49 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/ocean/1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:27:54 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/ocean_controller.rb:8:in `show'
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:29:39 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/Users/cassandraessex/Documents/wdi-24/WDi24-Homework/cassandra_essex/week_05/day_02/oceans/app/views/ocean/show.html.erb:3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+e_tag (@ocean.image, :class => feature) unless @ocean.image.
+                              ^
+/Users/cassandraessex/Documents/wdi-24/WDi24-Homework/cassandra_essex/week_05/day_02/oceans/app/views/ocean/show.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+) unless @ocean.image.blank? );@output_buffer.safe_append='
+                              ^):
+  
+app/views/ocean/show.html.erb:3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/ocean/show.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+Started GET "/oceans" for 127.0.0.1 at 2017-11-22 09:29:43 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 184ms (Views: 180.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:29:50 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/cassandraessex/Documents/wdi-24/WDi24-Homework/cassandra_essex/week_05/day_02/oceans/app/views/ocean/show.html.erb:3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+e_tag (@ocean.image, :class => feature) unless @ocean.image.
+                              ^
+/Users/cassandraessex/Documents/wdi-24/WDi24-Homework/cassandra_essex/week_05/day_02/oceans/app/views/ocean/show.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+) unless @ocean.image.blank? );@output_buffer.safe_append='
+                              ^):
+  
+app/views/ocean/show.html.erb:3: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/ocean/show.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:30:22 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1/edit" for 127.0.0.1 at 2017-11-22 09:30:26 +1100
+Processing by OceanController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/ocean_controller.rb:27:in `edit'
+Started GET "/oceans/1/edit" for 127.0.0.1 at 2017-11-22 09:30:56 +1100
+Processing by OceanController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/edit.html.erb within layouts/application
+  Rendered ocean/edit.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2> Edit Ocean </h2>
+    2: 
+    3: <form action="<%= ocean_path(@ocean.id) %>" <method="post">
+    4: 
+    5: Name: <input type="text" name="name" value="<%= @ocean.name %>" autofocus>
+    6: Image: <input type="url" name="image" value="<%= @ocean.image %>">
+  
+app/views/ocean/edit.html.erb:3:in `_app_views_ocean_edit_html_erb___3452564112954443006_70138780196220'
+Started GET "/oceans/1/edit" for 127.0.0.1 at 2017-11-22 09:31:18 +1100
+Processing by OceanController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/edit.html.erb within layouts/application
+  Rendered ocean/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 17.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/oceans/1?name=Atlantic+ii&image=&totalarea=106460000.0&maxdepth=8486.0&shorelength=111866.0" for 127.0.0.1 at 2017-11-22 09:31:25 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"name"=>"Atlantic ii", "image"=>"", "totalarea"=>"106460000.0", "maxdepth"=>"8486.0", "shorelength"=>"111866.0", "id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1/edit" for 127.0.0.1 at 2017-11-22 09:32:27 +1100
+Processing by OceanController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/edit.html.erb within layouts/application
+  Rendered ocean/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1/edit" for 127.0.0.1 at 2017-11-22 09:33:09 +1100
+Processing by OceanController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/edit.html.erb within layouts/application
+  Rendered ocean/edit.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/oceans/1" for 127.0.0.1 at 2017-11-22 09:33:20 +1100
+Processing by OceanController#update as HTML
+  Parameters: {"name"=>"Atlantic ii", "image"=>"", "totalarea"=>"106460000.0", "maxdepth"=>"8486.0", "shorelength"=>"111866.0", "id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "oceans" SET "name" = ?, "image" = ? WHERE "oceans"."id" = ?[0m  [["name", "Atlantic ii"], ["image", ""], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for OceanController#update, rendering head :no_content
+Completed 204 No Content in 156ms (ActiveRecord: 3.7ms)
+
+
+Started POST "/oceans/1" for 127.0.0.1 at 2017-11-22 09:33:26 +1100
+Processing by OceanController#update as HTML
+  Parameters: {"name"=>"Atlantic ii", "image"=>"", "totalarea"=>"106460000.0", "maxdepth"=>"8486.0", "shorelength"=>"111866.0", "id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for OceanController#update, rendering head :no_content
+Completed 204 No Content in 78ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/oceans/1" for 127.0.0.1 at 2017-11-22 09:33:57 +1100
+Processing by OceanController#update as HTML
+  Parameters: {"name"=>"Atlantic ii", "image"=>"", "totalarea"=>"106460000.0", "maxdepth"=>"8486.0", "shorelength"=>"111866.0", "id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/oceans/1
+Completed 302 Found in 11ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:33:58 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2017-11-22 09:34:03 +1100
+Processing by OceanController#new as HTML
+  Rendering ocean/new.html.erb within layouts/application
+  Rendered ocean/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/oceans" for 127.0.0.1 at 2017-11-22 09:34:07 +1100
+Processing by OceanController#create as HTML
+  Parameters: {"name"=>"test", "image"=>"", "totalarea"=>"", "maxdepth"=>"", "shorelength"=>""}
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `ocean' for #<OceanController:0x00007f94e2fe9510>
+Did you mean?  ocean_url):
+  
+app/controllers/ocean_controller.rb:16:in `create'
+Started GET "/oceans" for 127.0.0.1 at 2017-11-22 09:34:48 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2017-11-22 09:34:51 +1100
+Processing by OceanController#new as HTML
+  Rendering ocean/new.html.erb within layouts/application
+  Rendered ocean/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/oceans" for 127.0.0.1 at 2017-11-22 09:34:56 +1100
+Processing by OceanController#create as HTML
+  Parameters: {"name"=>"test", "image"=>"", "totalarea"=>"", "maxdepth"=>"", "shorelength"=>""}
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `parmas' for #<OceanController:0x00007f94e3c63b10>
+Did you mean?  params):
+  
+app/controllers/ocean_controller.rb:17:in `create'
+Started POST "/oceans" for 127.0.0.1 at 2017-11-22 09:35:19 +1100
+Processing by OceanController#create as HTML
+  Parameters: {"name"=>"test", "image"=>"", "totalarea"=>"", "maxdepth"=>"", "shorelength"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "oceans" ("name", "image") VALUES (?, ?)[0m  [["name", "test"], ["image", ""]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"ocean"}, missing required keys: [:id]):
+  
+app/controllers/ocean_controller.rb:23:in `create'
+Started GET "/oceans" for 127.0.0.1 at 2017-11-22 09:35:41 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/oceans/5" for 127.0.0.1 at 2017-11-22 09:35:45 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/oceans/5" for 127.0.0.1 at 2017-11-22 09:35:49 +1100
+Processing by OceanController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XW5JTHIGXKUA7aDF8vjk5+cIrAvww5/9phtH/W44H9DclAvo8PupOYQuyQV4hEZhXJ8Yo0ZYT2LOTgCTQtlAig==", "id"=>"5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/ocean_controller.rb:39:in `destroy'
+Started DELETE "/oceans/5" for 127.0.0.1 at 2017-11-22 09:36:05 +1100
+Processing by OceanController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hgqvw1GyxjqkZSKX97boGEAkXyPrtvGBy4ONtx1J1LXzQToWoxkmu/lnFpYeZq9DU8377Lsd1Q+AreCxDy2fqQ==", "id"=>"5"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "oceans" WHERE "oceans"."id" = ?[0m  [["id", 5]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/oceans/new
+Completed 302 Found in 16ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2017-11-22 09:36:05 +1100
+Processing by OceanController#new as HTML
+  Rendering ocean/new.html.erb within layouts/application
+  Rendered ocean/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-22 09:36:07 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.3ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:37:27 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1/edit" for 127.0.0.1 at 2017-11-22 09:37:30 +1100
+Processing by OceanController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/edit.html.erb within layouts/application
+  Rendered ocean/edit.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/oceans/1" for 127.0.0.1 at 2017-11-22 09:37:38 +1100
+Processing by OceanController#update as HTML
+  Parameters: {"name"=>"Atlantic", "image"=>"", "totalarea"=>"106460000.0", "maxdepth"=>"8486.0", "shorelength"=>"111866.0", "id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "oceans" SET "name" = ? WHERE "oceans"."id" = ?[0m  [["name", "Atlantic"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/oceans/1
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:37:38 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:39:23 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:39:38 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/cassandraessex/Documents/wdi-24/WDi24-Homework/cassandra_essex/week_05/day_02/oceans/app/views/ocean/show.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+_human(@ocean.maxdepth) meters);@output_buffer.safe_append='
+                              ^):
+  
+app/views/ocean/show.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/oceans/" for 127.0.0.1 at 2017-11-22 09:40:00 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:40:02 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:40:49 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:41:26 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/1" for 127.0.0.1 at 2017-11-22 09:41:38 +1100
+Processing by OceanController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ocean/show.html.erb within layouts/application
+  Rendered ocean/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-22 09:42:14 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.7ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-22 09:43:06 +1100
+Processing by OceanController#index as HTML
+  Rendering ocean/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  Rendered ocean/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.1ms)
+
+

@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
+* {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.links li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  color: red;
+}
+
+ul.links {
+  text-align: center;
+  font-size: 40px;
+}
+
+#hmm img {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: blue;
+}
+
+ul {
+  font-family: 'Arapey', serif;
+  font-size: 20px;
+}
+
+#marx {
+  display: none;
+}
+
+span:hover > #marx {
+  display: block;
+}

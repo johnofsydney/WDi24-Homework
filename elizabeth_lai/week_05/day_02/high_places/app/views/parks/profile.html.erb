@@ -1,0 +1,12 @@
+<h2><%=@park.name%> National Park</h2>
+
+<%= image_tag(@park.image, :class => 'gc') unless @park.image.blank? %>
+
+<p>LOCATED: <%= @park.state %></p>
+<p>CLOSEST CITY: <%= @park.nearest_city %></p>
+<p>SIZE: <%= @park.size %>km²</p>
+
+<ul>
+<li><%= link_to 'Edit park', park_edit_path(@park.id) %></li>
+<li><%= button_to 'Destroy park', park_path(@park.id), :method => 'delete' %></li>
+</ul>

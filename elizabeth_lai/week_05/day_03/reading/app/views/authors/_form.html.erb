@@ -1,0 +1,22 @@
+<%= form_for @author do |f| %>
+<fieldset>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+</fieldset>
+<fieldset>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+</fieldset>
+<fieldset>
+  <%= f.label :hometown %>
+  <%= f.text_field :hometown %>
+</fieldset>
+<fieldset>
+  <%= f.label :dob, 'Date of birth' %>
+  <%= f.text_field :dob, :required => true, :placeholder => 'yyyy-mm-dd' %>
+</fieldset>
+<fieldset>
+  <label></label>
+  <%= f.submit %>
+</fieldset>
+<% end %>
