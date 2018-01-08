@@ -26,6 +26,17 @@ namespace :twitter do
   task :search, [:query, :count] => :environment do |t, args|
     puts "Searching Twitter for #{ args[:count] } tweets mentioning #{ args[:query] }"
     # my homework code
-
+    # AUTH CONFIG, as per gem documentation
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key        = ENV["TWITTER_API_KEY"]
+      config.consumer_secret     = ENV["TWITTER_API_SECRET"]
+      config.access_token        = ENV["TWITTER_TOKEN"]
+      config.access_token_secret = ENV["TWITTER_TOKEN_SECRET"]
+    end
+    # search
+    tweets = client.search( args[:query], lang: "en" ).take( args[:count].to_i )
+    tweets.each do |t|
+      puts t.text
+    end
   end
 end
