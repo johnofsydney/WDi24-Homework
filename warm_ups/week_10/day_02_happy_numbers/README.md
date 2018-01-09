@@ -11,7 +11,6 @@ A happy number is defined by the following process:
 Those numbers for which this process ends in 1 are happy numbers,
 while those for which this process do not end in 1 are unhappy numbers.
 
-
 ## Task
 
 Your task is to write a program in Javascript which prints the first 10 happy numbers, starting from 1.
