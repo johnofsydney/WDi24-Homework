@@ -10,6 +10,7 @@ const collatz = function( num ){
 
       const currentNum = collection[ collection.length - 1 ];
 
+      // This ternary will do two things for us, it will evaluate if the number give is odd or even then run the corresponding code. 
       const nextIndex = currentNum % 2 === 0 ? ( currentNum / 2 ) : (( currentNum * 3 ) + 1 );
 
       collection.push( nextIndex );
