@@ -1,6 +1,6 @@
 const collatz = function( num ){
 
-  // This collection will be where we store each value for comparison. With each iteration we will add the new value to the end and target that value with `collection[ collection.length - 1 ]`
+  // This collection will be where we store each value for comparison. With each iteration we will add the new value to the end and target that value with `collection[ collection.length - 1 ]`.
   let collection = [ num ];
 
   const makeCollection = function(){
