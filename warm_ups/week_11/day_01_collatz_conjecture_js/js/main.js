@@ -10,7 +10,7 @@ const collatz = function( num ){
 
       const currentNum = collection[ collection.length - 1 ];
 
-      // This ternary will do two things for us, it will evaluate if the number give is odd or even then run the corresponding code. 
+      // This ternary will do two things for us, it will evaluate if the number give is odd or even then run the corresponding code.
       const nextIndex = currentNum % 2 === 0 ? ( currentNum / 2 ) : (( currentNum * 3 ) + 1 );
 
       collection.push( nextIndex );
@@ -19,11 +19,14 @@ const collatz = function( num ){
 
   };
 
+  // This method will out put the result in the console.
   const answer = function(){
     console.log(`The function ran ${ collection.length - 1 } times.`);
+    // We're using join with the delimiter of ', ' to seperate each element.
     console.log(`The process was: ${ collection.join(', ') }.`);
   }
 
+  
   makeCollection();
   answer();
 
