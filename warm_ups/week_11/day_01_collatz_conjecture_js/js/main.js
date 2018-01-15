@@ -39,4 +39,5 @@ const collatz = function( num ){
 
 };
 
+// call the outer function with a console log so we can see what we're returning.
 console.log(collatz(12));
