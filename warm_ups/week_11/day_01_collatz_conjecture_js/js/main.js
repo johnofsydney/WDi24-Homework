@@ -5,6 +5,7 @@ const collatz = function( num ){
   const makeCollection = function(){
 
     while ( collection[collection.length - 1] > 1 ){
+      // Using debugger to stop the code to show the collection being collated with each iteration.
       // debugger;
 
       const currentNum = collection[ collection.length - 1 ];
