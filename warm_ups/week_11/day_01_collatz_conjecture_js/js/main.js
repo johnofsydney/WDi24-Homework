@@ -19,17 +19,18 @@ const collatz = function( num ){
 
   };
 
-  // This method will out put the result in the console.
+  // This function will out put the result in the console.
   const answer = function(){
     console.log(`The function ran ${ collection.length - 1 } times.`);
     // We're using join with the delimiter of ', ' to seperate each element.
     console.log(`The process was: ${ collection.join(', ') }.`);
   }
 
-  
+  // call both functions otherwise nothing will happen.
   makeCollection();
   answer();
 
+  // we have the ability to return an output for a user through the console logs but what about return the data in a format that another programmer might like to use?
   return {
     start: num,
     collection: collection,
