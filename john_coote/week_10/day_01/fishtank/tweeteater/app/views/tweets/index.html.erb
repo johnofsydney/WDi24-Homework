@@ -4,7 +4,9 @@
   <% @tweets.each do |tweet| %>
 
     <div class="fish">
-      <h4><%= tweet.content %></h4>
+      <div class="text">
+        <p><%= tweet.content %></p>
+      </div>
     </div>
 
   <% end %>

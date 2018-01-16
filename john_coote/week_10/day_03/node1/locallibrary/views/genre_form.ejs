@@ -1,0 +1,14 @@
+<h1>New Genre</h1>
+
+<% if (errors) { %>
+  <ol>
+  <% for (let error in erros) { %>
+    <li><%= error.msg -%>
+  }
+}
+
+<form action="" method="post">
+  <label for="name">Genre</label>
+  <input type="text" id="name" name="name" placeholder="pooetry">
+  <button>Save</button>
+</form>

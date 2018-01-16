@@ -8934,3 +8934,1836 @@ Processing by TweetsController#index as HTML
 Completed 200 OK in 109ms (Views: 105.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2018-01-09 13:02:25 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 559ms (Views: 548.7ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "MakeTheNxtStep: RT @StartupDailyANZ: Sydney startup @EvertyAU is a peer-to-peer charging network for electric cars: https://t.co/6VyCJtuXxR"], ["created_at", "2018-01-09 02:02:57.801618"], ["updated_at", "2018-01-09 02:02:57.801618"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sydney_zarrilli: @shannonrforbes Jersey and newark delaware are the only two options I will allow"], ["created_at", "2018-01-09 02:02:57.816541"], ["updated_at", "2018-01-09 02:02:57.816541"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "WTAAddict: The crowds in Sydney are always so disappointing, especially when compared to Brisbane. 😝"], ["created_at", "2018-01-09 02:02:57.818516"], ["updated_at", "2018-01-09 02:02:57.818516"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "thanhadong: (Học chuyên ngành kế toán với học phí rẻ nhất tại Sydney)\nLink: https://t.co/iPWHQ49vxu https://t.co/Z78aPbdCUJ"], ["created_at", "2018-01-09 02:02:57.820805"], ["updated_at", "2018-01-09 02:02:57.820805"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "yourmatebrad: @Uber_Australia What is this transaction on my credit card UBER https://t.co/4dtI7rysIR Sydney AU Card Used? It was… https://t.co/IoGmUuCSNp"], ["created_at", "2018-01-09 02:02:57.823217"], ["updated_at", "2018-01-09 02:02:57.823217"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "_SydneyAU: current weather in Sydney: broken clouds, 25°C\n78% humidity, wind 9kmh, pressure 1013mb"], ["created_at", "2018-01-09 02:02:57.825630"], ["updated_at", "2018-01-09 02:02:57.825630"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Jgloxoxo: Found Sydney’s prom dates😏 p.s. he’s columbian!!!!"], ["created_at", "2018-01-09 02:02:57.828246"], ["updated_at", "2018-01-09 02:02:57.828246"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "kypros1992: RT @7NewsSydney: More Sydney rail services to be cancelled this afternoon and tonight. #sydneytrains #7News  https://t.co/Q4wryIotO0"], ["created_at", "2018-01-09 02:02:57.830514"], ["updated_at", "2018-01-09 02:02:57.830514"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "DrDemography: Interesting: high education attainment in the greater Sydney area follows the flow of population. Anything in that?… https://t.co/Jo3YIAp0s1"], ["created_at", "2018-01-09 02:02:57.832833"], ["updated_at", "2018-01-09 02:02:57.832833"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "McnairMira: RT @chrisoneill84: modelling of @AustralianLabor’s policies state that more than 50% of the benefits of #NegativeGearing go to the top 20%,…"], ["created_at", "2018-01-09 02:02:57.835408"], ["updated_at", "2018-01-09 02:02:57.835408"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2018-01-09 16:03:23 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (1.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 135ms (Views: 126.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 16:07:28 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 16:07:29 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 102ms (Views: 98.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 16:07:30 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 16:07:30 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 16:07:31 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 16:07:32 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "theage: RT @theagesport: It's a first-up win for Sam Stosur in Sydney https://t.co/07dMcbK6hS"], ["created_at", "2018-01-09 06:03:31.421599"], ["updated_at", "2018-01-09 06:03:31.421599"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sydneycitypress: Weather now: clear sky, 30°C, 21 km/h north wind. https://t.co/5FUes2Ly93"], ["created_at", "2018-01-09 06:03:31.437439"], ["updated_at", "2018-01-09 06:03:31.437439"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "twiddlekins: RT @MartinkusJohn: Suspected fatality on Sydney Brisbane 2:40 XPT run to Brisbane due to breakdown of air conditioning. Victim being remove…"], ["created_at", "2018-01-09 06:03:31.439652"], ["updated_at", "2018-01-09 06:03:31.439652"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "maxuthink: Did spend a lot of time today looking for that image of the barbecue chook sticky taped to something in Sydney"], ["created_at", "2018-01-09 06:03:31.441971"], ["updated_at", "2018-01-09 06:03:31.441971"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "jimprall: RT @Jeannieic: @JoyAnnReid @nytimes Trump’s plan to build a casino in #Sydney in 1987 was rejected because of #Mafia connections"], ["created_at", "2018-01-09 06:03:31.444194"], ["updated_at", "2018-01-09 06:03:31.444194"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "7NewsSydney: @HowieCollins Major delays across the Sydney train network. These photos have been sent to 7 News by two viewers wh… https://t.co/m1wMv8PITj"], ["created_at", "2018-01-09 06:03:31.446555"], ["updated_at", "2018-01-09 06:03:31.446555"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Sydney_Cove: RT @LawDavF: In early 1980s RN Admiral explained to me that the purpose of a naval education is to teach an officer when to break the rules…"], ["created_at", "2018-01-09 06:03:31.448859"], ["updated_at", "2018-01-09 06:03:31.448859"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "caseyconway_: I don’t wanna be that guy but I love my Sydney train service."], ["created_at", "2018-01-09 06:03:31.451625"], ["updated_at", "2018-01-09 06:03:31.451625"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "uglysteffy: @sydney_lashmet @TheBucktList Bish that could be for like a weekend trip. I'm trying to live in one. Start a family… https://t.co/XMPqwGnLON"], ["created_at", "2018-01-09 06:03:31.454438"], ["updated_at", "2018-01-09 06:03:31.454438"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "plavandoski: @BorjaFrancisco_ Francisco, checa aí se o stream pro Paire ta funcionando no stream Ucraniano por favor? Nenhum jog… https://t.co/z4mnxoJWTs"], ["created_at", "2018-01-09 06:03:31.457415"], ["updated_at", "2018-01-09 06:03:31.457415"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2018-01-09 18:37:50 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 173ms (Views: 168.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:38:13 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 185ms (Views: 181.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:43:27 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 175ms (Views: 171.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:43:53 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 166ms (Views: 162.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:44:29 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 141ms (Views: 137.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:51:57 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 165ms (Views: 160.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:53:46 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 132ms (Views: 127.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 18:55:56 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 168ms (Views: 164.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:38:40 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 177ms (Views: 173.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:39:12 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 164ms (Views: 160.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:39:41 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 180ms (Views: 176.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:39:55 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 42.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:40:15 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 134ms (Views: 130.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:40:46 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 168ms (Views: 164.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:40:51 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:40:53 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:41:49 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 190ms (Views: 186.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:41:59 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 191ms (Views: 187.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:42:07 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 167ms (Views: 163.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:42:13 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 173ms (Views: 169.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:42:21 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 289ms (Views: 285.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:42:29 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 168ms (Views: 165.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:49:26 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 184ms (Views: 180.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:50:54 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 174ms (Views: 170.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:11 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 192ms (Views: 188.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:19 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:20 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:20 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 99ms (Views: 93.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:20 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 60ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:21 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:51:41 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 190ms (Views: 186.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:52:00 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 132ms (Views: 128.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:52:20 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 172ms (Views: 168.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:52:39 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 224ms (Views: 219.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:53:04 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 161ms (Views: 156.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:53:22 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 119ms (Views: 115.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:54:15 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 183ms (Views: 179.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:54:30 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 246ms (Views: 242.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:55:29 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 187ms (Views: 183.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:57:28 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 162ms (Views: 158.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:58:44 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 198ms (Views: 194.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:58:47 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:59:11 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 196ms (Views: 192.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:59:27 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 187ms (Views: 183.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:59:49 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 285ms (Views: 281.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 19:59:58 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 243ms (Views: 239.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:00:24 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 144ms (Views: 140.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:00:56 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 212ms (Views: 209.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:04:00 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 204ms (Views: 200.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:04:26 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 178ms (Views: 174.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:04:50 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 194ms (Views: 190.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:05:04 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 224ms (Views: 219.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:05:51 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 199ms (Views: 194.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:06:39 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 202ms (Views: 199.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:08:01 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 206ms (Views: 202.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:14:16 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 191ms (Views: 187.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:14:43 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 206ms (Views: 201.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:15:26 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 153ms (Views: 149.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:15:49 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 271ms (Views: 266.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:15:55 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:17:05 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 212ms (Views: 208.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:17:40 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 240ms (Views: 236.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:17:51 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 173ms (Views: 169.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:17:56 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 217ms (Views: 213.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:19:27 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 195ms (Views: 191.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:19:37 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 176ms (Views: 172.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:20:17 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 172ms (Views: 168.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:20:27 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 168ms (Views: 164.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:22:24 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 212ms (Views: 208.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:22:50 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 212ms (Views: 208.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:25:33 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 213ms (Views: 209.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:26:01 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 237ms (Views: 233.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:30:24 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 200ms (Views: 196.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:30:53 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 177ms (Views: 173.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:31:07 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:32:40 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 184ms (Views: 180.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:33:20 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 154ms (Views: 150.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:36:34 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 79ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:37:11 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 102ms (Views: 98.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:37:52 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 94ms (Views: 90.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:38:07 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:40:06 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:40:18 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:42:22 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 80ms (Views: 75.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:42:41 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:42:49 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 72ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:43:00 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:43:35 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 160ms (Views: 156.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:43:45 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:43:59 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 166ms (Views: 162.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:45:12 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 201ms (Views: 197.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:45:52 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:47:31 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 186ms (Views: 182.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:48:25 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 137ms (Views: 133.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:48:45 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:48:54 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:48:58 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:51:07 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 166ms (Views: 162.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:53:15 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 177ms (Views: 173.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:53:26 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 183ms (Views: 179.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:55:56 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 170ms (Views: 166.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:56:40 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:57:07 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:57:53 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 184ms (Views: 180.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:58:31 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 219ms (Views: 216.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:58:38 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 172ms (Views: 169.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:58:44 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 20:59:19 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 219ms (Views: 215.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:01:14 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 165ms (Views: 161.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:02:11 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 173ms (Views: 169.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:02:16 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:02:34 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 192ms (Views: 189.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:06:11 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 193ms (Views: 189.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:10:18 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 158ms (Views: 154.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:11:50 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 150ms (Views: 146.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:13:19 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 198ms (Views: 195.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:13:48 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 212ms (Views: 209.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:14:44 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 209ms (Views: 205.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:15:55 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 203ms (Views: 199.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:16:41 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 182ms (Views: 178.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:17:15 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 151ms (Views: 147.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:17:52 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 189ms (Views: 185.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:19:22 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 189ms (Views: 184.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:20:05 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 235ms (Views: 230.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:20:40 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 129ms (Views: 125.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:21:35 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 213ms (Views: 208.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:23:30 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.7ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 204ms (Views: 200.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:23:59 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 185ms (Views: 181.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:24:16 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 213ms (Views: 209.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:25:12 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 233ms (Views: 229.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:28:46 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 205ms (Views: 200.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:29:37 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 261ms (Views: 255.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:29:46 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 280ms (Views: 276.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:29:55 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 250ms (Views: 245.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:30:11 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 258ms (Views: 252.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:30:35 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 60ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:31:15 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 191ms (Views: 187.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:31:35 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 220ms (Views: 215.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:34:08 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 184ms (Views: 181.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:34:55 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 205ms (Views: 200.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:35:24 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 180ms (Views: 176.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:36:38 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 243ms (Views: 239.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:36:47 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:37:05 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 188ms (Views: 184.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:37:23 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 215ms (Views: 211.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:37:54 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 211ms (Views: 207.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:38:34 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 202ms (Views: 198.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:39:07 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:40:19 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 183ms (Views: 179.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:40:54 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 191ms (Views: 187.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:42:08 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 223ms (Views: 220.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:43:13 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 185ms (Views: 181.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:44:39 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 207ms (Views: 204.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:46:19 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 191ms (Views: 187.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:47:19 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 184ms (Views: 180.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:48:52 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 183ms (Views: 178.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:50:12 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 169ms (Views: 165.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1265]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1266]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1267]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1268]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1269]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1270]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1271]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1272]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1273]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1274]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1275]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1276]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1277]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1278]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1279]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1280]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1281]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1282]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1283]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1284]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1285]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (43.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1286]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1287]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1288]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1289]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1290]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1291]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1292]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1293]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1294]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1295]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1296]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1297]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1298]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1299]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1300]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1301]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1302]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1303]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1304]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Thomas_195813: RT @ColumbiaBugle: Lots of cheers for President Trump as he arrives to #NationalChampionship game! \n\nVery few boos. \n\nSome chants of \"USA,U…"], ["created_at", "2018-01-09 10:52:34.065040"], ["updated_at", "2018-01-09 10:52:34.065040"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sparrow_warner: RT @TRUMP45Michael2: Our @POTUS Trump’s Latest Narcissistic Pathological Liar Funded by the AntiAmerica Deep State...\nWe are with YOU, 💯 @r…"], ["created_at", "2018-01-09 10:52:34.082405"], ["updated_at", "2018-01-09 10:52:34.082405"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "cnni: Ivanka Trump's support for Oprah Winfrey's Golden Globes speech, in a tweet that also nodded to the #TIMESUP campai… https://t.co/jYbR97DAid"], ["created_at", "2018-01-09 10:52:34.085026"], ["updated_at", "2018-01-09 10:52:34.085026"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "wendybyrdm: RT @SethAbramson: BREAKING: Now there are *two* known dossiers on Trump's illicit business ties, and both of them were originally commissio…"], ["created_at", "2018-01-09 10:52:34.088460"], ["updated_at", "2018-01-09 10:52:34.088460"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ernie_ursua: RT @TulsiGabbard: Permitting offshore oil drilling is a reckless escalation of the all-out assault on our environment. It's not a question…"], ["created_at", "2018-01-09 10:52:34.096235"], ["updated_at", "2018-01-09 10:52:34.096235"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "progressivepush: RT @AFP: The US energy watchdog terminates a key proposal by President Donald Trump's administration to subsidize coal and nuclear plants,…"], ["created_at", "2018-01-09 10:52:34.099372"], ["updated_at", "2018-01-09 10:52:34.099372"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "alan_rosario69: Democrats can't escape the issue of Trump's impeachment - NBC News https://t.co/pAclNIoiUx"], ["created_at", "2018-01-09 10:52:34.103502"], ["updated_at", "2018-01-09 10:52:34.103502"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "kekkahere: RT @antoniodelotero: 14. me when i see trump supporters https://t.co/COdK1Irz53"], ["created_at", "2018-01-09 10:52:34.108503"], ["updated_at", "2018-01-09 10:52:34.108503"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "CMuongchanh: RT @TorontoStar: Did @realDonaldTrump just forget the words to the U.S. anthem? https://t.co/OQiGnbK6Dc"], ["created_at", "2018-01-09 10:52:34.112977"], ["updated_at", "2018-01-09 10:52:34.112977"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "HarrisKupfer: @Deplorable_OK @MSNBC @realDonaldTrump @POTUS Ya know everything can be a conspiracy if you want to live your life… https://t.co/Yq4afCBhDG"], ["created_at", "2018-01-09 10:52:34.120314"], ["updated_at", "2018-01-09 10:52:34.120314"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "AlanBiggs1: @youaretheref @deanmo1982 Coote sent off John Fleck in recent TV clash in which #sufc lost 2-1 at home to Bristol C… https://t.co/JHTPxeRyvu"], ["created_at", "2018-01-09 10:52:59.475578"], ["updated_at", "2018-01-09 10:52:59.475578"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2018-01-09 21:53:10 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTweet Load (0.1ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1305]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1306]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1307]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1308]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1309]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1310]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1311]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1312]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1313]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1314]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1315]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "knowwhentoholde: RT @Doodisgirl: This is #MAGA!\n👍🏼❤️💙🇺🇸 \nThank you @realDonaldTrump\n\nSouth Florida is fighting hard against Salvadoran MS-13 gangs that Bara…"], ["created_at", "2018-01-09 10:53:44.468899"], ["updated_at", "2018-01-09 10:53:44.468899"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ohyasitzandyyy: RT @HuevosDeChivo: Trump saved millions of lives and ensured the 2018 Winter Olympics happens, simply by pointing out his weapon is much bi…"], ["created_at", "2018-01-09 10:53:44.484335"], ["updated_at", "2018-01-09 10:53:44.484335"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ammaradurrani: RT @Mushahid: For a change, an excellent, realistic, commonsense perspective on Pakistan from Washington, by the former US Amb in Islamabad…"], ["created_at", "2018-01-09 10:53:44.486659"], ["updated_at", "2018-01-09 10:53:44.486659"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "bubbalouie007: RT @TruthFeedNews: WOW! Watch President Trump Bring the House Down! https://t.co/KV97czsAvO"], ["created_at", "2018-01-09 10:53:44.489602"], ["updated_at", "2018-01-09 10:53:44.489602"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "jfhdvm: RT @CNN: Ivanka Trump's support for Oprah Winfrey's Golden Globes speech, in a tweet that also nodded to the #TIMESUP campaign, has been me…"], ["created_at", "2018-01-09 10:53:44.492829"], ["updated_at", "2018-01-09 10:53:44.492829"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "umersoe: @realDonaldTrump The Mercer family will burn in Hell for all eternity along with Bannon and Trump!"], ["created_at", "2018-01-09 10:53:44.498661"], ["updated_at", "2018-01-09 10:53:44.498661"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Anthonybaker686: RT @KamalaHarris: An estimated 3M gallons of crude oil created a massive oil slick on our beautiful shore during the Santa Barbara oil spil…"], ["created_at", "2018-01-09 10:53:44.502459"], ["updated_at", "2018-01-09 10:53:44.502459"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "donna48OH: @oprah is the left's counter to @realDonaldTrump. They complain about #Trump being brash and mouthy...so is... https://t.co/reatQgLnad"], ["created_at", "2018-01-09 10:53:44.506049"], ["updated_at", "2018-01-09 10:53:44.506049"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "calabra46: RT @Deanofcomedy: Given Trump's erratic behavior and that his father had Alzheimer's, the White House's refusal to allow the military docto…"], ["created_at", "2018-01-09 10:53:44.509373"], ["updated_at", "2018-01-09 10:53:44.509373"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Lizerenity: RT @SethAbramson: BREAKING (today): Reuters says Mueller-Trump interview could happen within a few weeks. \n\n(We'll see—I'm still doubtful.…"], ["created_at", "2018-01-09 10:53:44.511793"], ["updated_at", "2018-01-09 10:53:44.511793"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Newyorker_67: RT @krassenstein: Trump appears to be kicking 200,000 Salvadorans from this country, separating thousands of children from parents, brother…"], ["created_at", "2018-01-09 10:53:44.517200"], ["updated_at", "2018-01-09 10:53:44.517200"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "PeterCRoberts45: RT @sallyeastman1: @bfraser747 @realDonaldTrump I have never had this about #Trump before. Unreal!"], ["created_at", "2018-01-09 10:53:44.525458"], ["updated_at", "2018-01-09 10:53:44.525458"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "pauleroy: RT @GeorgeLakoff: What do Trump’s fans need to understand?\n1. He's betraying our country.  \n2. He's been selling out America for money from…"], ["created_at", "2018-01-09 10:53:44.529311"], ["updated_at", "2018-01-09 10:53:44.529311"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "tvandradiopro: Rich Lowry Out At Fox News, Some Trump Supporters Want Shepard Smith To Be Next https://t.co/8fo1XdKadk"], ["created_at", "2018-01-09 10:53:44.533292"], ["updated_at", "2018-01-09 10:53:44.533292"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "robin5362: RT @cj_disabledVet: Watch Trump Fail Miserably at Singing the National Anthem — Because He Didn’t Know the Words. https://t.co/gNoUKPylYX v…"], ["created_at", "2018-01-09 10:53:44.539050"], ["updated_at", "2018-01-09 10:53:44.539050"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "BrianBachner: RT @neontaster: The real victims of the Trump administration - rich vapid New Yorkers who have to tell the reception clerk at the Hôtel de…"], ["created_at", "2018-01-09 10:53:44.548677"], ["updated_at", "2018-01-09 10:53:44.548677"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "vnrichta: @dpa @szonline Völlig wurscht, welches kasperle das diktat des kapitals ausführt...gut das mit #trump lief jetzt un… https://t.co/HOFIQHmPu6"], ["created_at", "2018-01-09 10:53:44.556806"], ["updated_at", "2018-01-09 10:53:44.556806"]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (4.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "FGLM64: RT @a_b_berurier: \"dicen que es como un niño que necesita satisfacción inmediata...no lee, no escucha, ve TV todo el tiempo... dicen que es…"], ["created_at", "2018-01-09 10:53:44.576221"], ["updated_at", "2018-01-09 10:53:44.576221"]]
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "CosminFiciu: RT @FoxNews: .@POTUS joined servicemembers on the field for the singing of the national anthem at the @CFBPlayoff #NationalChampionship gam…"], ["created_at", "2018-01-09 10:53:44.596784"], ["updated_at", "2018-01-09 10:53:44.596784"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ItsPrettyDee: RT @splinter_news: The politicians who couldn't pass the DREAM Act are now trying to solve Trump's TPS crisis https://t.co/av8uL5XNLx https…"], ["created_at", "2018-01-09 10:53:44.609421"], ["updated_at", "2018-01-09 10:53:44.609421"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "oldmillstream: RT @BuzzFeedNews: \"Oh, are you happy you voted for me. You are so lucky that I gave you that privilege,\" President Trump tells farmers in N…"], ["created_at", "2018-01-09 10:53:44.621362"], ["updated_at", "2018-01-09 10:53:44.621362"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "uberpaul: RT @MarkDiStef: The head of Twitter Europe Bruce Daisley on @bbc5live is being asked what it would take for Donald Trump to be banned or su…"], ["created_at", "2018-01-09 10:53:44.625607"], ["updated_at", "2018-01-09 10:53:44.625607"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Frances17033: RT @Amy_Siskind: So here we are, the cat is out of the bag: Trump is not mentally well, not functioning. Essentially generals are running o…"], ["created_at", "2018-01-09 10:53:44.633218"], ["updated_at", "2018-01-09 10:53:44.633218"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "WonderG78: RT @aselak: A twist I did not see coming: Donald Trump does not know the words to the National Anthem #nationalchampionship"], ["created_at", "2018-01-09 10:53:44.690935"], ["updated_at", "2018-01-09 10:53:44.690935"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "cgnetwork: A Trump Interview With Robert Mueller Would Follow Presidential Tradition: President Trump… https://t.co/XeuSTItuNr"], ["created_at", "2018-01-09 10:53:44.707140"], ["updated_at", "2018-01-09 10:53:44.707140"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "PalfreyStan: RT @oldhippiebroad: All celebrities seem to forget the past and their support of President Trump.  All these elitist forget they were willi…"], ["created_at", "2018-01-09 10:53:44.712928"], ["updated_at", "2018-01-09 10:53:44.712928"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "lobomom50: RT @SavingAmerica4U: 🔴RACIST Alabama RB Bo Scarbrough yells “F— Trump” before tonight’s title game.\n\nImagine if a white player would have y…"], ["created_at", "2018-01-09 10:53:44.722419"], ["updated_at", "2018-01-09 10:53:44.722419"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "drunkgrimes: -Bullrich\n-Pablo Agustín \n-Trump\n-Carrió \n-Feinmann\n-Iudica https://t.co/AKsanZPY8s"], ["created_at", "2018-01-09 10:53:44.730598"], ["updated_at", "2018-01-09 10:53:44.730598"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "mwt2008: RT @RBReich: Trump is planning his \"Fake News Awards\" event -- rewarding media that suck up to him (Fox News) and condemning most of the re…"], ["created_at", "2018-01-09 10:53:44.734971"], ["updated_at", "2018-01-09 10:53:44.734971"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tweets" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "elkuki82: RT @GusiSkywalker: El botón de Trump / El botón del machismo https://t.co/8oktgO9bze"], ["created_at", "2018-01-09 10:53:44.740692"], ["updated_at", "2018-01-09 10:53:44.740692"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2018-01-09 21:53:49 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 21:56:20 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 212ms (Views: 208.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 22:36:27 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (1.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 106ms (Views: 97.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 22:58:55 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 239ms (Views: 234.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 22:59:13 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 257ms (Views: 253.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:00:45 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 177ms (Views: 173.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:01:30 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 213ms (Views: 208.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:02:26 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 201ms (Views: 197.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:03:25 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 240ms (Views: 236.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:04:17 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 148ms (Views: 144.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:07:02 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 187ms (Views: 184.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:08:26 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 301ms (Views: 296.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:17:14 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 235ms (Views: 231.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:18:12 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 179ms (Views: 175.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:18:21 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 145ms (Views: 141.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:18:54 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 155ms (Views: 151.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:20:51 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 189ms (Views: 185.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-09 23:21:14 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 177ms (Views: 174.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-01-10 08:52:10 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (3.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 146ms (Views: 133.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2018-01-10 08:53:36 +1100
+Processing by TweetsController#index as HTML
+  Rendering tweets/index.html.erb within layouts/application
+  [1m[36mTweet Load (0.7ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 76ms (Views: 71.9ms | ActiveRecord: 0.7ms)
+
+

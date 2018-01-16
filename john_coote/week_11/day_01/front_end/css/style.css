@@ -1,0 +1,29 @@
+body {
+  background-image: url(http://placekitten.com/1024/1025);
+  background-size: cover;
+}
+
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: rgba(255,255,255,0.6);
+  box-sizing: border-box;
+  font-size: 140%
+}
+
+
+.bill {
+  height: 10em;
+  background-image: url(http://fillmurray.com/900/1200);
+  background-size: cover;
+}
+
+.bubble {
+  width: 10em;
+  height: 10em;
+  border: 2px solid red;
+  border-radius: 100%;
+  position: absolute;
+}

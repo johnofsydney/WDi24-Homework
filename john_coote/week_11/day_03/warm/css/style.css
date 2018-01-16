@@ -1,0 +1,79 @@
+body {
+  background-color: pink;
+}
+
+div {
+  border: solid black 1px;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.row-1 {
+  top: 100px;
+}
+
+.row-2 {
+  top: 200px;
+}
+
+.row-3 {
+  top: 300px;
+}
+
+.row-4 {
+  top: 400px;
+}
+.row-5 {
+  top: 500px;
+}
+.row-6 {
+  top: 600px;
+}
+.row-7 {
+  top: 700px;
+}
+.row-8 {
+  top: 800px;
+}
+
+
+.col-1 {
+  left: 100px;
+}
+
+.col-2 {
+  left: 200px;
+}
+
+.col-3 {
+  left: 300px;
+}
+
+.col-4 {
+  left: 400px;
+}
+
+.col-5 {
+  left: 500px;
+}
+
+.col-6 {
+  left: 600px;
+}
+
+.col-7 {
+  left: 700px;
+}
+
+.col-8 {
+  left: 800px;
+}

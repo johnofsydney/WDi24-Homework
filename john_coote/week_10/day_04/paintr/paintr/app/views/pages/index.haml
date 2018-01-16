@@ -1,0 +1,9 @@
+%h1 Paintr
+= text_field_tag :color, '#FFFFFF', :type => 'color', :autofocus => true
+= button_tag 'Add', :id => 'add-color'
+
+%div.pallette
+
+%div.canvas
+  - 10_000.times do
+    %div.pixel

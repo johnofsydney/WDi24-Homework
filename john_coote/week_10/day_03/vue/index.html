@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/vue.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>VUE intro</h1>
+
+  <div id="app">
+    {{ message}}
+  </div>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        message: "Hellow World"
+      }
+    })
+  </script>
+
+  <div id="app2">
+    <span v-bind:title="message">Hover over me</span>
+  </div>
+
+  <script>
+    const app2 = new Vue ({
+      el: '#app2',
+      data: {
+        message: `blah`
+      }
+    })
+  </script>
+
+  <div id="app3">
+    <span v-if="seen">This is showing</span>
+  </div>
+
+  <script>
+    const app3 = new Vue ({
+      el: '#app3',
+      data: {
+        seen: true
+      }
+    })
+  </script>
+
+
+
+  <div id="app4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text}}
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    const app4 = new Vue ({
+      el: "#app4",
+      data: {
+        todos: [
+          {text: "dog"},
+          {text: "cat"},
+          {text: "sheep"}
+        ]
+      }
+    })
+  </script>
+
+
+
+  <div id="app5">
+    <p>{{message}}</p>
+    <button v-on:click="reverseMessage">Reverse</button>
+  </div>
+
+  <script>
+    const app5 = new Vue ({
+      el: '#app5',
+      data: {
+        message: "Hello World"
+      },
+      methods: {
+        reverseMessage() {
+          this.message = this.message.split('').reverse().join('');
+        }
+      }
+    })
+  </script>
+
+
+  <div id="app6">
+    <p>{{message}} {{message}}</p>
+    <input v-model="message">
+  </div>
+
+  <script>
+    const app6 = new Vue ({
+      el: '#app6',
+      data: {
+        message: "Hello Everybody"
+      }
+    });
+  </script>
+
+
+
+  <div id="app7">
+    <ol>
+      <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+      </todo-item>
+    </ol>
+  </div>
+
+  <script>
+    Vue.component('todo-item', {
+      props: ['todo'],
+      template: "<li>{{todo.text}}</li>"
+    })
+    const app7 = new Vue ({
+      el: '#app7',
+      data: {
+        groceryList: [
+          {id: 0, text:"Milk"},
+          {id: 1, text:"Bread"},
+          {id: 2, text:"Tea"}
+        ]
+      }
+    })
+  </script>
+
+
+
+
+</body>
+</html>
