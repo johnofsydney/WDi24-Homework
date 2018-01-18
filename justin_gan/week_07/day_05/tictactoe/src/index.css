@@ -54,3 +54,7 @@ ol, ul {
   background-color: green;
   color: red;
 }
+
+.current-selection {
+  font-weight: bold;
+}
