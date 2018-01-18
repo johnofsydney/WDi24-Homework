@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+}
+
+#words {
+  display: none;
+}
+
+.word {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: #FFF;
+  position: absolute;
+}
