@@ -1,0 +1,15 @@
+body {
+  background-color: pink;
+  text-align: center;
+}
+
+
+.profile, .repos {
+  display: inline-block;
+  max-width: 50%;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 0.5em;
+  vertical-align: top;
+  text-align: left;
+}

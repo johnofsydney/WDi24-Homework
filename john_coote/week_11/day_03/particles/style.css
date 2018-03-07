@@ -1,0 +1,14 @@
+#particles-js {
+  background-color: #06203D;
+  height: 400px;
+}
+
+#login {
+  background-color: #FFF;
+  opacity: 0.5;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
