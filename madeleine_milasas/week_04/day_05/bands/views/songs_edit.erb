@@ -1,0 +1,9 @@
+<h2>Edit song information</h2>
+
+<form action="/songs/<%= @song.to_param %>" method="post">
+  <input type="text" name="name" placeholder="Song name" value="<%= @song['name'] %>">
+  <input type="text" name="album" placeholder="Album" value="<%= @song['album'] %>">
+  <input type="number" name="year" placeholder="Year released" min="1000" max="2017" value="<%= @song['year'] %>">  <!-- TODO make this max current year -->
+  <input type="url" name="video" placeholder="Youtube URL e.g. http://www.youtube.com..." value="<%= @song['video'] %>">
+  <button>Save changes</button>
+</form>

@@ -1,0 +1,53 @@
+html {
+  background: url(images/pokemongoldheader.jpg) no-repeat center center fixed;
+  background-size: cover
+}
+
+input, textarea, select, button {
+  width: 150px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*.pokemon-sprite {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}*/
+
+.container {
+  display: flex;
+
+  justify-content: center;
+}
+
+.pokemon-info {
+  align-self: center;
+}
+
+.container span {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+
+  height: 20vh;
+  width: 20vh;
+}
+
+.pokemon-info img {
+  display: block;
+  margin: 0 auto;
+}
+
+.pokemon-info p {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*.pokemon-sprite span {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10em;
+}*/

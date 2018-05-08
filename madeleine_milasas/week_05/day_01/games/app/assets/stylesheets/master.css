@@ -1,0 +1,109 @@
+* {
+  /*border: pink solid 1px;*/
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background-color: #F5F5F0;
+  font-family: Avenir, sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img.round {
+  border-radius: 50%;
+}
+
+
+a.round {
+  border-radius: 50%;
+  display: block;
+  width: 500px;
+  margin: 10px 200px;
+}
+
+.back {
+  padding: 3em 0 0 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: right;
+  padding: 20px;
+  text-transform: uppercase;
+  margin: 15px 0 40px 0;
+}
+
+nav > a {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+ a:hover {
+   color: black;
+ }
+
+ li {
+   padding: 15px 0;
+ }
+
+.turns {
+  font-size: 40px;
+  margin-right: 67px;
+  text-transform: uppercase;
+}
+
+.options {
+  margin-top: 50px;
+}
+
+.ball-container {
+  position: relative;
+  background-color: rgba(245, 245, 240, 1.00);
+  background-image: url(/assets/ball_answer_blue.jpg);
+  background-blend-mode: multiply;
+  height: 675px;
+  box-shadow: 0px 0px 50px 0 rgba(245, 245, 240, 1.00) inset, 0px -12px 20px 0 rgba(245, 245, 240, 1.00) inset;
+}
+
+.abs-text {
+    position: absolute;
+    top: 272px;
+    left: 334px;
+    color: white;
+    text-align: center;
+    width: 240px;
+    font-size: 20px;
+}
+
+.ball-ask-again {
+  padding-top: 10px;
+}
+
+.creepy {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+.creepy-text {
+  z-index: 20;
+  color: white;
+  display: inline-block;
+  font-size: 200px;
+  position: fixed;
+  padding: 50px;
+  text-align: center;
+  width: 100vw;
+}

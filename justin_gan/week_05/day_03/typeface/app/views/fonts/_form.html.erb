@@ -1,0 +1,36 @@
+<%= form_for @font do |f| %>
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :category_id %>
+    <%= f.select :category_id, Category.pluck(:name, :id), :include_blank => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :classification %>
+    <%= f.text_field :classification %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :designer %>
+    <%= f.text_field :designer %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :year_created %>
+    <%= f.text_field :year_created %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </fieldset>
+
+  <fieldset>
+    <label></label>
+    <%= f.submit %>
+  </fieldset>
+<% end %>

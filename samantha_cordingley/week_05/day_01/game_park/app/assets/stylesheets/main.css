@@ -1,0 +1,173 @@
+/*/////////////////////////////MAIN STYLING/////////////////////////////*/
+
+body {
+  background-color: #0c0c0c;
+  font-family: 'Spectral SC', serif;
+}
+
+nav {
+position: fixed;
+vertical-align: bottom;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 4.15rem;
+background-color: white;
+text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0c0c0c;
+  margin-right: 30px;
+}
+
+nav a:hover {
+  border-bottom: 5px solid black;
+}
+
+/*/////////////////////////////HOME STYLING/////////////////////////////*/
+
+#sitetitle {
+  font-size: 155px;
+  line-height: 1;
+  color: limegreen;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  -webkit-animation: "blink" .12s, infinite; /* Safari 4+ */
+  -moz-animation: "blink" .12s, infinite; /* Fx 5+ */
+  -o-animation: "blink" .12s, infinite; /* Opera 12+ */
+  animation: "blink" .12s, infinite;
+}
+
+#videocover {
+  display: inline-block;
+  position: absolute;
+  /*padding-left: 135px;
+  margin-top: 164px;*/
+  z-index: 2;
+  width: 200px;
+  height: 150px;
+  color: red;
+}
+
+.video {
+background: black;
+width: 100%;
+position: absolute;
+margin: auto;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: -1;
+}
+
+.videoscreen {
+  display: block;
+  padding-left: 15%;
+  padding-right: 8%;
+}
+
+/*/////////////////////////////SITE TITLE ANIMATION/////////////////////////////*/
+
+@keyframes blink {
+	0% {opacity: 0}
+	50% {opacity: .5}
+  100% {opacity: 0}
+}
+
+blink{animation: blink 5s, infinite;}
+
+/*/////////////////////////////PAGES STYLING/////////////////////////////*/
+
+.pagetitles {
+  color: limegreen;
+  font-size: 60px;
+  text-align: center;
+  line-height: .5;
+}
+
+.answertitles {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+/*/////////////////////////////SECRET NUMBER STYLING/////////////////////////////*/
+
+.formcontainer {
+  margin-left: 13%;
+  padding: 0;
+}
+
+.numberbutton {
+  width: 180px;
+  height: 85px;
+  display: inline-block;
+  padding: 20px;
+  margin: 0;
+  margin-top:20px;
+  border: none;
+  background-color: rgb(255, 3, 80);
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*/////////////////////////////MAGIC 8 STYLING/////////////////////////////*/
+
+.formfields {
+  display: inline-block;
+  width: 400px;
+  height: 150px;
+  margin-top: 4px;
+  margin-left: 32%;
+  border-style: none;
+  font-weight: 600px;
+  font-size: 26px;
+  padding-left: 86px;
+  margin-right: -21px;
+  vertical-align: top;
+  font-family: 'Spectral SC', serif;
+}
+
+.buttonstyle {
+  width: 402px;
+  height: 91px;
+  display: block;
+  border: none;
+  background-color: limegreen;
+  color: white;
+  font-weight: 700;
+  font-family: 'Spectral SC', serif;
+  font-size: 40px;
+  margin-top: 67px;
+  margin-left: 35%;
+  margin-bottom: 143px;
+}
+
+/*//////////////////////////ROCK PAPER SCISSORS STYLING///////////////////////////*/
+
+.rockbuttons {
+  width: 180px;
+  height: 85px;
+  display: inline-block;
+  padding: 20px;
+  margin: 0;
+  margin-top:20px;
+  border: none;
+  background-color: rgb(255, 3, 80);
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.rockcontainer {
+  margin-left: 29%;
+  padding: 0;
+}

@@ -1,0 +1,12 @@
+<h1>Discover the Blues</h1>
+<hr>
+
+<% @blues.each do |b| %>
+<div class="row">
+  <div class="indeximg" style="background-image: url(<%= b['image'] %>)">
+  </div><div class="name cell"><a href="/blues/<%= b['id'] %>" style="color: <%= b['hex'] %>"><%=b['name']%></a>
+  </div><div class="description cell"><%=b['description'][0..100]%>...<a href="/blues/<%= b['id'] %>">Read More</a>
+  </div><div style="background-color: <%= b['hex'] %>" class="swatch"><%= b['hex'] %></div>
+</div>
+
+<% end %>

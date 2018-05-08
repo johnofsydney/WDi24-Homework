@@ -1,0 +1,11 @@
+<h2><%= @animals['name'] %></h2>
+<h2> Country: <%= @animals['country'] %></h2>
+<h3> Population remaining: <%= @animals['population'] %></h3>
+<% unless @animals ['image'].nil?|| @animals['image'].empty? %>
+<img class="feature" src="<%= @animals['image'] %>" alt="<%= @animals ['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/animals/<%= @animals['id'] %>/delete">Delete animal</a>
+  <a href="/animals/<%= @animals['id'] %>/edit">Edit animal</a>
+</div>

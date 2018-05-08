@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.maintitle {
+  margin-top: 30vh;
+  font-size: 5vw;
+  display: inline-block;
+}
+
+.maintitle h1 {
+  display: inline-block;
+}
+
+.titlecake {
+  max-width: 50px;
+  max-height: 50px;
+  display: inline-block;
+}
+
+.person {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.personlist {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.profilepicture {
+max-width: 100%;
+border-radius: 1em;
+}
+
+.cakelist {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.cakelistimgs {
+  margin: 0 auto;
+  height: 10vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.cakeitem {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.person {
+  margin: 50px 0 80px;
+}
+
+.displaycake {
+  margin-top: 20px;
+  max-width: 60%;
+  border-radius: 20px;
+}

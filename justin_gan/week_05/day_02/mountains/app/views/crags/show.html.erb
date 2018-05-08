@@ -1,0 +1,19 @@
+<h2><%= @crag.name %></h2>
+
+<main class="show">
+
+  <%= image_tag(@crag.image, :class => 'feature') unless @crag.image.blank? %>
+
+  <p>Location: <%= @crag.location %></p>
+  <%# TODO: gmaps integration %>
+  <p>Parent Range: <%= @crag.parent_range %></p>
+  <%# TODO: hacky code to append kilometers; i18n? %>
+  <p>Elevation: <%= number_with_delimiter @crag.elevation %> <%= 'm' unless @crag.elevation.blank? %></p>
+  <p>Mountain Type: <%= @crag.mountain_type.capitalize %></p>
+
+  <div class="controls">
+    <%= link_to 'Edit crag', crag_edit_path(@crag.id) %>
+    <%= button_to 'Delete crag', crag_path(@crag.id), :method => 'delete' %>
+  </div>
+
+</main>

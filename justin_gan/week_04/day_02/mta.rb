@@ -43,18 +43,19 @@ def get_journey_leg( line, start_index, end_index, start_station, end_station )
 end
 
 def travel_east( line, start_index, end_index )
-  passed_stations = line[ (start_index + 1)..end_index] # ignore starting station
+  passed_stations = line[ (start_index + 1)..end_index ] # ignore starting station
 end
 
 def travel_west( line, start_index, end_index )
   # end index is smaller if travelling west; reverse to get correct order
-  passed_stations = line[ (end_index)..(start_index - 1)].reverse # ignore starting station
+  passed_stations = line[ (end_index)..(start_index - 1) ].reverse # ignore starting station
 end
 
 SUBWAY = {
   :N => [ "Times Square", "34th", "28th (N)", "23rd (N)", "Union Square", "8th (N)"],
-  :L => [ "8th (L)", "6th", "Union Square", "3rd", '1st' ],
+  :L => [ "8th", "6th", "Union Square", "3rd", '1st' ],
   6 => [ "Grand Central", "33rd", "28th (6)", "23rd (6)", "Union Square", "Astor Place" ]
+  :C => [ "W 4th", "8th", "23rd (C)", "34th (C)" ]
 }
 
 

@@ -1,0 +1,17 @@
+<h1 class="showtitle">
+  <%= @artist.name %>
+</h1>
+
+<% unless @artist.artworks.empty? %>
+<p class="secondaryinfo"> Artworks Include:</p>
+<ul>
+  <% @artist.artworks.each do |artwork| %>
+  <li class="artworkassc"><a href="/artworks/<%= artwork.id %>"><%= artwork.name %></a></li>
+  <% end %>
+</ul>
+<% end %>
+
+<p class="secondaryinfo">Biography. <%= @artist.bio %></p>
+
+<a class="editbuttons" href="/artists/<%= @artist.id %>/edit">Edit Artist Now</a>
+<a class="deletebuttons" href="/artists/<%= @artist.id %>/delete">Delete Artist Now</a>

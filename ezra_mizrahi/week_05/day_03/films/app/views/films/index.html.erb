@@ -1,0 +1,9 @@
+<h1>all films</h1>
+
+<% @films.each do |film| %>
+  <%= image_tag(film.image, :class => 'thumb') %>
+  <ul>
+    <li><%= link_to film.title, film_path(film.id)  %></li>
+    <li><%= film.year  %></li>
+  </ul>
+<% end %>

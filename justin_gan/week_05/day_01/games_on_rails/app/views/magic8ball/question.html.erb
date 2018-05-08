@@ -1,0 +1,15 @@
+<main class="magic8ball">
+
+  <h3 class="heading">Magic 8 Ball</h3>
+  <div class="content">
+
+    <p>Ask the mystical, all-knowing 8 ball a question:</p>
+    <a href="/magic8ball"><%= image_tag "8ball.png" %></a>
+    <form action="/magic8ball/answer">
+      <input type="text" name="question">
+      <button>Show me the answer!</button>
+    </form>
+
+  </div>
+
+</main>

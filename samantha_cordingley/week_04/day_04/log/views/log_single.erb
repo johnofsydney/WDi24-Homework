@@ -1,0 +1,22 @@
+<h1>
+  <%= @log['screenname'] %>
+</h1>
+
+<p>
+  Course week: <%=@log['week'] %>
+  Day of the week: <%=@log['day'] %>
+</p>
+
+<h2>
+  In short.  <%=@log['message']%>
+</h2>
+
+<p>
+  Here goes a rant.
+</p>
+<h1>NO RANT HERE YET!</h1>
+
+<div>
+  <a href="/log/<%= @log['id'] %>/delete">Delete this post</a>
+  <a href="/log/<%= @log['id'] %>/edit">Argh! I need to change something</a>
+</div>

@@ -1,0 +1,37 @@
+<div>
+
+  <div class="inner">
+
+    <h1 class="page-header">The Hardest Of Hard Climbs</h1>
+
+    <section class="boulders">
+
+      <% @boulders.each do |boulder| %>
+        <% unless boulder.image.nil? || boulder.image.empty? %>
+          <div class="boulder">
+            <a href="/boulders/<%= boulder.id %>">
+              <figure>
+                <img class="thumbnail" src="<%= boulder.image %>">
+                <figcaption>
+                  <h2><%= boulder.name %></h2>
+                  <h3><%= boulder.crag %></h3>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        <% end %>
+      <% end %>
+
+    </section>
+
+      <ul>
+        <% @boulders.each do |boulder| %>
+          <li>
+            <a href="/boulders/<%= boulder.id %>"><%= boulder.name %></a>
+          </li>
+        <% end %>
+      </ul>
+
+  </div>
+
+</div>

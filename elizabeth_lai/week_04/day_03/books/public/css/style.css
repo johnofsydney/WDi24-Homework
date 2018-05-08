@@ -1,0 +1,19 @@
+body {
+  color: #80b3ff;
+  text-align: center;
+  font-family: 'Spectral SC', serif;
+}
+
+h1 {
+  font-family: 'Spectral SC', serif;
+}
+
+img {
+  height: 200px;
+  width: 140px;
+  margin: 0 auto;
+}
+
+a {
+  margin: 0 20px 0 auto;
+}

@@ -1,0 +1,10 @@
+<h1 class="nameheadings"><%= @mountain.name %></h1>
+
+<%= image_tag @mountain.image unless @mountain.image.blank? %>
+<p>Range: <%= @mountain.range %></p>
+<p>Country: <%= @mountain.country %></p>
+<p>Feet: <%= @mountain.feet %></p>
+
+
+<%= link_to 'Edit mountain', mountain_edit_path(@mountain.id) %>
+<%= button_to 'Destroy mountain', mountain_path(@mountain.id), :method => 'delete' %>

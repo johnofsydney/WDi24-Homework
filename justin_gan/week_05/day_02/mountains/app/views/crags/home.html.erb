@@ -1,0 +1,12 @@
+<h2>All Crags</h2>
+
+<main class="home">
+
+  <% @crags.each do |crag| %>
+    <figure>
+      <%= link_to image_tag(crag.image), crag_path(crag.id) %>
+      <%= link_to crag.name, crag_path(crag.id) %>
+    </figure>
+  <% end %>
+  
+</main>

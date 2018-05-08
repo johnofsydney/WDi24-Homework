@@ -1,0 +1,16 @@
+<h1><%= @film.title %></h1>
+
+<%= image_tag @film.image, :class => 'feature' %>
+
+<ul>
+  <% unless @film.director.nil? %>
+  <li><%= link_to @film.director.name, @film.director %></li>
+  <% end %>
+  <li><%= @film.year %></li>
+</ul>
+
+
+<div class="controls">
+  <%= link_to 'edit film', edit_film_path(@film)  %>
+  <%= link_to 'delete film', film_path(@film.id), :method => 'delete', :data => { :confirm => 'sure?' } %>
+</div>

@@ -1,0 +1,40 @@
+body {
+  background-color: #010113;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.pageHeading {
+  font-weight: 600;
+  font-size: 147px;
+  margin-bottom: 0;
+  margin-top:0vh;
+}
+
+input#query {
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 300;
+  color: grey;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+button#gobutton {
+  width: 150px;
+  height: 57px;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  background-color: grey;
+  border: none;
+}
+
+button#gobutton:hover {
+  background-color: #1cd064;
+}

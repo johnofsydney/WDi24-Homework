@@ -1,0 +1,20 @@
+<h1 class="pagetitle">Add Artwork</h1>
+
+<form action="/artworks" method="post">
+  <input class="formstyle" type="text" name="name" placeholder="Artwork Name">
+  <input class="formstyle" type="text" name="author" placeholder="Artist">
+  <input class="formstyle" type="text" name="year" placeholder="Year">
+  <input class="formstyle" type="text" name="canvas" placeholder="Painted On..">
+  <input class="formstyle" type="url" name="image" placeholder="Image http://..">
+
+  <select name="artist_id">
+    <!-- allow them to choose nothing if they dont know -->
+    <option disabled>Artist Name</option>
+    <option></option>
+    <% Artist.all.each do |artist| %>
+    <option value="<%= artist.id %>"><%= artist.name %></option>
+    <% end %>
+  </select>
+
+  <button class="buttonstyle">ADD IT</button>
+</form>

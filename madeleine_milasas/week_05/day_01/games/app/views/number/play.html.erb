@@ -1,0 +1,9 @@
+<h2>Which is the secret number?</h2>
+
+<p>Click a number below...</p>
+
+<% @numbers.each do |n|  %>
+  <%= link_to "#{ n }", "/secret-number/#{ n }", :class => "turns" %>
+<% end  %>
+
+<p class="back"><%= link_to "Back to all games", '/' %></p>

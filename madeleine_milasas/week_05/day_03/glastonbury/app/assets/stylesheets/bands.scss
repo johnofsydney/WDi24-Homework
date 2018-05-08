@@ -1,0 +1,84 @@
+body {
+  font-family: 'Avenir', sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.thumb {
+  max-height: 150px;
+}
+
+.feature {
+  max-width: 400px;
+  margin: 40px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  border: none;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+}
+
+nav {
+  padding: 2em;
+  text-align: right;
+}
+
+nav > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  padding: 20px;
+}
+
+nav > a:hover {
+  color: coral;
+}
+
+p > a {
+  // text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  // padding: 20px;
+}
+
+p > a:hover {
+  color: coral;
+}
+
+.controls {
+  padding: 40px 0;
+}
+
+.controls > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  margin-right: 30px;
+}
+
+.controls > a:hover {
+  color: coral;
+}
+
+
+/***********  CSS GRID BASIC *********/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+}
+
+
+.box {
+  margin: 60px 0;
+}

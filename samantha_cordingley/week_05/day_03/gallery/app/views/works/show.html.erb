@@ -1,0 +1,12 @@
+<h1><%= @work.title %></h1>
+<% unless @work.artist.nil? %>
+<%= link_to @work.artist.name, @work.artist %>
+<% end %>
+<h3><%= @work.material %></h3>
+
+<%= image_tag(@work.image) %>
+
+<div class="controls">
+<%= button_to 'Edit Work', edit_work_path(@work), :method => 'get' %>
+<%= button_to 'Destroy Work', @work, :method => 'delete', :data => { :confirm => 'Arghhhhhhh noooooooo, please nooooooooooooooooooooooooooooo!!'} %>
+</div>

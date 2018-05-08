@@ -1,0 +1,5 @@
+<h1>All Fonts</h1>
+
+<% @fonts.each do |font| %>
+  <%= link_to image_tag(font.image, :class => 'thumb'), font %>
+<% end %>

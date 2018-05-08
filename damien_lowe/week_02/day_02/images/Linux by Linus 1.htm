@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0108)https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Linux by Linus 1_files/event"></script><script src="./Linux by Linus 1_files/ads"></script><script type="text/javascript" async="" src="./Linux by Linus 1_files/bid"></script><script type="text/javascript" src="./Linux by Linus 1_files/event(1)"></script><script type="text/javascript" src="./Linux by Linus 1_files/event(2)"></script><script src="./Linux by Linus 1_files/ads(1)"></script><script type="text/javascript" async="" src="./Linux by Linus 1_files/bid(1)"></script><script type="text/javascript" async="" src="./Linux by Linus 1_files/bid(2)"></script><script type="text/javascript" src="./Linux by Linus 1_files/event(3)"></script><script type="text/javascript" src="./Linux by Linus 1_files/event(4)"></script><script src="./Linux by Linus 1_files/osd.js"></script><script src="./Linux by Linus 1_files/ads(2)"></script><script src="./Linux by Linus 1_files/pubads_impl_rendering_163.js"></script><script src="./Linux by Linus 1_files/ads(3)"></script><script src="./Linux by Linus 1_files/init"></script><script type="text/javascript" async="" src="./Linux by Linus 1_files/bid(3)"></script><script src="./Linux by Linus 1_files/ptrack-v0.9.2-engaged-time-slots-video.js"></script><script src="./Linux by Linus 1_files/show_companion_ad.js"></script><script type="text/javascript" src="./Linux by Linus 1_files/sparrow.min.js"></script><script type="text/javascript" src="./Linux by Linus 1_files/event(5)"></script><script src="./Linux by Linus 1_files/arstechnica.com"></script><script type="text/javascript" src="./Linux by Linus 1_files/ars-technica.config.js"></script><script type="text/javascript" src="./Linux by Linus 1_files/get" charset="UTF-8" async=""></script>
+<title>How Linux was born, as told by Linus Torvalds himself | Ars Technica</title>
+    <script type="text/javascript" async="" src="./Linux by Linus 1_files/ga.js"></script><script type="text/javascript">
+    ars = {"ASSETS":"https:\/\/cdn.arstechnica.net\/wp-content\/themes\/ars\/assets","HOME_URL":"https:\/\/arstechnica.com","LOGIN_URL":"https:\/\/arstechnica.com\/services\/login-desktop.html?v=1","CIVIS":"\/civis","THEME":"light","VIEW":"grid","MOBILE":false,"PREMIER":false,"LOGGED":false,"ENV":"production","AD":{"kw":["section_information-technology","discipline","history-of-tech","enterprise","ventures","small","business"],"zone":"business","queue":[]},"TOTAL":82941,"UNREAD":0,"RECENT":[1196623,1196457,1196621,1196547,1196567,1196551,1196543,1196505,1196241,1196461,1196343,1196247,1196245,1196275,1196239,1196185,1196223,1196183,1196167,1191853,1194891,1196093,1195581,1186747,1191137],"LOGINS":true,"CROSS":false,"GEOALERTS":true,"PARSELY":"arstechnica.com","COMMENTS":false,"HOMEPAGE":false,"COUNTRY":"us","SITE":1,"READY":[],"SHOW_ADS":true,"IMG_PROXY":"https:\/\/cdn.arstechnica.net\/i\/","CATEGORY":"information-technology","PAGETITLE":""};
+  </script>
+
+  <link rel="stylesheet" type="text/css" media="all" href="./Linux by Linus 1_files/main-900497e260.css">
+      <link rel="alternate" type="application/rss+xml" href="http://feeds.arstechnica.com/arstechnica/index/">
+  <link rel="shortcut icon" href="https://cdn.arstechnica.net/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="https://cdn.arstechnica.net/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.arstechnica.net/wp-content/themes/ars/assets/img/ars-ios-icon-d9a45f558c.png">
+  <link rel="icon" sizes="192x192" href="https://cdn.arstechnica.net/wp-content/themes/ars/assets/img/material-ars-db41652381.png">
+
+    <meta name="application-name" content="Ars Technica">
+  <meta name="msapplication-starturl" content="http://arstechnica.com/">
+  <meta name="msapplication-tooltip" content="Ars Technica: Serving the technologist for 1.2 decades">
+  <meta name="msapplication-task" content="name=News;action-uri=http://arstechnica.com/;icon-uri=https://cdn.arstechnica.net/favicon.ico">
+  <meta name="msapplication-task" content="name=Features;action-uri=http://arstechnica.com/features/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-features.ico">
+  <meta name="msapplication-task" content="name=OpenForum;action-uri=http://arstechnica.com/civis/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-forum.ico">
+  <meta name="msapplication-task" content="name=Subscribe;action-uri=http://arstechnica.com/subscriptions/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-subscribe.ico">
+
+
+  
+  <meta name="advertising" content="ask">
+  <meta property="fb:admins" content="592156917">
+  <meta property="fb:admins" content="108943">
+    <meta property="fb:pages" content="19374573752">
+  
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#000000">
+
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- cache miss 142:single/meta:e822402e5bc9fba123caa5c1ed6441a3 -->
+<meta name="parsely-page" content="{&quot;title&quot;:&quot;How Linux was born, as told by Linus Torvalds himself&quot;,&quot;link&quot;:&quot;https:\/\/arstechnica.com\/information-technology\/2015\/08\/how-linux-was-born-as-told-by-linus-torvalds-himself\/&quot;,&quot;type&quot;:&quot;post&quot;,&quot;author&quot;:&quot;Glyn Moody&quot;,&quot;post_id&quot;:728861,&quot;pub_date&quot;:&quot;2015-08-25T18:02:50Z&quot;,&quot;section&quot;:&quot;Biz &amp; IT&quot;,&quot;tags&quot;:[&quot;linus-torvalds&quot;,&quot;linux-2&quot;,&quot;unix&quot;,&quot;type: report&quot;],&quot;image_url&quot;:&quot;https:\/\/cdn.arstechnica.net\/wp-content\/uploads\/2015\/08\/LinuxCon_Europe_Linus_Torvalds_05-150x150.jpg&quot;}">
+<meta name="parsely-metadata" content="{&quot;type&quot;:&quot;report&quot;,&quot;title&quot;:&quot;How Linux was born, as told by Linus Torvalds himself&quot;,&quot;post_id&quot;:728861,&quot;lower_deck&quot;:&quot;Linux is 24 years old today. In 1996, he told me how it all started.&quot;,&quot;image_url&quot;:&quot;https:\/\/cdn.arstechnica.net\/wp-content\/uploads\/2015\/08\/LinuxCon_Europe_Linus_Torvalds_05-150x150.jpg&quot;,&quot;listing_image_url&quot;:&quot;https:\/\/cdn.arstechnica.net\/wp-content\/uploads\/2015\/08\/LinuxCon_Europe_Linus_Torvalds_05-300x150.jpg&quot;}">
+
+<link rel="canonical" href="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/">
+
+<link rel="amphtml" href="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?amp=1">
+
+<link rel="alternate" hreflang="en-gb" href="http://arstechnica.co.uk/business/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/">
+<link rel="alternate" hreflang="en" href="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/">
+
+
+<link rel="shorturl" href="https://arstechnica.com/?p=728861">
+
+<meta name="description" content="Linux is 24 years old today. In 1996, he told me how it all started.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/">
+<meta name="twitter:title" content="How Linux was born, as told by Linus Torvalds himself">
+<meta name="twitter:description" content="Linux is 24 years old today. In 1996, he told me how it all started.">
+
+<meta name="twitter:site" content="@arstechnica">
+<meta name="twitter:domain" content="arstechnica.com">
+
+<meta property="og:site_name" content="Ars Technica">
+
+<meta name="twitter:image:src" content="https://cdn.arstechnica.net/wp-content/uploads/2015/08/LinuxCon_Europe_Linus_Torvalds_05-640x215.jpg">
+<meta name="twitter:image:width" content="640">
+<meta name="twitter:image:height" content="215">
+
+<meta name="twitter:creator" content="@glynmoody">
+
+<meta property="og:url" content="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/">
+<meta property="og:title" content="How Linux was born, as told by Linus Torvalds himself">
+<meta property="og:image" content="https://cdn.arstechnica.net/wp-content/uploads/2015/08/LinuxCon_Europe_Linus_Torvalds_05-640x215.jpg">
+<meta property="og:description" content="Linux is 24 years old today. In 1996, he told me how it all started.">
+<meta property="og:type" content="article">
+
+<script type="text/javascript">var digitalData = {"contributor":"Glyn Moody","contentID":728861,"contentLength":1543,"display":"How Linux was born, as told by Linus Torvalds himself","pageType":"report","keywords":{"display":"linus-torvalds|linux-2|unix|type: report"},"canonical":"https:\/\/arstechnica.com\/information-technology\/2015\/08\/how-linux-was-born-as-told-by-linus-torvalds-himself\/","pageValue":1,"publishDate":"2015-08-25T18:02:50+00:00","section":"Biz &amp; IT"};</script>
+  <!-- cache hit 142:single/header:e822402e5bc9fba123caa5c1ed6441a3 -->
+
+  
+  
+  
+<script>
+!function(b,c,d){"use strict";var e=b.location.hostname,f=""!==b.location.port?":"+b.location.port:"",g=location.search.match(/CNS_SB=([^&\s]+)[&\s]?/)||[],h=e+f+"/cns"+(g.length?"-sandbox/"+g[1]:"")+"/services.min.js",i=d||"//"+h;b.cns=b.cns||{async:function(b,c){this.queue[b]||(this.queue[b]=[]),"function"==typeof c&&this.queue[b].push(c)},queue:{},embed:{backup:d}};var j;j=c.createElement("script"),j.async=!0,j.src=i,c.head.appendChild(j)}(window,document,'https://cdn.arstechnica.net/cns/services.min.js?1509425100');
+</script><script async="" src="./Linux by Linus 1_files/services.min.js"></script>
+
+  <script src="./Linux by Linus 1_files/satellite-579c051264746d4fa9001135.js"></script><script src="./Linux by Linus 1_files/satellite-5762fa5864746d7eef000ffb.js"></script><script src="./Linux by Linus 1_files/s-code-contents-566dcf5046f148f38d0aa32bf73df40db7ae7768.js"></script><script type="text/javascript" async="" src="./Linux by Linus 1_files/saved_resource"></script><script type="text/javascript" async="" src="./Linux by Linus 1_files/saved_resource(1)"></script><script async="" type="text/javascript" src="./Linux by Linus 1_files/PageName=Biz &amp;amp"></script><style></style><script async="" src="./Linux by Linus 1_files/gpt.js" id="gpt-script"></script><style class="cns-ads-iframe-styles"></style><script class="cns-metrics-sparrow" async="" src="./Linux by Linus 1_files/sparrow.min.js"></script><script async="" src="./Linux by Linus 1_files/yieldbot.intent.js"></script><script async="" src="./Linux by Linus 1_files/htw-condenast.js"></script><script async="" src="./Linux by Linus 1_files/conde-nast"></script><script src="./Linux by Linus 1_files/https-%2F%2Farstechnica.com%2Finformation-technology%2F2015%2F08%2Fhow-linux-was-born-as-told-by-linus-torvalds-himself%2F"></script><link rel="preload" href="./Linux by Linus 1_files/integrator.js" as="script"><script type="text/javascript" src="./Linux by Linus 1_files/integrator.js"></script><script src="./Linux by Linus 1_files/pubads_impl_163.js" async=""></script><link rel="prefetch" href="https://securepubads.g.doubleclick.net/static/3p_cookie.html"><script src="./Linux by Linus 1_files/teads-format.min.js" async=""></script></head>
+<body class="post-template-default single single-post postid-728861 single-format-standard grid-view light blog-us">
+
+  <div data-name="_out_of_page_0" data-slot-type="_out_of_page" id="cns_ads_1509425700124n58OBO7THq4kdnLh0C8E0PP7mLPmDb__out_of_page_0_stage" class="cns-ads-stage cns-ads-slot-type--out-of-page cns-ads-slot-type--out-of-page-0 cns-ads-slot-type-out-of-page cns-ads-slot-size-1x1 cns-ads-slot-state-filled" style="font-size: 0px; line-height: 0; overflow: hidden; height: 0px; width: 0px; padding: 0px; margin: 0px;"><div class="cns-ads-container" id="cns_ads_1509425700124n58OBO7THq4kdnLh0C8E0PP7mLPmDb__out_of_page_0_container" data-google-query-id="CM-JgfaImtcCFZkgKgodgQUK8Q" style="font-size: 0px; line-height: 0; overflow: hidden; margin: 0px auto; box-sizing: content-box;"><div id="google_ads_iframe_3379/ars.dart/business_3__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_3379/ars.dart/business_3" title="3rd party ad content" name="google_ads_iframe_3379/ars.dart/business_3" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Linux by Linus 1_files/saved_resource.html"></iframe></div></div></div><aside class="ad ad_crown" id="ad_crown_top"><div data-name="post_nav_0" data-slot-type="post_nav" id="cns_ads_15094257001218bY5i6B1skX4BATm0ZELg7LxqsLniM_post_nav_0_stage" class="cns-ads-stage cns-ads-slot-type-post-nav cns-ads-slot-type-post-nav-0 cns-ads-slot-size-970x250 cns-ads-slot-state-filled" style="font-size: 0px; line-height: 0; overflow: hidden;"><div class="cns-ads-container" id="cns_ads_15094257001218bY5i6B1skX4BATm0ZELg7LxqsLniM_post_nav_0_container" data-jivox-ad-id="constellation-crown" data-google-query-id="CKHJ5oSJmtcCFQdylgodXnsDww" style="font-size: 0px; line-height: 0; overflow: hidden; margin: 0px auto; box-sizing: content-box; min-height: 250px; width: 970px;"><div id="google_ads_iframe_3379/ars.dart/business_4__container__" style="border: 0pt none; min-height: 250px; width: 970px;"><iframe id="google_ads_iframe_3379/ars.dart/business_4" title="3rd party ad content" name="google_ads_iframe_3379/ars.dart/business_4" width="970" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom; min-height: 250px; width: 970px;" data-integralas-id-61994c0f-97d8-a233-2f84-6bf89ff2b4b4="" src="./Linux by Linus 1_files/saved_resource(6).html"></iframe></div></div></div></aside>
+
+<div class="site-wrapper">
+  <header class="site-header is_stuck scrolled-up" style="position: fixed; top: -60px; width: 1140px;">
+    <div class="header-left">
+      <a href="https://arstechnica.com/" id="header-logo" title="Ars Technica Homepage">
+      <span class="icon icon-logo-ars-us"></span>
+  </a>
+      <div class="dropdown" id="header-search">
+        <a href="https://arstechnica.com/search/" class="dropdown-toggle">
+          <span class="icon icon-search-mag-glass"></span>
+        </a>
+        <div class="dropdown-content">
+          <form action="https://arstechnica.com/search/" method="GET" id="search_form">
+  <input type="hidden" name="ie" value="UTF-8">
+  <input type="text" name="q" id="hdr_search_input" value="" placeholder="Search..." tabindex="10">
+</form>
+<a class="nav-search-close">Close</a>
+        </div>
+      </div>
+      <nav id="header-nav-primary">
+        <ul>
+          
+  <li><a class="active" href="https://arstechnica.com/information-technology/">Biz &amp; IT</a></li>
+  <li><a class="" href="https://arstechnica.com/gadgets/">Tech</a></li>
+  <li><a class="" href="https://arstechnica.com/science/">Science</a></li>
+  <li><a class="" href="https://arstechnica.com/tech-policy/">Policy</a></li>
+  <li><a class="" href="https://arstechnica.com/cars/">Cars</a></li>
+  <li><a class="" href="https://arstechnica.com/gaming/">Gaming &amp; Culture</a></li>
+  <li><a href="https://arstechnica.com/civis/">Forums</a></li>        </ul>
+      </nav>
+      <div class="dropdown dropdown-mega" id="header-burger">
+        <a href="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/#site-footer" class="dropdown-toggle">
+          <span></span>
+        </a>
+        <div class="dropdown-content">
+          <section class="burger-navigate">
+  <h3>
+    <span class="icon icon-half-target"></span>
+    Navigate
+  </h3>
+  <ul>
+    <li><a href="http://video.arstechnica.com/">Videos</a></li>
+    <li><a href="https://arstechnica.com/features/">Features</a></li>
+    <li><a href="https://arstechnica.com/reviews/">Reviews</a></li>
+    <li><a href="https://arstechnica.com/tag/ars-approved/">Ars Approved</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="https://arstechnica.com/rss-feeds/">RSS Feeds</a></li>
+    <li><a href="https://arstechnica.com/?view=mobile">Mobile Site</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="https://arstechnica.com/about-us/">About Ars</a></li>
+    <li><a href="https://arstechnica.com/staff-directory/">Staff Directory</a></li>
+    <li><a href="https://arstechnica.com/contact-us/">Contact Us</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="https://arstechnica.com/advertise-with-us/">Advertise with Ars</a></li>
+    <li><a href="https://arstechnica.com/reprints/">Reprints</a></li>
+  </ul>
+</section>
+
+<section class="burger-filter">
+  <h3>
+    <span class="icon icon-half-mag"></span>
+    Filter by topic
+  </h3>
+  <ul id="burger-nav-primary">
+    
+  <li><a class="active" href="https://arstechnica.com/information-technology/">Biz &amp; IT</a></li>
+  <li><a class="" href="https://arstechnica.com/gadgets/">Tech</a></li>
+  <li><a class="" href="https://arstechnica.com/science/">Science</a></li>
+  <li><a class="" href="https://arstechnica.com/tech-policy/">Policy</a></li>
+  <li><a class="" href="https://arstechnica.com/cars/">Cars</a></li>
+  <li><a class="" href="https://arstechnica.com/gaming/">Gaming &amp; Culture</a></li>
+  <li><a href="https://arstechnica.com/civis/">Forums</a></li>  </ul>
+</section>
+
+<section class="burger-settings">
+  <h3>
+    <span class="icon icon-half-gear"></span>
+    Settings
+  </h3>
+  <div>
+    <div class="burger-layout">
+      
+<p>Front page layout</p>
+<div class="burger-layout-grid">
+  <a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?view=grid" class="">
+    <span class="icon icon-grid"></span><br>
+    Grid
+    <div class="faux-radio active"></div>
+      </a>
+</div>
+
+<div class="burger-layout-list">
+  <a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?view=archive" class="">
+    <span class="icon icon-list"></span><br>
+    List
+    <div class="faux-radio "></div>
+      </a>
+</div>
+
+<div class="burger-layout-unified">
+  <a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?view=unified" class="">
+    <span class="icon icon-hybrid-view"></span><br>
+    Unified
+    <div class="faux-radio "></div>
+      </a>
+</div>
+
+  <div class="burger-layout-wide" style="display: none;">
+    <a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?view=full" class="">
+      <span class="icon icon-wide"></span><br>
+      Wide
+      <div class="faux-radio "></div>
+          </a>
+  </div>
+    </div>
+    <div class="burger-theme">
+      
+<p>Site theme</p>
+<div class="burger-theme-light">
+  <a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?theme=light" class="">
+    <span><span>Black on white</span></span>
+    <div class="faux-radio active"></div>
+      </a>
+</div>
+
+<div class="burger-theme-dark">
+  <a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?theme=dark" class="">
+    <span><span>White on black</span></span>
+    <div class="faux-radio "></div>
+      </a>
+</div>
+    </div>
+  </div>
+  </section>
+        </div>
+      </div>
+      <div class="dropdown dropdown-mega" id="header-account">
+      <a href="https://arstechnica.com/civis/ucp.php?mode=login&amp;return_to=%2Finformation-technology%2F2015%2F08%2Fhow-linux-was-born-as-told-by-linus-torvalds-himself%2F" class="dropdown-toggle">
+      Sign in
+      <span class="icon dropdown-indicator icon-drop-indicator"></span>
+    </a>
+    <div class="dropdown-content">
+    <section class="profile-activity">
+      <h3>
+        <span class="icon icon-half-bubble-up"></span>
+        Comment activity
+      </h3>
+              <p>Sign up or login to join the discussions!</p>
+          </section>
+
+    <section class="profile-settings">
+              <form id="login-form" action="https://arstechnica.com/civis/ucp.php?mode=login" method="post">
+  <input type="text" name="username" id="username" placeholder="Username or Email">
+  <input type="password" name="password" id="password" placeholder="Password">
+  <input type="submit" value="Submit" class="button button-orange button-wide" name="login">
+  <label id="remember-label">
+    <input type="checkbox" name="autologin" id="autologin">
+  Stay logged in</label> <span>|</span> <a href="https://arstechnica.com/civis/ucp.php?mode=sendpassword">Having trouble?</a>
+
+  <input type="hidden" name="redirect" value="./ucp.php?mode=login&amp;return_to=%2Fservices%2Fx%2Fa.php%3Fpath%3D%2Finformation-technology%2F2015%2F08%2Fhow-linux-was-born-as-told-by-linus-torvalds-himself%2F%26s%3D1">
+  <input type="hidden" name="return_to" value="/services/x/a.php?path=%2Finformation-technology%2F2015%2F08%2Fhow-linux-was-born-as-told-by-linus-torvalds-himself%2F&amp;s=1">
+</form>
+<div class="register-account">
+  <span>Sign up to comment and more</span>
+  <a href="https://arstechnica.com/civis/ucp.php?mode=register" class="signup-btn button button-wide">Sign up</a>
+</div>
+      
+    </section>
+  </div>
+</div>
+    </div>
+    <div class="header-right">
+            <!-- cache hit 142:header/site-toggle:517d9f47cde01ccfd255765092ec6a7f -->
+  <div class="dropdown dropdown-right" id="header-sites">
+                        <a href="https://arstechnica.com/?return" class="dropdown-toggle">
+          <span class="icon header-flag icon-flag-us"></span>
+          <span class="icon dropdown-indicator icon-drop-indicator"></span>
+        </a>
+                                  
+    <div class="dropdown-content">
+                        <a href="https://arstechnica.co.uk/">
+            <span class="icon header-flag icon-flag-uk"></span>
+            Ars Technica UK          </a>
+          </div>
+  </div>
+          </div>
+  </header><div style="position: relative; width: 1140px; height: 40px; display: flex; vertical-align: baseline; float: none;"></div>
+
+            
+  <div class="content-wrapper">
+
+<script type="text/javascript">
+  ars.ARTICLE = {"url":"https:\/\/arstechnica.com\/information-technology\/2015\/08\/how-linux-was-born-as-told-by-linus-torvalds-himself\/","short_url":"https:\/\/arstechnica.com\/?p=728861","title":"How Linux was born, as told by Linus Torvalds himself","author":480857,"id":728861,"topic":1291903,"pages":1,"current_page":1,"superscroll":false,"promoted":[],"single_page":false,"comments":126,"fullwidth":false,"slug":"how-linux-was-born-as-told-by-linus-torvalds-himself","arsStaff":{"104481":{"name":"Aaron Zimmerman","title":"Copyeditor","staff":true},"520255":{"name":"Annalee Newitz","title":"Senior Tech Culture Editor","staff":true},"509873":{"name":"Beth Mole","title":"Health Reporter","staff":true},"335607":{"name":"Cyrus Farivar","title":"Senior Business Editor","staff":true},"329388":{"name":"Dan Goodin","title":"Security Editor","staff":true},"427993":{"name":"David Kravets","title":"Senior Editor","staff":true},"512413":{"name":"Eric Berger","title":"Senior Space Editor","staff":true},"55943":{"name":"Jacqui Cheng","title":"Editor at Large","staff":false},"439519":{"name":"Jennifer Hahn","title":"","staff":false},"334677":{"name":"Joe Mullin","title":"Tech Policy Editor","staff":true},"52979":{"name":"John Timmer","title":"Senior Science Editor","staff":true},"312082":{"name":"Jon Brodkin","title":"Senior IT Reporter","staff":true},"14317":{"name":"Jonathan M. Gitlin","title":"Automotive Editor","staff":true},"338374":{"name":"Kathleen DeVries","title":"","staff":false},"440179":{"name":"Kerry Staurseth","title":"Associate Copyeditor","staff":true},"328283":{"name":"Kyle Orland","title":"Senior Gaming Editor","staff":true},"483933":{"name":"Mark Walton","title":"Consumer Editor","staff":true},"331051":{"name":"Megan Geuss","title":"Staff editor","staff":true},"1169":{"name":"Peter Bright","title":"Technology Editor","staff":true},"391727":{"name":"Ron Amadeo","title":"Reviews Editor","staff":true},"348927":{"name":"Sam Machkovech","title":"Tech Culture Editor","staff":true},"588289":{"name":"Samuel Axon","title":"Senior Reviews Editor","staff":true},"314884":{"name":"Sean Gallagher","title":"IT Editor","staff":true},"495539":{"name":"S.I. Newhouse","title":"","staff":false},"173910":{"name":"Timothy B. Lee","title":"Senior tech policy reporter","staff":true},"505571":{"name":"Valentina Palladino","title":"Associate Reviewer","staff":true},"369205":{"name":"Akshat Rathi","title":"Associate Writer","staff":false},"325040":{"name":"Allie Wilkinson","title":"","staff":false},"332715":{"name":"Andrew Cunningham","title":"Reviews Editor Emeritus","staff":false},"505703":{"name":"Cassandra Khaw","title":"Contributing Reporter ","staff":false},"453791":{"name":"Cathleen O'Grady","title":"Contributing science reporter","staff":true},"102179":{"name":"Chris Lee","title":"Associate writer","staff":true},"332078":{"name":"Curt Hopkins","title":"Associate Writer","staff":false},"6978":{"name":"Dave Girard","title":"Associate Writer","staff":false},"332434":{"name":"Dave Klingler","title":"Associate Writer","staff":false},"129513":{"name":"David Kanter","title":"","staff":false},"254631":{"name":"Diana Gitig","title":"Associate Writer","staff":false},"52335":{"name":"edgar","title":"","staff":false},"172426":{"name":"egosumliber","title":"","staff":false},"480857":{"name":"Glyn Moody","title":"Contributing Policy Editor","staff":false},"46707":{"name":"Iljitsch van Beijnum","title":"Associate Writer","staff":false},"332336":{"name":"James Holloway","title":"Associate Writer","staff":false},"217531":{"name":"Jeremy Jacquot","title":"","staff":false},"15365":{"name":"Jeremy Reimer","title":"Senior Niche Technology Historian","staff":false},"4086":{"name":"Jim Salter","title":"Contributor","staff":false},"8996":{"name":"John Siracusa","title":"Associate writer","staff":false},"375641":{"name":"Kate Prengaman","title":"","staff":false},"251816":{"name":"Kate Shaw Yoshida","title":"Associate Writer","staff":false},"133411":{"name":"Knadles","title":"","staff":false},"37509":{"name":"Matt Ford","title":"Associate writer","staff":false},"300066":{"name":"Matthew Braga","title":"Associate writer","staff":true},"323078":{"name":"Matthew Francis","title":"Associate Writer","staff":false},"173191":{"name":"Matthew Lasar","title":"Associate writer","staff":true},"336278":{"name":"Melissae Fellet","title":"Associate Writer","staff":false},"1991":{"name":"Ohrmazd","title":"","staff":false},"445261":{"name":"Robert Lemos","title":"","staff":false},"66380":{"name":"Ryan Paul","title":"Ars Editor Emeritus ","staff":false},"17480":{"name":"SBD","title":"","staff":false},"294205":{"name":"Scott K. Johnson","title":"Associate Writer","staff":true},"451673":{"name":"Shalini Saxena","title":"Science Writer","staff":false},"163185":{"name":"Tim De Chant","title":"","staff":false},"181333":{"name":"vansau","title":"","staff":false},"445789":{"name":"Xaq Rzetelny","title":"","staff":false},"6021":{"name":"Yaz","title":"","staff":false},"417641":{"name":"Yogi Patel","title":"","staff":false},"513703":{"name":"Forrest Marvez","title":"Developer","staff":false},"316010":{"name":"Jason Marlin","title":"Technical Director","staff":true},"998":{"name":"Ken Fisher","title":"Editor in Chief","staff":true},"671621":{"name":"Steven Klein","title":"Developer","staff":false},"1002":{"name":"Aurich Lawson","title":"Creative Director","staff":true},"25862":{"name":"Eric Bangeman","title":"Managing Editor","staff":true},"10243":{"name":"Lee Hutchinson","title":"Senior Technology Editor","staff":true},"182268":{"name":"Nate Anderson","title":"Deputy Editor","staff":true},"330533":{"name":"Nathan Mattise","title":"Features Editor","staff":true},"547195":{"name":"Tom Mendelsohn","title":"Contributing Sub Editor","staff":true},"513593":{"name":"Andrii Degeler","title":"Contributing reporter","staff":true},"549735":{"name":"Jennifer Baker","title":"Contributing Europe Correspondent","staff":true},"566299":{"name":"J.M. Porup","title":"Contributing Security Reporter","staff":true},"100955":{"name":"Lee Aylward","title":"Lead Developer","staff":false}}};
+</script>
+
+<article itemscope="" itemtype="http://schema.org/NewsArticle" class="article-single standalone intro-default ">
+
+  <div class="column-wrapper" style="position: relative;">
+
+    <div class="left-column">
+      <header class="article-header">
+        <h4 class="post-upperdek">
+      Biz &amp; IT    —
+</h4>
+        <h1 itemprop="headline">How Linux was born, as told by Linus Torvalds himself</h1>
+        <h2 itemprop="description">Linux is 24 years old today. In 1996, he told me how it all started.</h2>
+        <section class="post-meta">
+
+  
+  <p class="byline" itemprop="author creator" itemscope="" itemtype="http://schema.org/Person">
+      <a itemprop="url" href="https://arstechnica.com/author/glyn_moody/" rel="author"><span itemprop="name">Glyn Moody</span></a>
+     (UK)  -  <time class="date" data-time="1440525770" datetime="2015-08-25T18:02:50+00:00">8/26/2015, 4:02 AM</time>
+  </p>
+
+
+  
+</section>      </header>
+
+      <section class="article-guts">
+        <div itemprop="articleBody" class="article-content post-page">
+          
+<figure class="intro-image intro-left">
+  <img src="./Linux by Linus 1_files/LinuxCon_Europe_Linus_Torvalds_05-640x640.jpg">
+      <figcaption class="caption"><div class="caption-text">Linus Torvalds</div><div class="caption-credit"><a rel="nofollow" class="caption-link" href="https://commons.wikimedia.org/wiki/File:LinuxCon_Europe_Linus_Torvalds_05.jpg">Krd</a></div></figcaption>  </figure>
+
+  <aside id="social-left"><a title="71 posters participating, including story author." class="comment-count icon-comment-bubble-down" href="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?comments=1">
+      <span class="comment-count-before">reader comments</span>
+    <span class="comment-count-number">126</span>
+  </a>  
+
+<div class="share-links">
+  <span>Share this story</span>
+  <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861" target="_blank" class="social-icon share-facebook" title="Share on Facebook"></a>
+  <a href="https://twitter.com/share?text=How+Linux+was+born%2C+as+told+by+Linus+Torvalds+himself&amp;url=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861" target="_blank" class="social-icon share-twitter" title="Share on Twitter"></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861&amp;title=How+Linux+was+born%2C+as+told+by+Linus+Torvalds+himself" target="_blank" class="social-icon share-reddit" title="Share on Reddit"></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861" target="_blank" class="social-icon share-gplus" title="Share on Google+"></a>
+</div>
+</aside>
+
+
+
+
+<!-- cache hit 142:single/related:e822402e5bc9fba123caa5c1ed6441a3 --><!-- empty -->
+<p>One of the most famous messages in all computing was posted exactly 24 years ago today, on <a href="https://groups.google.com/forum/#!msg/comp.os.minix/dlNtH7RRrGA/SwRavCzVE7gJ">25 August, 1991</a>:</p>
+<blockquote><p>Hello everybody out there using minix -</p>
+<p>I'm doing a (free) operating system (just a hobby, won't be big and<br>
+professional like gnu) for 386(486) AT clones. This has been brewing<br>
+since april, and is starting to get ready.</p></blockquote>
+<figure class="image shortcode-img right medium" style="width:300px"><a href="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2015/08/LinuxCon_Europe_Linus_Torvalds_05.jpg" class="enlarge" data-height="2346" data-width="2346" alt="Linus Torvalds in 2005"><img alt="Linus Torvalds in 2005" src="./Linux by Linus 1_files/LinuxCon_Europe_Linus_Torvalds_05-300x300.jpg" width="300" height="300" srcset="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2015/08/LinuxCon_Europe_Linus_Torvalds_05-640x640.jpg 2x"></a><figcaption class="caption"><div class="caption-text"><a href="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2015/08/LinuxCon_Europe_Linus_Torvalds_05.jpg" class="enlarge-link" data-height="2346" data-width="2346">Enlarge</a> <span class="sep">/</span> Linus Torvalds in 2005</div></figcaption></figure>
+<p>Many people have read that post by Linus Torvalds in the <span class="skimlinks-unlinked">comp.os.minix</span> newsgroup on Usenet, or at least heard about it. Many more are aware of how that (free) operating system ended up taking over vast swathes of the computing world, and becoming both "big" and "professional." But what about <em>before</em> that famous moment? What were the key events that led to Linus creating that first public release of Linux?</p>
+<p>To find out, in December 1996, I went to Finland to interview Linus in his flat in Helsinki. I used some of his replies in a feature that appeared in <a href="http://archive.wired.com/wired/archive/5.08/linux.html"><em>Wired</em> magazine</a> in August 1997; more of them appeared in my book, <i><a href="https://en.wikipedia.org/wiki/Rebel_Code">Rebel Code</a>: Inside Linux and the open source revolution</i>, published in 2001. What follows is a more detailed explanation of how Linux came into being, as told in Linus' own words.</p>
+<p>In the autumn of 1988, Linus had entered Helsinki University to study computer science. It was only two years later that he encountered Unix for the first time:</p>
+<blockquote><p>There was one pretty short Unix course. This was fall 1990, the University had gotten a MicroVAX running Ultrix, whatever, 16-user licence, stuff like this. They used to be a VMS shop entirely, so this small Unix course had a maximum number of people, 16, because we didn't have the hardware for anything more. And you had to wait in line to get to a terminal, but even so I immediately enjoyed Unix. I think it was the programming interface it had. Unix is called complex but it's actually very simple.</p></blockquote>
+<p>One of the coursebooks that Linus used was Andrew Tanenbaum's <em>Operating Systems: Design and Implementation</em>. As well as a wealth of detailed information about how to write an operating system, Tanenbaum's book came with the source code for a small study system called Minix. Originally written for Intel's 8088 processor, it was later ported to the Intel 80386.</p>
+<p>Linus has always been something of a connoisseur of chips, and while he had hated the earlier Intel products, he regarded the 80386 as "a lot better than any of the previous chips." The availability of the Unix-like Minix on a half-way decent chip proved decisive: "That's when I actually broke down and got a PC." Until then, he had been programming on a Sinclair QL ("Quantum Leap"), and before that a Commodore Vic-20.</p>
+<p>Linus was able to buy his first PC thanks to falling hardware prices and a happy combination of personal circumstances. Because of the way the Finnish university education system was funded, he was able to get a student loan. Since he was living at home with his mother, he didn't need to spend much of that loan on living costs, and could therefore put it to other uses. It was also Christmas time: "I had Christmas money, stuff like that. I remember the first non-holiday day of the New Year I went to buy a PC." That was on 5 January, 1991. Even in 1996, Linus remembered well the specifications of his first PC:</p>
+<blockquote><p>[Intel] 386, DX33, 4 megs of RAM, no co-processor—I actually had to buy a floating-point unit half a year later just because I had the emulation stuff, but there were people who had the floating point unit and I couldn't be sure I could make [Linux] work. 40 megs hard disk, so not very large.</p></blockquote>
+<p>Even though Linus had rushed out to buy his PC as soon as he had scraped together the money to do so, he was unable to plunge into the world of Unix immediately, since it took several months for the Minix floppy disks&nbsp;to turn up. So he passed the time as any real coder would—by playing games like <em>Prince of Persia</em> under MS-DOS. He was also exploring the architecture of the Intel 80386 chip. Linus described his early experiments thus:</p>
+<blockquote><p>I was testing the task-switching capabilities, so what I did was I just made two processes and made them write to the screen and had a timer that switched tasks. One process wrote A, the other wrote B, so I saw AAAA BBBB and so on. The first two months the amount of code I wrote was very small, because it was a lot of details, totally new CPU, I've never programmed Intel before.</p></blockquote>
+<p>Remarkably, that very simple task-switching program turned out to be the seed that grew into the Linux kernel:</p>
+<blockquote><p>At some point I just noticed that hey, I almost have this [kernel] functionality because the two original processes that I did to write out A and B, I changed those two processes to work like a terminal emulation package. You have one process that is reading from the keyboard, and sending to the modem, and the other is reading from the modem and sending to the screen. I had keyboard drivers because I obviously needed some way to communicate with this thing I was writing, and I had driver for text mode VGA and I wrote a driver for the serial line so that I could phone up the University and read news. That was really what I was initially doing, just reading news over a modem.</p></blockquote>
+<p>One advantage of being able to read newsgroups using his simple proto-kernel was that Linus could get answers to technical issues that helped him improve his system:</p>
+<blockquote><p>That summer of '91, I really took advantage of the newsgroups to ask information about the POSIX standard, stuff like that. I was reading news, I was making this emulation package better. Then I wanted to download stuff, so I had to write a disk&nbsp;driver, I had to write a file system so I could read the Minix file system in order to be able to write files and read files to upload them. So essentially when you have task-switching, you have a file system, you have device drivers—that's Unix.</p></blockquote>
+<p>Linux may have existed by this point, but Linus wasn't calling it that yet. Its name came about as a result of Linus's request for information about the <a href="https://en.wikipedia.org/wiki/POSIX">POSIX</a> specifications for ensuring compatibility between Unix-like operating systems. A member of the Helsinki University staff, Ari Lemmke, told Linus that POSIX wasn't freely available online, and had to be paid for—hardly an option for an impecunious student. But as Linus recalled:</p>
+<blockquote><p>The same person who told me that the standards weren't available also told me his area of interest was kernels, operating systems. He had this small area on [the FTP server] <span class="skimlinks-unlinked">ftp.funet.fi</span>, and he said: "hey, I'm putting a directory aside for you." So he created the /pub/os/linux directory.</p>
+<p>Linux was my working name, so in that sense he didn't really name it, but I never wanted to release it as Linux. Linux was a perfectly good working name, but if I actually used it as the official one people would think that I am egomaniac, and wouldn't take it seriously. So I chose this very bad name "Freax," for "Free Unix." Luckily, Ari Lemmke used this working name instead. And after that he never changed it.</p></blockquote>
+<p>As well as giving Linux a decent name, Lemmke also kickstarted the entire public development process:</p>
+<blockquote><p>The first version [of Linux] I never even announced; I only sent personal emails to a few people who had shown interest [in the newsgroups.] The next version, a few weeks later, was a lot better; I announced that one. The first version was very hurried, partly because the FTP site was there—had been there for a month or something like that—and I felt that I have to make something available because I had this site, I had to upload something to it. So the second version was much closer to what I really wanted, and that one I announced on the Minix newsgroups.</p></blockquote>
+<p>Back in 1996, Linus said: "I don't know how many people got [this first public version in <span class="skimlinks-unlinked">comp.os.minix</span>]—probably 10, 20, this kind of size." Fortunately it was evidently big enough to set in motion a series of events that have resulted in a rather larger number of people now using the 24-year-old lineal descendant of that humble task switcher from 1991.</p>
+
+<!-- cache hit 142:single/origin:acf1c93c3bbcf5b37ae8a6dcc47863fb --><p><em>This post originated on <a href="http://arstechnica.co.uk/business/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/">Ars Technica UK</a></em></p>
+        </div>
+
+        
+        
+      </section>
+          </div>
+
+    <div class="xrail">
+      <div class="xrail-content is_stuck" style="position: fixed; top: 20px; width: 300px;">
+                
+        
+                  <aside class="ad ad_xrail ad_xrail_top" id="ad_xrail_top"><div data-name="siderail_0" data-slot-type="siderail" id="cns_ads_15094257001234BQUkm6bU9GbSAOSK9TxhUw5ppV3gD_siderail_0_stage" class="cns-ads-stage cns-ads-slot-type-siderail cns-ads-slot-type-siderail-0 cns-ads-slot-state-filled cns-ads-slot-size-300x600" style="font-size: 0px; line-height: 0; overflow: hidden;"><div class="cns-ads-container" id="cns_ads_15094257001234BQUkm6bU9GbSAOSK9TxhUw5ppV3gD_siderail_0_container" data-google-query-id="CK7-1JOJmtcCFRIXvAodaRYNJw" style="font-size: 0px; line-height: 0; overflow: hidden; margin: 0px auto; box-sizing: content-box; min-height: 600px; width: 300px;"><div id="google_ads_iframe_3379/ars.dart/business_0__container__" style="border: 0pt none; min-height: 600px; width: 300px;"><span style="width:300px;height:600px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB4SURBVBjTbZALDsAwCELpDbj/aZeJKPvYpM6UsleA/zqqu8cEsE7ZH56ki1XTfUKydnRnquUd6vUMb5PYuUmmyBc3Ron0ZmlZm9r4LQpO2hYxl8kM0E9SjvHt1y5pYYx2E2Tc2RTUPgmaxxyd4BPD3qPlM0HpJL4AGikFnieaYUcAAAAASUVORK5CYII=&#39;) !important;display:inline !important"></span><iframe id="google_ads_iframe_3379/ars.dart/business_0" title="3rd party ad content" name="google_ads_iframe_3379/ars.dart/business_0" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom; min-height: 600px; width: 300px;" src="./Linux by Linus 1_files/saved_resource(7).html"></iframe></div></div></div></aside>
+          <aside class="ad_native" id="ad_xrail_native"><div data-name="native_xrail_0" data-slot-type="native_xrail" id="cns_ads_1509425700124GmOT4U0DG2Twie7dWmIszvEqxehWvi_native_xrail_0_stage" class="cns-ads-stage cns-ads-slot-type-native-xrail cns-ads-slot-type-native-xrail-0 cns-ads-slot-size-300x140 cns-ads-slot-state-filled" style="font-size: 0px; line-height: 0; overflow: hidden;"><div class="cns-ads-container" id="native-xrail300x140_frame" data-google-query-id="CNCJgfaImtcCFZkgKgodgQUK8Q" style="font-size: 0px; line-height: 0; overflow: hidden; margin: 0px auto; box-sizing: content-box; min-height: 140px; width: 300px;"><div id="google_ads_iframe_3379/ars.dart/business_2__container__" style="border: 0pt none; min-height: 140px; width: 300px;"><iframe id="google_ads_iframe_3379/ars.dart/business_2" title="3rd party ad content" name="google_ads_iframe_3379/ars.dart/business_2" width="300" height="140" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom; min-height: 140px; width: 300px;" src="./Linux by Linus 1_files/saved_resource(8).html"></iframe></div></div></div></aside>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div class="column-wrapper">
+    <div class="left-column">
+              <!-- cache hit 142:single/author:401bd40befcfb9068b574cfda317ac55 --><section class="article-author">
+      <a style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2015/04/glyn-moody-sharpened-brighter-350px.jpg&#39;);" class="author-photo" href="https://arstechnica.com/author/glyn_moody"></a>
+  
+  <div class="author-bio">
+    <section class="author-bio-top">
+      <a href="https://arstechnica.com/author/glyn_moody" class="author-name">Glyn Moody</a>
+      Glyn Moody is Contributing Policy Editor at Ars Technica.  He has been writing about the Internet, free software, copyright, patents and digital rights for over 20 years.    </section>
+    <section class="author-social">
+              <strong>Email</strong> <a href="mailto:glyn.moody@arstechnica.co.uk">glyn.moody@arstechnica.co.uk</a>
+                    <span class="slashes">//</span>
+                    <strong>Twitter</strong> <a href="https://www.twitter.com/glynmoody" target="_blank">@glynmoody</a>
+          </section>
+    
+  </div>
+
+</section>
+      
+      <aside id="social-footer">
+        <a title="71 posters participating, including story author." class="comment-count icon-comment-bubble-down" href="https://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?comments=1">
+      <span class="comment-count-before">reader comments</span>
+    <span class="comment-count-number">126</span>
+  </a>  
+
+<div class="share-links">
+  <span>Share this story</span>
+  <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861" target="_blank" class="social-icon share-facebook" title="Share on Facebook"></a>
+  <a href="https://twitter.com/share?text=How+Linux+was+born%2C+as+told+by+Linus+Torvalds+himself&amp;url=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861" target="_blank" class="social-icon share-twitter" title="Share on Twitter"></a>
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861&amp;title=How+Linux+was+born%2C+as+told+by+Linus+Torvalds+himself" target="_blank" class="social-icon share-reddit" title="Share on Reddit"></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Farstechnica.com%2F%3Fpost_type%3Dpost%26p%3D728861" target="_blank" class="social-icon share-gplus" title="Share on Google+"></a>
+</div>
+      </aside>
+    </div>
+    <div class="xrail">
+    </div>
+  </div>
+
+
+  <div id="article-footer-wrap">
+          <div class="row comments-row">
+  <section id="comments-area">
+    <a name="comments-bar"></a>
+          <div id="comments-container"></div>
+      <div id="comments-posting-container" class="thick-divide-bottom">
+        <p id="reply">You must <a href="https://arstechnica.com/civis/ucp.php?mode=login&amp;return_to/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/" class="vote_login">login or create an account</a> to comment.</p>
+      </div>
+      <section>
+</section></section></div>
+      <div class="prev-next-links">
+  <a href="https://arstechnica.com/gadgets/2015/08/free-apple-logic-pro-10-2-update-brings-back-famed-alchemy-synth-2/" rel="prev"><span class="arrow">←</span> Previous story</a>  <a href="https://arstechnica.com/tech-policy/2015/08/feds-cyberbullying-reverses-cops-convictions-for-shooting-unarmed-people/" rel="next">Next story <span class="arrow">→</span></a></div>      <footer id="article-footer">
+  <div id="recommendations-footer">
+    <aside id="story-recommendations">
+  <div class="heading-column">
+    <h3>Related Stories</h3>
+  </div>
+  <div id="story-recs" class="rec-wrap"><article class="article tease-report" data-post-id="338767"><a href="http://arstechnica.com/information-technology/2013/09/google-and-samsung-soar-into-list-of-top-10-linux-contributors/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2013/09/linus-torvalds-300x150.jpg&#39;);"><div></div></figure></a><header><a href="http://arstechnica.com/information-technology/2013/09/google-and-samsung-soar-into-list-of-top-10-linux-contributors/"></a><h2><a href="http://arstechnica.com/information-technology/2013/09/google-and-samsung-soar-into-list-of-top-10-linux-contributors/"></a><a href="http://arstechnica.com/information-technology/2013/09/google-and-samsung-soar-into-list-of-top-10-linux-contributors/">Google and Samsung soar into list of top 10 Linux contributors</a></h2><p class="excerpt">And Microsoft's days of major Linux contributions have come to a halt.</p></header><footer></footer></article><article class="article tease-report" data-post-id="307545"><a href="http://arstechnica.com/information-technology/2013/07/linus-torvalds-defends-his-right-to-shame-linux-kernel-developers/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2013/02/linus-eff-you-300x150.png&#39;);"><div></div></figure></a><header><a href="http://arstechnica.com/information-technology/2013/07/linus-torvalds-defends-his-right-to-shame-linux-kernel-developers/"></a><h2><a href="http://arstechnica.com/information-technology/2013/07/linus-torvalds-defends-his-right-to-shame-linux-kernel-developers/"></a><a href="http://arstechnica.com/information-technology/2013/07/linus-torvalds-defends-his-right-to-shame-linux-kernel-developers/">Linus Torvalds defends his right to shame Linux kernel developers</a></h2><p class="excerpt">"My culture is cursing": Linux kernel world is a hostile place—by design.
+</p></header><footer></footer></article><article class="article tease-report" data-post-id="357673"><a href="http://arstechnica.com/information-technology/2013/10/linux-is-king-nix-of-the-data-center-but-unix-may-live-on-forever/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2013/10/unix-creators-300x150.jpg&#39;);"><div></div></figure></a><header><a href="http://arstechnica.com/information-technology/2013/10/linux-is-king-nix-of-the-data-center-but-unix-may-live-on-forever/"></a><h2><a href="http://arstechnica.com/information-technology/2013/10/linux-is-king-nix-of-the-data-center-but-unix-may-live-on-forever/"></a><a href="http://arstechnica.com/information-technology/2013/10/linux-is-king-nix-of-the-data-center-but-unix-may-live-on-forever/">Linux is king *nix of the data center—but Unix may live on forever</a></h2><p class="excerpt">Unix servers hit lowest market share ever, but they still have a long future.</p></header><footer></footer></article><article class="article tease-report" data-post-id="213843"><a href="http://arstechnica.com/information-technology/2013/02/linus-torvalds-i-will-not-change-linux-to-deep-throat-microsoft/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2013/02/linus-eff-you-300x150.png&#39;);"><div></div></figure></a><header><a href="http://arstechnica.com/information-technology/2013/02/linus-torvalds-i-will-not-change-linux-to-deep-throat-microsoft/"></a><h2><a href="http://arstechnica.com/information-technology/2013/02/linus-torvalds-i-will-not-change-linux-to-deep-throat-microsoft/"></a><a href="http://arstechnica.com/information-technology/2013/02/linus-torvalds-i-will-not-change-linux-to-deep-throat-microsoft/">Linus Torvalds: I will not change Linux to “deep-throat Microsoft”</a></h2><p class="excerpt">"This is not a d**k-sucking contest," says Linux's benevolent overlord.</p></header><footer></footer></article></div>
+</aside>
+        <aside id="sponsored-recommendations">
+  <div class="heading-column">
+    <h3>Sponsored Stories</h3>
+    <a href="http://www.outbrain.com/what-is/default/en" target="_blank">Powered by <span class="icon outbrain-logo icon-logo-outbrain"></span></a>
+  </div>
+  <div id="outbrain-recs">
+  <div class="outbrain-recommendation"><a href="https://ad.doubleclick.net/ddm/trackclk/N5323.1984505OUTBRAIN/B10293150.201746957;dc_trk_aid=401631486;dc_trk_cid=91021307;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=" data-ob-url="https://paid.outbrain.com/network/redir?p=bV4P3smpcaof8qarsNfaNqTHLyRJQ9ZGhXCMfQ0Pa1vduWfV0WWKpHJI_Y0gDF10Y2OskbNRIlt6vhHw7Zihi26Uh5fls6luHp2RltvHtF3hTUBgA46C-Za1FYYYl0ylkwPH3T8kYtArfxde5qxcFI9NPYU1sNRDAkUbx6eCubJytO4R29M5OXFx9pPvFZhxiuMCa8rwZdpMFsdK9GcDfvmRsjDT6CgGfjsWLjhujsrgE4u1ovzgCKpJdqdrWcUH2YhQwoqbkc4Qx6hwX7Yo61NN7hrelbt-lDOanMpnL3r5HAlL0prQe68UOIgKUZQJDgJ432jc5xM_CcOv-BjaHc1tonQLgNLGH3xxDs824RnDi62SPNePau-bXo5VmrH-ag-sISpkx-7gtU8BQtyCj-aTamkqP2fMGLCHq-46ru1RhC_VO6hOrB1xN_vXV-jwEqfL3mbH0PgoY7EaViyASE1tIOxmQw2FELlA8v96iJRdhgQIxfueYE8edztOjHbo6DdfbWdzhngtQJODl7WRAfSQiPWfYq3Kh61I2avWAN2W0ErNdN1fYWyaWuS-PXCoSAsuFH4790y21UZ8JwL1YONL1HL7ea2H6x8Oyp3Yu3ERlWV7V93lmeY48XR3P3VxD2I3lDVfCpIy-vQa-M_YWXQDAoQR3gD-QZpMTfoLXMVyAFr6dka208yZr2Tz1Z4UxgI_KB5b1adME7oXYHmNZhfNUeh4rIKSzwm0Fpchxfe2KxbtEta0fhr2zAPo8IZpaf80uv9bfcL1WXRV81cs6A&amp;c=42402db6&amp;v=3" target="_blank"><img class="ob-image" src="./Linux by Linus 1_files/eyJpdSI6IjczMDQ5ZjRmZmVlODU1ZTkyYzQzNjU4NGQwNzVkODE0MTFhNTkwMWNhNDQ0NTU0NmZlOGFiYzFjY2M3NWZiYWEiLCJ3IjoxNDAsImgiOjEwMCwiZCI6MS4wLCJjcyI6MCwiZiI6MH0.webp" alt="Get Amazing Rates On Global Money Transfers With OFX"><p class="ob-title">Get Amazing Rates On Global Money Transfers With OFX</p><p class="ob-source">OFX</p></a></div><div class="outbrain-recommendation"><a href="https://gsn.chameleon.ad/?r=1&amp;bx=55581&amp;a=99420&amp;z=7771&amp;chm_sub6=$publisher_id$&amp;chm_sub7=$section_name$" data-ob-url="https://paid.outbrain.com/network/redir?p=5s3Ii0t_SVRU1wsme9lpWkNWdvzsAPAtDjVcJlIBp33hi3EODCoRHQ-qJHaA4EMkdDMlSpr227XYhKyFBa3ezD4P0tSsNb5SvrMKhwDq0d-Rnqv7CEisn8H8mIW408OgVweecTmrKbkkCsy2tDrTBDiGMD4JcP4vi1YHylxZelw2TFE__ZWZPjY5pL6lanDM71mEWPs6SE2mvnrFeizUZ9llqS9Cw36tjSoxGBg0gBb_c86XncOVrEVRyQPBg_3r38g8LPKSZSg8mwInHh55HH97lb0H2BCETp8Xrf_mchTJiyFZ_BRm4nP1BJ0Cc5Q7z4QmPDSylZ4dWs-UFA_WrR6BX7VxJt55FE568dydubDPGkpaS-8yoG8HMLgwRa_cWIAwd2jvfjJVoMMZgmcsXC1wXaZeqMk1VR_tWnAIzChsQLfDiPfdA8xjbAm_E00wuomZ6zdio5NdfKj47MPVMy30iJXJc7CpHaksGkw0neIbig41tvEYkWNeKYSkDGmL-_MUBFcpV1g4pwfzGIEkIiFDHkdqKu5oIBIka9cA19EMlpXwA_AmSlFMJIPbZCAgKQbDolTbnsa8zeb1OzwA_7WN9Gc17qprPxP2oA-DmUDgkB_h8q0PgB_XPSdcAhXPaFW352oDsyYi9ygcTiuBZ3dHMq-Y4ulM8ohmjj8Tb6nDhttPxBe1hadEjE7ySxLUuJAXn3KytP2zE16ISrQdBKgDYOZ72_wm8iE6bDIgZI4u2wqnytym-WHEHhBwH0Pq&amp;c=9e99edff&amp;v=3" target="_blank"><img class="ob-image" src="./Linux by Linus 1_files/eyJpdSI6IjViYWRlNDBjNWNkNzIyMGY4YWJmNjk2OGM1Zjk2OTA0YTkyMmRlNTcwZDUzYWVmZmViMDhmNzYzY2VhNTI1MmUiLCJ3IjoxNDAsImgiOjEwMCwiZCI6MS4wLCJjcyI6MCwiZiI6MH0.webp" alt="If You Bought $5 of Bitcoin 7 Years Ago, You’d Be $4.4 Million Richer"><p class="ob-title">If You Bought $5 of Bitcoin 7 Years Ago, You’d Be $4.4 Million Richer</p><p class="ob-source">bitcoinau</p></a></div><div class="outbrain-recommendation"><a href="http://info.listenhearing.com/cochlear-implants-australia?cid=59ede9145890c&amp;utm_source=outbrain&amp;utm_medium=$publisher_name$&amp;utm_term=Amazing+Cochlear+Implants%7C+Listen+Hearing+%7C+info.listenhearing.com&amp;utm_content=$section_name$&amp;utm_campaign=Cochlear_AU_OB_D" data-ob-url="https://paid.outbrain.com/network/redir?p=SVDKzGCoGfN6emCBDIZilc2CKtNU6PYDFxU-Ec-YK-ZBdyCnh_lI6qTKRh_ItYjIfJF8NaGHbANaWOLBz13VzkrMVNZClUvcI4B-MZyKANy3w8Yq5AEIgdrmhaNIezIyoWhUAoXUEfHl9b5DlL4ohVJ6ArvOHeSTRFZh8ai6PXmaj6sOxZkrxr4jvW3LnkPXzy7r2duV_p0VsN0TaW1uZ1Id2sCMdq8PFlRuXzCWGIfDAEAdZIe5Zwz53dEft1_oOPtvz1pyorOzWLHjrR0mAwJxhjGq46htBFpkZYEbeVflGOY43hlWTfgEul2C2KiOltjlDMtWjh30fBrwDz8brO9XYIMNASMWqdZ6yXWHKRyohFdBmyXc_MVfrf2PzY1Y25s_J3zTOsVNjK4gStZ1d9mAYLa47_pW2cTd9wrrgnDltdrgaEM7EWT7QqgU8ATeUAZlK6ku0pHiRcn4yI7fjhmQ6pahdtL98Na6kyhJ8OaZhDj9DG9QWjgPPXdNEolWTEdQ5752mRLLRHaYLujawibO-LGeFDlliYSl16j2MBSr-vAzTF2MP831bPpgquWdlrhEXl0y6K416-3euxDH4YigrQOtVqlICM3bwojaIXuMqckNAtUL1nV9PQrk5QvNCnqhjLPLZbq8_nBEW4A-bA6_7MOhz-nRFTPFiEMFU6nL6y1GhDgaE71x-vDN4qgGmTC1l3fWYQ_voS4cMDh4HrBgwaLSHfvLuAOg1ZfJEGXUgs4icrsECeQPyJKOdXWP&amp;c=4fce9ed4&amp;v=3" target="_blank"><img class="ob-image" src="./Linux by Linus 1_files/eyJpdSI6IjQzMTgzYjZkN2M0MTc2NDIyNGExMzRlMjkzN2FmYTdmNDM3ZWZlZmVjMWFlZDhmNTUzZDhjOGM5ZWFlNDU1YmEiLCJ3IjoxNDAsImgiOjEwMCwiZCI6MS4wLCJjcyI6MCwiZiI6MH0.webp" alt="Hearing aids not working? Try this genius solution"><p class="ob-title">Hearing aids not working? Try this genius solution</p><p class="ob-source">info.listenhearing.com</p></a></div><div class="outbrain-recommendation"><a href="http://scribol.com/a/lifestyle/families-and-parenting/these-septuplets-were-first-ever-survive-birth-heres-what-they-look-like-twenty-years-on/?utm_source=Outbrain&amp;utm_medium=CPC&amp;utm_content=$origsrcname$&amp;utm_campaign=29671_scribol_these_septuplets_were_the_firs_AU_Desktop_DZ&amp;utm_term=162378" data-ob-url="https://paid.outbrain.com/network/redir?p=mOBFjI_j7Y0tfRwZDEa8HmzuVSmZxen5xMWOwsCnGqcQVjAQ6h4xPmPSnAVsxayzxBRSMM8hdLcOA2Eug9VVIMzPe3umR5JRvaJGEzMAdcVPKsUQ7K0lNr_fljk9QFlEjJkkAs8EQ7jI7er1CwZO8t0_-lx5NygyH9WxbM2ObKcvHsVKQWbxtn9pcuv-uNsrPJBjfmkQ9pFlivgZmDzOnHsEknfKNtsFe0EgSvhbMwhvfZWdFfJYmzSnxkJLJoCaqc6dinQWnHF3DdjmJyMhJUKc_oBJBnulyNtI999HxuXylNBL4Do6526T-dZauzZ4XkISvNOf_ohJjnN9E1LqvnvjtI4onJQ1LkFrRaGYi_Mdf3XsZUIkWaXlAK0ldHBakVk6xO-p4cAecnD2OF192v7uZz4KGxSHGU0j_gcDmays7i44WZU-spY9I5FD6rgWNkWSl4yWqGElv2FrHoQL9XbShaRKSgCwQ9kW1X3weSgqj66ZfIPcKF1lmvKvCpOuUm5otv1LR5kb7wGKjNvsrR8glfFV4vUD6rrodVdiA1rzJ-Xin65kqoCuFgNPmr9Xpomlxc9JTt61GThQmHP1ZWpjOj0FWVJdu0Ya_PzA7Rw574aYsVzYdtJ_LQaIW-8F4IjobieLVpWLKZl1SNWfneA-AGbH5z6S7tSO-sbvDJn7aVx25Cdab5OLbopZkz-wyZ9iXIuo4KfEzwDLVLvXh7kLPhS6c7mpXKFCJz3JtX3f4U7Ju1YtYH0n0NRd9tAi&amp;c=a81d552a&amp;v=3" target="_blank"><img class="ob-image" src="./Linux by Linus 1_files/eyJpdSI6ImU0YmY1Zjc3NjdiZDY0ZjdmYTkyNzkzOGVjOGE2OTU0OGMzZDhiZjc0ZWNlNTE5NjgwZWM2ZDU2MGY3NTY4MTciLCJ3IjoxNDAsImgiOjEwMCwiZCI6MS4wLCJjcyI6MCwiZiI6MH0.webp" alt="They Are The World’s First Surviving Septuplets. Here’s What They Look Like 18 Year Later"><p class="ob-title">They Are The World’s First Surviving Septuplets. Here’s What They Look Like 18 Year Later</p><p class="ob-source">Scribol</p></a></div><div class="outbrain-recommendation"><a href="https://signup.marleyspoon.com.au/why-people-in-australia-are-going-crazy-for-marley-spoon/?CLID=vid&amp;v=AQDCJHGFGJPPO&amp;utm_source=ob_rea&amp;utm_medium=cpc&amp;utm_campaign=Outbrain_AU_REA_Desktop_4_reasons_dynamic_location_zipcodes&amp;utm_content=4+Reasons+Why+Marley+Spoon+is+Australia%E2%80%99s+Best+Meal+Kit+Delivery-$time_stamp$&amp;utm_term=$publisher_name$-$section_name$-$section_id$" data-ob-url="https://paid.outbrain.com/network/redir?p=zVtZ-Ogt9H18bL2M1ZOXYqm5U9SYoVMa9ursax0BE-1lgpzbxekR_20wWpKff_h1oFrno595hQDcPP-r0qLe3bvpuedBidu48FfHwvNz2dL3SskvuZucKl3BWYukFVonTDnmFlA2Jd4cMH8Hf24L9SaVftSvL5R-FCgsb9ZtZNjc-nyXF0-V66bD8IxeghsDdI3CYaqDB7SWBrgdGrQ58-aCElwUW6armRpKZB4PvgwS_z11aEg1RaThbSSZOAIAxx7PKMD5b3jxJgbA3tnK0Ql-TIkdD7U7m5Zg_gQKj7bHmVwkgBFhV2eHfT3HUrRXjmylw0Gpgx2fWKzfG5Ynh7TEyLIoQK7o4RDYpOZnYWW3SSpdrrDbvtG3vnGhu_J3wqMAK-TFUqNXke8lnO__mjcDp9Pn8kKuvg2UJexsa3WjJFH6EI_mpxHibcLg6jvtQLqOGPUUGg1rp-m4DOiMnEdsyK3EjjZcF_xotI7KMRZ5MzEYtslg6nLaV7d2BYj_Ki7Bo1XYE6HlHduibYDAZIsuooR66diTrO3hmETbWzvGgsvt-8_98NXth_X4GVczGyPGbs22__txQTjGwbt1mj3lFzP10-NMjfG5E0pGj76MeXoMn1bZjwnIAWduOhyueptq6BHkbzfG87moxXrufQQhBwDUrUJk0Ab3wpS2xg4LpWLbER913qCvWsYwPW5HyO5Z9SGyWY-7hFHXt-hvewf_DYdaXAwHoxTJI-ntJZw4-F0NB2ksPFgEXjugbp4Z&amp;c=b32c6852&amp;v=3" target="_blank"><img class="ob-image" src="./Linux by Linus 1_files/eyJpdSI6IjUyNWFhZmRlYjNlZTcxZmRlMzUwOGU4YzhhZDJiNGIyZTQzNzEzYjExZTQ5MjAxMGNiMmNjN2E0NmUyMmZjYmQiLCJ3IjoxNDAsImgiOjEwMCwiZCI6MS4wLCJjcyI6MCwiZiI6MH0.webp" alt="Why People in Sydney Are Going Crazy For Marley Spoon"><p class="ob-title">Why People in Sydney Are Going Crazy For Marley Spoon</p><p class="ob-source">Marley Spoon</p></a></div><div class="outbrain-recommendation"><a href="https://aglsolar.com.au/blog/how-smart-is-the-solar-smart-plan/?utm_campaign=june16&amp;utm_content=h6&amp;utm_source=outbrain&amp;utm_medium=cpc" data-ob-url="https://paid.outbrain.com/network/redir?p=Uh0a1Y-NHsIvoQOybV2fDOBEnK4oe4e45KUI1qTA2fYX_eVVT5Jvl_OOICL7UKQS-ahBIgF-L0E0yKVekjdaHmYxfhk7wHJiGsV8jie11BlCeC0n2mJMknGQmK7xZiXauHBfisdyRl8DcHRklZ-zDZcKXMgEPE2Go8cW4tC6Rj6_8M6be-mZVdHnjLui1U82A5spHCQDC6M4MlmdjZTH2UgZkN29D61qeVg0KQjuinHcY8O08zlghQ6wQA25N9ZLWbhHP7zHDqynn2-b339N6J8WDi5ZdsUeccGWkk2IdIyhX0gtaYYg_i7G0WD1u9xSggvrxcXf9RR8FgIBRxc-t_tip_srLxXN0ch1mptpU_aWgeckzIcs-3qz440bYB83plBG6X03t4LjAybSieZVXNaBVZa0IU5YN6u2gfTWI1OXjbhXM_C0t_7OWOM7gpSCdAnhRaDkEUt--2nhPxuEtjajNgaiMAyWcS5nozADEDmUfSVEnQuU1jXRGAGyWmRQE7GA65oTbIfUFFVUPO1eAHq6VhbYsBJWTJg8i03tWqrUYyFvcKHbjtpcIlay3ERepKAa_jPO9gmrlNg5uRcLgCj4v5Pss0DB6eRf4Svf6ronbaaSOC0Pdx3MzaVjFZ2SHYjo5khwwTuBmfU1PaS-Z1iqWCmmJF6rlFl-hEIfr810b3tENCcwD9BIaQ32Igt5x0lsWDxaL792h0_zhOf3je6H4sKcEZ-P00Nri9TQyy_cgk_-69xAveaqRp0VwIUf&amp;c=584c49cb&amp;v=3" target="_blank"><img class="ob-image" src="./Linux by Linus 1_files/eyJpdSI6ImJkNjg4YjMyNWIwMDM3NjMwZDY5ZmQzY2FlOTg2YWE5OTc3YWQ4OWIyNDA0YTFmZDIyODg5M2NhZjc3YTlmZGQiLCJ3IjoxNDAsImgiOjEwMCwiZCI6MS4wLCJjcyI6MCwiZiI6MH0.webp" alt="How did AGL make the solar Smart Plan so smart?"><p class="ob-title">How did AGL make the solar Smart Plan so smart?</p><p class="ob-source">AGL Solar</p></a></div></div>
+</aside>
+        <aside id="latest-stories">
+  <div class="heading-column">
+    <h3>Today on Ars</h3>
+  </div>
+  <div id="latest-recs" class="rec-wrap"><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/tech-policy/2017/10/amd-stock-price-falls-after-report-predicts-cryptocurrency-slowdown/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/10/GettyImages-539557934-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/tech-policy/2017/10/amd-stock-price-falls-after-report-predicts-cryptocurrency-slowdown/">AMD, which lost over $2.8B in 5 years, takes a hit after new report</a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/tech-policy/2017/10/grubhub-gig-economy-trial-ends-with-judge-calling-out-plaintiffs-lies/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/10/Grubhub-App-OrderTracker-Large-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/tech-policy/2017/10/grubhub-gig-economy-trial-ends-with-judge-calling-out-plaintiffs-lies/">GrubHub “gig economy” trial ends with judge calling out plaintiff’s lies</a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/tech-policy/2017/10/facebook-youtube-admit-to-wider-ranging-campaigns-by-russian-state-actors/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/10/youtube-conspiracy-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/tech-policy/2017/10/facebook-youtube-admit-to-wider-ranging-campaigns-by-russian-state-actors/">Facebook, YouTube admit to wider-ranging campaigns by Russian “state actors”</a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/gadgets/2017/10/outlook-com-is-getting-better-for-office-365-subscribers-immigrants/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/10/stamps-envelope-mail-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/gadgets/2017/10/outlook-com-is-getting-better-for-office-365-subscribers-immigrants/">Microsoft cans Outlook.com Premium as it rolls its features into Office 365</a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/tech-policy/2017/10/appeals-court-keeps-alive-the-never-ending-linux-case-sco-v-ibm/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/10/GettyImages-526661710-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/tech-policy/2017/10/appeals-court-keeps-alive-the-never-ending-linux-case-sco-v-ibm/">Appeals court keeps alive the never-ending Linux case, <em>SCO v. IBM</em></a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/information-technology/2017/10/a-surge-of-sites-and-apps-are-exhausting-your-cpu-to-mine-cryptocurrency/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/05/Cryptocurrency_Mining_Farm-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/information-technology/2017/10/a-surge-of-sites-and-apps-are-exhausting-your-cpu-to-mine-cryptocurrency/">A surge of sites and apps are exhausting your CPU to mine cryptocurrency</a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/information-technology/2017/10/another-broadband-merger-centurylink-gets-fcc-approval-to-buy-level-3/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2016/10/CenturyLink_servers3_mid-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/information-technology/2017/10/another-broadband-merger-centurylink-gets-fcc-approval-to-buy-level-3/">Another broadband merger: CenturyLink gets FCC approval to buy Level 3</a></h2></header><footer></footer></article><article class="article tease-" data-post-id=""><a href="https://arstechnica.com/gaming/2017/10/hidden-agenda-review-police-procedural-party-time/"><figure style="background-image:url(&#39;https://cdn.arstechnica.net/wp-content/uploads/2017/10/Hidden-Agenda-10-360x200.jpg&#39;);"><div></div></figure></a><header><h2><a href="https://arstechnica.com/gaming/2017/10/hidden-agenda-review-police-procedural-party-time/"><em>Hidden Agenda</em> review: Police procedural party time</a></h2></header><footer></footer></article></div>
+</aside>
+  </div>
+</footer>
+    
+  </div>
+</article>
+  </div>
+
+  <footer class="site-footer">
+    <nav class="nav-footer">
+
+	<section>
+		<ul>
+			<li><a href="https://arstechnica.com/rss-feeds/">RSS Feeds</a></li>
+			<li><a rel="nofollow" href="http://arstechnica.com/information-technology/2015/08/how-linux-was-born-as-told-by-linus-torvalds-himself/?view=mobile">View Mobile Site</a></li>
+			<li><a href="http://arstechnica.co.uk/">Visit Ars Technica UK</a></li>
+			<li><a href="https://arstechnica.com/about-us/">About Us</a></li>
+		</ul>
+	</section>
+
+	<section>
+		<ul>
+			<li><a href="https://arstechnica.com/contact-us/">Contact Us</a></li>
+			<li><a href="https://arstechnica.com/staff-directory/">Staff</a></li>
+			<li><a href="https://arstechnica.com/advertise-with-us/">Advertise with us</a></li>
+			<li><a href="https://arstechnica.com/reprints/">Reprints</a></li>
+		</ul>
+	</section>
+
+</nav>
+
+<section class="footer-terms-logo">
+	<div class="cn-logo">
+		<a href="http://condenast.com/" class="icon icon-logo-cn-us" title="Visit Condé Nast"></a>
+	</div>
+
+	<div id="copyright-terms">
+  CNMN Collection<br>
+  WIRED Media Group<br>
+  Use of this Site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy" target="_blank">User Agreement</a> (effective 1/2/14) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective 1/2/14), and <a href="https://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/">Ars Technica Addendum (effective 5/17/2012)</a>. <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a>. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written <a href="https://www.condenast.com/reprints-permissions">permission of Condé Nast</a>.
+</div>
+</section>  </footer>
+</div>
+
+<script type="text/javascript" src="./Linux by Linus 1_files/main-52002686c7.js"></script>
+
+
+<!-- cache hit 142:single/javascript-footer:e822402e5bc9fba123caa5c1ed6441a3 -->
+
+
+
+
+  <script type="text/javascript" src="./Linux by Linus 1_files/ars-7309851ac7.ads.us.js"></script>
+    <!-- Google Analytics start -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-31997-1'],
+    ['_setCustomVar', 1, 'view', "grid"],
+    ['_setCustomVar', 2, 'theme', "light"],
+    ['_setCustomVar', 3, 'logged_in', "false"],
+    ['_setCustomVar', 4, 'show_comments', "false"],
+    ['_setCustomVar', 5, 'is_premier', "false"],
+    ['_trackPageview']
+  );
+	(function() {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+  <!-- Google Analytics end -->
+
+  <!-- Parse.ly start -->
+	<script type="text/javascript">
+  (function(d) {
+    var site = "arstechnica.com",
+    b = d.body,
+    e = d.createElement("div");
+    e.innerHTML = '<span id="parsely-cfg" data-parsely-site="'+site+'"></span>';
+    e.id = "parsely-root";
+    e.style.display = "none";
+    b.appendChild(e);
+  })(document);
+
+  (function(s, p, d) {
+    var h=d.location.protocol, i=p+"-"+s,
+    e=d.getElementById(i), r=d.getElementById(p+"-root"),
+    u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+    if (e) return;
+    e = d.createElement(s); e.id = i; e.async = true;
+    e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+  })("script", "parsely", document);
+	</script><div id="parsely-root" style="display: none;"><span id="parsely-cfg" data-parsely-site="arstechnica.com"></span><script id="parsely-script" async="" src="./Linux by Linus 1_files/p.js"></script></div>
+  <!-- Parse.ly end -->
+
+  <!-- Adobe Tag Mgr. -->
+  <script src="./Linux by Linus 1_files/satelliteLib-56a425e07376b6977c987d46ef46ba636a6e2036.js"></script>
+
+  <script type="text/javascript">_satellite.pageBottom();</script><iframe src="./Linux by Linus 1_files/satellite-59888de864746d0ba501787b.html" style="display: none;"></iframe>
+
+
+
+
+<script type="text/javascript" src="./Linux by Linus 1_files/100098X1555750.skimlinks.js"></script>
+
+
+<script async="" src="./Linux by Linus 1_files/apstag.js"></script><div id="cns-ads-placeholder-1x1-how-linux-was-born-as-told-by-linus-torvalds-himself" data-google-query-id="CK3-1JOJmtcCFRIXvAodaRYNJw" style="font-size: 0px; line-height: 0; width: 0px; height: 0px; overflow: hidden;"><div id="google_ads_iframe_3379/ars.dart/business_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_3379/ars.dart/business_1" title="3rd party ad content" name="google_ads_iframe_3379/ars.dart/business_1" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Linux by Linus 1_files/saved_resource(9).html"></iframe></div></div><iframe id="google_osd_static_frame_5841868716071" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Linux by Linus 1_files/saved_resource(10).html"></iframe><iframe scrolling="no" frameborder="0" id="teadsusersync" src="./Linux by Linus 1_files/iframe.html" style="margin: 0px !important; padding: 0px !important; width: 0px !important; height: 0px !important; border: 0px !important; overflow: hidden !important; float: none !important; display: none;"></iframe><iframe id="destination_publishing_iframe_condenast_0" src="./Linux by Linus 1_files/dest4.html" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

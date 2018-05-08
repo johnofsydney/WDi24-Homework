@@ -1,0 +1,17 @@
+<h2>All cymbals</h2>
+
+<ul>
+    <% @cymbals.each do |c| %>
+      <li>
+        <a href="/cymbals/<%= c['id'] %>">
+          <%= c['maker'] %> <%= c['name'] %>
+        </a>
+      </li>
+    <% end %>
+</ul>
+
+<a href="/cymbals/new">
+  <div class="button">
+    ADD YOUR OWN CYMBAL
+  </div>
+</a>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GamesOnRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="grid">
+
+      <header>
+
+        <a href="/"><h1 class="title">Carnival of fun</h1></a>
+        <h2 class="subtitle">fun games are fun</h2>
+
+        <nav>
+          <a href="/">Home</a>
+          <a href="/magic8ball">Magic 8 Ball</a>
+          <a href="/secret_number">Secret Number</a>
+          <a href="/rock_paper_scissors">Rock Paper Scissors</a>
+        </nav>
+
+    </header>
+
+    <%= yield %>
+
+    </div>
+  </body>
+</html>

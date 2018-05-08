@@ -1,0 +1,41 @@
+<h2><%= @mountain.name %></h2>
+
+<main>
+  <table>
+    <% unless @mountain.location.blank? %>
+    <tr>
+      <td>Location:</td>
+      <td><%= @mountain.location %></td>
+    </tr>
+    <% end %>
+    <% unless @mountain.base_height.blank? || @mountain.base_height == 0 %>
+    <tr>
+      <td>Height from base:</td>
+      <td><%= number_with_delimiter( @mountain.base_height, :delimiter => ',' ) %>m</td>
+    </tr>
+    <% end %>
+    <% unless @mountain.sea_height.blank? || @mountain.sea_height == 0 %>
+    <tr>
+      <td>Height above sea level:</td>
+      <td><%= number_with_delimiter( @mountain.sea_height, :delimiter => ',' ) %>m</td>
+    </tr>
+    <% end %>
+    <% unless @mountain.fact.blank? %>
+    <tr>
+      <td>Factoid:</td>
+      <td><%= @mountain.fact %></td>
+    </tr>
+    <% end %>
+  </table>
+</main>
+
+<aside>
+    <%= image_tag( @mountain.image, :class => "featured" ) unless @mountain.image.blank? %>
+</aside>
+
+<div class="controls">
+    <%= link_to 'Edit mountain', mountain_edit_path(@mountain.to_param), :class => "button edit" %>
+    <%= button_to 'Destroy mountain', mountain_path(@mountain.id), :method => "delete", :class => "button delete",
+                      data: {confirm: @confirm } %>
+    <%= link_to 'Back to all mountains', mountains_path, :class => "button home" %>
+</div>

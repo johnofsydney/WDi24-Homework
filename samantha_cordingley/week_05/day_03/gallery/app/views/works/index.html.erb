@@ -1,0 +1,5 @@
+<h1>The Latest 10.</h1>
+
+<% @works.each do |work| %>
+<%= link_to image_tag(work.image), work_path(work.id) %>
+<% end %>

@@ -1,0 +1,15 @@
+<h2>Edit Crag</h2>
+
+<main class="edit">
+
+  <form action="/crags/<%= @crag.id %>" method="post">
+    Name: <input type="text" name="name" placeholder="Enter crag name..." value="<%= @crag.name %>">
+    Image: <input type="url" name="image" placeholder="http://..." value="<%= @crag.image %>">
+    Location: <input type="text" name="location" placeholder="Location..." value="<%= @crag.location %>">
+    Parent Range: <input type="text" name="parent_range" placeholder="Parent Range..." value="<%= @crag.parent_range %>">
+    Elevation:<input type="number" name="elevation" placeholder="Elevation..." value="<%= @crag.elevation %>">
+    Mountain Type: <input type="text" name="mountain_type" placeholder="Mountain Type..." value="<%= @crag.mountain_type %>">
+    <button>Edit Crag</button>
+  </form>
+
+</main>

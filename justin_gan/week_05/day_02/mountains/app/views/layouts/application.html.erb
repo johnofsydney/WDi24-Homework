@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crags</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="grid">
+
+      <%# TODO: link_to takes block %>
+      <h1 class="heading">
+        <%= link_to root_path do %>
+          cra<span class="cragslist">i</span>gslist
+        <% end %>
+      </h1>
+
+      <nav>
+        <%= link_to 'All Crags', root_path %>
+        <%= link_to 'Add Crag', crags_new_path %>
+      </nav>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>

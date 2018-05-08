@@ -1,0 +1,22 @@
+
+<% unless params[:country].nil?%>
+<h2>Ninjas from The Land of <%= params[:country]%></h2>
+
+
+
+
+
+ <div class="ninjaList">
+   <% @ninjas.each do |ninja| %>
+   <li>
+   <a href="/ninjas/<%= ninja.id%>"><%= ninja.name%>
+   </a>
+   </li>
+   <% end %>
+
+ </div>
+<% end%>
+
+<% if params[:country].nil? %>
+<iframe class="movie" width="800" height="450" src="https://www.youtube.com/embed/l0_1ay2qHA4?start=870" frameborder="0" allowfullscreen></iframe>
+<% end%>

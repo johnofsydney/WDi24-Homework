@@ -1,0 +1,17 @@
+
+<div class="container">
+
+  <h1>Add New</h1>
+
+<form class="" action="/words/<%= @word.id %>" method="post">
+  Name: <input type="text" name="name" value="<%= @word.name %>">
+  Image: <input type="text" name="image" value="<%= @word.image %>">
+  Last Words: <textarea name="quote" cols="80" rows="8"><%= @word.quote %></textarea>
+  Description of Person: <textarea name="description" rows="8" cols="80"><%= @word.description %></textarea>
+  Died From: <input type="text" name="died_from" value="<%= @word.died_from %>">
+  Death Date: <input type="text" name="died" value="<%= @word.died %>">
+  Age at Death: <input type="text" name="death_age" value="<%= @word.death_age %>">
+  <button>Save these Last Words</button>
+</form>
+
+</div>

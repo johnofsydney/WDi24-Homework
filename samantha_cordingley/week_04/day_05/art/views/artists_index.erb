@@ -1,0 +1,12 @@
+<h1 class="pagetitle"> The Artists. </h1><br>
+<h1 class="artiststopper">...</h1>
+
+<ul class="indexlist">
+  <% @artists.each do | artist | %>
+  <li>
+    <a class="indexitems" href="/artists/<%= artist.id %>">
+      <%= artist.name %>
+    </a>
+  </li>
+  <% end %>
+</ul>

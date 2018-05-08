@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 40px;
+  height: 50px;
+  background-color: #191970;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  width: 400px;
+  height: px;
+  line-height: 20px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  height: 40px;
+  width: 300px;
+  text-align: center;
+}
+
+a {
+  color: cyan;
+  text-decoration: none;
+}
+
+nav a {
+  margin: 0 50px;
+  line-height: 50px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 120px;
+}
+
+nav a:hover {
+  border: 1px solid white;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+hr {
+  margin: 20px 0 40px;
+  border-bottom: 1px dashed white;
+  border-top: none;
+}
+
+.cell {
+  border: 1px solid white;
+}
+
+.cell:hover {
+  background-color: slategrey;
+}
+
+.row {
+  margin: 25px auto;
+}
+
+.title {
+  font-size: 25vw;
+  height: 75vh;
+  line-height: 75vh;
+  background: -webkit-linear-gradient(#00FFFF, #007FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showimg {
+  max-width: 30%;
+  max-height: 30%;
+  margin: 20px 0;
+}
+
+.swatch {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  line-height: 100px;
+}
+
+.indeximg {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.row div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.name {
+  display: inline-block;
+  width: 200px;
+}
+
+.description {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+
+}
+
+.row {
+  height: 100px;
+  display: table;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.descbox {
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+
+.notable {
+  width: 560px;
+  height: auto;
+}
+
+.rating img {
+  max-height: 60px;
+}
+
+.item {
+  margin: 50px auto;
+}
+
+.controls {
+  margin: 20px auto;
+}
+
+.controls a {
+  margin: 0 20px;
+}

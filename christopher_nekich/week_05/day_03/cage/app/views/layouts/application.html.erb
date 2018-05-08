@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cage</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/actors">Actors</a>
+      <a href="/movies">All of the Movies</a>
+      <a href="/actors/1">Movies featuring Nic Cage</a>
+      <a href="/actors/2">Movies featuring Inferior Actors</a>
+      <a href="/movies/new">Add Movie to Database</a>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

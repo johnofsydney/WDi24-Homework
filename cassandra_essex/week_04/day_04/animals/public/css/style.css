@@ -1,0 +1,40 @@
+body{
+  background-color: #00938c;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color:black;
+  padding: 1em;
+  min-height: 90vh;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+}
+
+h3 {
+  color: red;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+  font-family: sans-serif;
+}
+
+img.feature {
+  display:block;
+  margin: auto;
+  max-width: 100%;
+}

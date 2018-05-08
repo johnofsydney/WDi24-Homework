@@ -1,0 +1,11 @@
+
+<h2>Edit Club</h2>
+<form action="/teams/<%= @team.id %>" method="post">
+
+  <input type="text" name="name" placeholder="Chelsea Football Club" value="<%= @team.name %>">
+  <input type="text" name="stadium" placeholder="Stamford Bridge" value="<%= @team.stadium %>">
+  <input type="text" name="coach" placeholder="Antonio Conte" value="<%= @team.coach %>">
+  <input type="text" name="logo" placeholder="http://.." value="<%= @team.logo %>">
+
+  <button>Edit club</button>
+</form>

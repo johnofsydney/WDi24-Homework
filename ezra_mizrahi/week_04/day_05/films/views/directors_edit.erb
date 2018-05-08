@@ -1,0 +1,11 @@
+<h2>Update a director page</h2>
+
+<form action="/directors/<%= @director.id %>" method="post">
+  <input type="text" name="name" placeholder="director name" value="<%= @director.name %>">
+  <input type="text" name="nationality" placeholder="nationality" value="<%= @director.nationality %>">
+  <input type="text" name="biography" placeholder="biography" value="<%= @director.biography %>">
+  <input type="text" name="filmography" placeholder="filmography" value="<%= @director.filmography %>">
+  <input type="url" name="image" placeholder="image" value="<%= @director.image %>">
+  <button>Update this page</button>
+
+</form>

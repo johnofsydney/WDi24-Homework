@@ -1,0 +1,7 @@
+<h1>All The FEELS.</h1>
+
+<% @log.each do | log | %>
+  <%=log['screenname'] %>
+  <%=log['id'] %>
+  <%=log['message'] %>
+<% end %>

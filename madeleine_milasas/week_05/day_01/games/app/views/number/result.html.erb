@@ -1,0 +1,7 @@
+<p><%= @message %></p>
+
+<% if @correct  %>
+  <%= link_to "Play again", "/secret-number" %>
+<% else  %>
+  <%= link_to "Try again", "/secret-number/play" %>
+<% end  %>

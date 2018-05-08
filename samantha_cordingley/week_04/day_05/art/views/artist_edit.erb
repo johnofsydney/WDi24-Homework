@@ -1,0 +1,8 @@
+<h1 class="pagetitle">Edit Artist</h1>
+
+<form action="/artists/<%= @artist.id %>" method="post">
+  <input class="editformstyle" type="text" name="name" value="<%= @artist.name %>" placeholder="Artist name">
+  <input class="editformstyle" type="text" name="bio" value="<%= @artist.bio %>" placeholder="Artist biography">
+
+  <button class="editbuttonstyle">UPDATE NOW</button>
+</form>

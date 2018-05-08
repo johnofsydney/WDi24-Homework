@@ -1,0 +1,10 @@
+<h2>Add another band</h2>
+
+<form action="/bands" method="post">
+  <input type="text" name="name" placeholder="Band name" required="required">
+  <input type="text" name="country" placeholder="Country of origin">
+  <input type="number" name="year" placeholder="Year formed" min="1000" max="2017">  <!-- TODO make this max current year -->
+  <input type="text" name="members" placeholder="Band member names">
+  <input type="url" name="image" placeholder="Image URL">
+  <button>Add Band</button>
+</form>

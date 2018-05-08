@@ -1,0 +1,25 @@
+.fixednav {
+  display: flex;
+  flex-direction: grow;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.leftnav {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+.rightnav {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+}

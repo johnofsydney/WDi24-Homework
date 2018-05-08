@@ -1,0 +1,72 @@
+
+body {
+  background-color: white;
+  font-family: 'Cuprum', sans-serif;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+}
+
+.teamname {
+  font-size: 7em;
+  position: relative;
+  top: 100px;
+}
+
+div {
+  width: 500px;
+}
+
+.container {
+  background-color: white;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #lightblue;
+  padding: 1em;
+  min-height: 80vh;
+  border: 3px solid navy;
+  box-shadow: 4px 4px 2px #003380;
+}
+
+img {
+
+}
+
+.headshot {
+  height: 370px;
+  width: 270px;
+}
+
+.clublogo img {
+  position: absolute;
+  width: 15vw;
+  height: 30vh;
+  /*display: flex;*/
+  right: 420px;
+  top: 20px;
+}
+
+.menu {
+  text-align: left;
+  top: 100px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.index {
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+}
+.controls {
+  text-align: right;
+  right: 10px;
+  width: 300px;
+  top: 440px;
+}
+
+nav {
+  text-align: right
+  color: orange;
+}

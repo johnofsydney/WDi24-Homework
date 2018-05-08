@@ -1,0 +1,19 @@
+<h1 class="showtitle">
+  <%= @artwork.name %>
+</h1>
+
+<% unless @artwork.artist.nil? %>
+<p class="secondaryinfo">Artist. <a class="artistassoc" href="/artists/<%= @artwork.artist.id%>"><%= @artwork.artist.name %></a></p>
+<% end %>
+
+<% unless @artwork.image.nil? || @artwork.image.empty? %>
+<img class="artworkimg" src="<%= @artwork.image %>" alt="<% @artwork.name %>">
+<% end %>
+
+<!-- <p class="secondaryinfo">Artist. <%= @artwork.author %></p> -->
+<p class="secondaryinfo">Year. <%= @artwork.year %></p>
+<p class="secondaryinfo">Materials. <%= @artwork.canvas %></p>
+
+
+<a class="editbuttons" href="/artworks/<%= @artwork.id %>/edit">Edit Artwork Now</a>
+<a class="deletebuttons" href="/artworks/<%= @artwork.id %>/delete">Delete Artwork Now</a>

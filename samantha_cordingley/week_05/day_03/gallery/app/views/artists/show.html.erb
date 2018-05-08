@@ -1,0 +1,17 @@
+<h1><%= @artist.name %></h1>
+
+<%= image_tag(@artist.image) %>
+<ul>
+  <li><%= @artist.nationality %></li>
+  <li><%= @artist.dob %></li>
+  <li><%= @artist.instagram %></li>
+</ul>
+
+<% @artist.works.each do | work | %>
+<%= link_to image_tag(work.image, :class => 'thumbnail'), work %>
+<% end %>
+
+<div class="controls">
+  <%= button_to 'Edit Artist', edit_artist_path(@artist), :method => 'get' %>
+  <%= button_to 'Destroy Artist', @artist, :method => 'delete', :data => { :confirm => 'Are you sure? We can do better?!'} %>
+</div>

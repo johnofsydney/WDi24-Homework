@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Movies</h1>
+
+
+  <div class="moviecontainer">
+    <% @movies.each do |movie| %>
+        <a href="/movies/<%= movie.id %>" class="movlink">
+          <div class="moviebox">
+            <% unless movie.cover.blank? %>
+            <%= image_tag(movie.cover) %>
+            <% end %>
+            <h2 class="movietitle"><%= movie.title  %></h2>
+          </div>
+        </a>
+    <% end %>
+
+</div>

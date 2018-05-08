@@ -1,0 +1,11 @@
+<h2>Edit mountain info</h2>
+
+<form action="<%= mountain_path(@mountain.id) %>" method="post">
+    <input type="text" name="name" placeholder="Name of mountain" value="<%= @mountain.name %>" required="required" autofocus>
+    <input type="url" name="image" placeholder="Image URL, e.g. http://..." value="<%= @mountain.image %>">
+    <input type="number" name="base_height" placeholder="Height from base (metres)" value="<%= @mountain.base_height if @mountain.base_height != 0 %>" min="1">
+    <input type="number" name="sea_height" placeholder="Height above sea level (metres)" value="<%= @mountain.sea_height if @mountain.sea_height != 0 %>">
+    <input type="text" name="location" placeholder="Location country" value="<%= @mountain.location %>">
+    <input type="text" name="fact" placeholder="Entirely true fact about this mountain" value="<%= @mountain.fact %>">
+    <button>Update mountain</button>
+</form>

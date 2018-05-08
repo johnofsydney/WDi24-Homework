@@ -1,0 +1,10 @@
+<h2><%= @country.name %></h2>
+<h3><%= @country.continent %></h3>
+<h3><%= @country.capital %></h3>
+<p><%= @country.area %></p>
+<p><%= @country.population %></p>
+
+<div class="controls">
+  <a href="/countries/<%= @country.id %>/delete">Delete Country</a>
+  <a href="/countries/<%= @country.id %>/edit">Edit Country</a>
+</div>

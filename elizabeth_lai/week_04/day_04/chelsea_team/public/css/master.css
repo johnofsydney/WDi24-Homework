@@ -1,0 +1,51 @@
+body {
+  background-color: white;
+  font-family: 'Cuprum', sans-serif;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+}
+
+div {
+  width: 500px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #lightblue;
+  padding: 1em;
+  min-height: 84vh;
+  border: 3px solid navy;
+  box-shadow: 4px 4px 2px #888888;
+}
+
+img {
+  height: 370px;
+  width: 270px;
+}
+
+.menu {
+  text-align: left;
+  top: 100px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.index {
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+}
+.controls {
+  text-align: right;
+  position: relative;
+  right: 10px;
+  width: 300px;
+  top: 440px;
+}
+
+.nav {
+  color: black;
+}

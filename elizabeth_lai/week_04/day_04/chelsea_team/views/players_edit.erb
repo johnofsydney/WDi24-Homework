@@ -1,0 +1,11 @@
+<h2> Edit Player </h2>
+<form action="/players/<%= @players['id'] %>" method="post">
+  <input type="text" name="first_name" placeholder="" value="<%= @players['first_name']%>">
+  <input type="text" name="last_name" placeholder="" value="<%= @players['last_name']%>">
+    <input type="text" name="position" placeholder="" value="<%= @players['position']%>">
+    <input type="text" name="nationality" placeholder="" value="<%= @players['nationality']%>">
+    <input type="text" name="flag" placeholder="" value="<%= @players['flag']%>">
+  <input type="integer" name="jersey" placeholder="" value="<%= @players['jersey'] %>">
+  <input type="text" name="image" placeholder="" value="<%= @players['image']%>">
+  <button>Edit player<button>
+</form>

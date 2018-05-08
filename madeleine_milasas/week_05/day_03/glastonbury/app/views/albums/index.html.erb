@@ -1,0 +1,11 @@
+<h1>All of the Albums</h1>
+
+<div class="grid-container">
+  <% @albums.each do |a| %>
+    <div class="box">
+      <%= link_to image_tag( a.image, :class => 'thumb' ), a %>
+      <p><em><%= a.name %></em></p>
+      <p><%= link_to a.band.name, band_path(a.band_id) unless a.band_id.nil? %></p>
+    </div>
+  <% end %>
+</div><!-- end grid-container -->

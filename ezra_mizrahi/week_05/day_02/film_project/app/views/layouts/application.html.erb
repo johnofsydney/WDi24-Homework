@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Film Project</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="fixednav">
+        <div class="leftnav">
+          <%= link_to 'All films', root_path %>
+        </div>
+        <div class="rightnav">
+          <%= link_to 'Add a film', films_new_path %>
+        </div>
+      </nav>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>

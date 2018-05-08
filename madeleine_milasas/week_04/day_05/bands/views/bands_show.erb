@@ -1,0 +1,58 @@
+<h2><%= @band.name %></h2>
+
+<main>
+  <table>
+    <% unless @band.country.nil? || @band.country.empty? %>
+    <tr>
+      <td>Country: </td>
+      <td class="right-col"><%= @band.country %></td>
+    </tr>
+    <% end %>
+    <% unless @band.year.nil? || @band.year == 0 %>
+    <tr>
+      <td>Year formed:</td>
+      <td class="right-col"><%= @band.year %></td>
+    </tr>
+    <% end  %>
+    <% unless @band.members.nil? || @band.members.empty? %>
+      <tr>
+        <td>Members:</td>
+        <td class="right-col"><%= @band.members %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td>Highlight songs:</td>
+      <td class="right-col">
+        <ul class="list-unstyled">
+        <% @band.songs.each do |song| %>
+          <li class="list-unstyled"><a class="small-link" href="/songs/<%= song.to_param %>"><%= song['name'] %></a></li>
+        <% end  %>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</main>
+
+<aside class="side-image">
+  <% unless @band.image.nil? || @band.image.empty? %>
+    <img class="featured" src="<%= @band.image %>" alt="Image of <%= @band.name %>">
+  <% end %>
+</aside>
+
+<div class="controls">
+  <a href="/bands/<%= @band.to_param %>/edit">
+    <div class="button edit">
+      Edit band info
+    </div>
+  </a>
+  <a href="/songs/new/<%= @band.to_param %>">
+    <div class="button add">
+      Add song
+    </div>
+  </a>
+  <!-- <a href="/bands/<%= @band.to_param %>/delete" data-name="<%= @band.to_param %>" id="delete"> -->
+    <div class="button" id="delete-button" data-name="<%= @band.to_param %>">
+      Delete band
+    </div>
+  <!-- </a> -->
+</div>

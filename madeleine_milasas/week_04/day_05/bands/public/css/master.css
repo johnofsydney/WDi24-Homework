@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+
+* {
+  /*border: 1px solid cornsilk;*/
+}
+
+html, body {
+  margin: 0;    /*these for sticky footer*/
+  padding: 0;   /*these for sticky footer*/
+  height: 100%; /*these for sticky footer*/
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.8px;
+  background-color: black;
+  /*background-color: #025075;*/
+  background-image: url('../../images/mic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  min-height: 74.8vh;    /*these for sticky footer*/
+  position: relative;  /*these for sticky footer*/
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(34, 34, 34, 0.97);
+  color: white;
+  padding: 2em;
+  padding-bottom: 7em;
+}
+
+p {
+ padding: 8px 0;
+ font-size: 14px;
+ text-align: justify;
+}
+
+p:last-of-type {
+  margin-bottom: 4em;
+}
+
+.controls {
+    padding: 80px 0;
+}
+
+main {
+  display: inline-block;
+  width: 40%;
+}
+
+aside {
+  display: inline-block;
+  width: 59%;
+  vertical-align: top;
+}
+
+img.featured {
+  max-width: 100%;
+}
+
+iframe {
+  /*padding: 2em 0;*/
+}
+
+.container a {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+nav {
+  background-color: rgba(255, 248, 220, 0.5);
+  height: 80px;
+  line-height: 80px;
+  text-align: right;
+  padding: 10px 30px;
+}
+
+nav > a {
+  padding: 30px;
+  text-decoration: none;
+  color: #561A91;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+nav>a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+}
+
+.song-list {
+  padding-left: 40px;
+}
+
+li, td > a {
+  color: white;
+  /*font-size: 18px;*/
+  text-decoration: none;
+}
+
+li > a:hover, td > a:hover {
+  /*text-decoration: underline;*/
+  color: rgba(255, 130, 130, 1);
+}
+
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-col {
+  max-width: 210px;
+  vertical-align: top;
+}
+
+.small-link {
+  font-size: 14px;
+  color: rgba(136, 179, 198, 1);
+}
+
+.small-link:hover {
+  color: rgba(255, 130, 130, 1);
+}
+
+.button {
+  background-color: #DA4040;
+  padding: 40px;
+  max-width: 220px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.25s; /*TODO prefixes*/
+  display: inline-block;
+}
+
+.button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: coral;
+  transition: 0.25s; /*TODO prefixes*/
+}
+
+
+footer {
+	background: rgba(255, 248, 220, 0.05);
+  width: 100%;
+	height: 80px;
+  line-height: 80px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.edit {
+  background-color: #014765;
+}
+
+.add {
+    background-color: teal;
+}
+
+.add:hover {
+  background-color: coral;
+}
+
+input {
+  display: block;
+  margin: 2em 0;
+  padding: 1em;
+  width: 350px;
+}
+
+button {
+  width: 200px;
+  color: white;
+  background-color: #014765;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 40px;
+  margin: 20px 0;
+  border: none;
+  transition: 0.25s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: coral;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+td {
+  padding: 1em 2em 1em 0;
+  vertical-align: baseline;
+  font-size: 14px;
+}
+
+.band-list {
+  font-size: 14px;
+}
+
+#delete-button:hover {
+  background-color: #DA4040;
+  animation: flash 0.25s ease-in-out infinite alternate;
+}
+
+@keyframes flash {
+    from {background-color: #DA4040;}
+    to {background-color: coral;}
+}

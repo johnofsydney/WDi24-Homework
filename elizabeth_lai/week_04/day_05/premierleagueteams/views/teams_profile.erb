@@ -1,0 +1,15 @@
+<h2 class="teamname"> <%= @team.name%></h2>
+
+<% unless @team.logo.nil? || @team.logo.empty? %>
+  <div class="clublogo"><img src="  <%= @team.logo %>" alt=" <%= @team.name %>"></div>
+<% end %>
+
+<p>
+  <%= @team.stadium %>
+  <%= @team.coach %>
+
+  <div class="controls" id="teams">
+    <a href="/teams/<%= @team.id %>/edit">Edit team</a>
+    <a href="/teams/<%= @team.id %>/delete">Delete team</a>
+  </div>
+</p>

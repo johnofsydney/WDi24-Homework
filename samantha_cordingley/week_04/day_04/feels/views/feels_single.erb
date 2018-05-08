@@ -1,0 +1,22 @@
+<h1>
+  <%= @feels['screenname'] %>
+</h1>
+
+<p>
+  Course week: <%=@feels['week'] %>
+  Day of the week: <%=@feels['day'] %>
+</p>
+
+<h2>
+  In short.  <%=@feels['message']%>
+</h2>
+
+<p>
+  Here goes a rant.
+</p>
+<h1>NO RANT HERE YET!</h1>
+
+<div>
+  <a href="/feels/<%= @feels['id'] %>/delete">Delete this post</a>
+  <a href="/feels/<%= @feels['id'] %>/edit">Argh! I need to change something</a>
+</div>

@@ -1,0 +1,14 @@
+<h2>Name :<%= @naruto['name']%></h2>
+<h2>Birthday:<%= @naruto['birthday']%></h2>
+<h2>Kekkei Genkai :<%= @naruto['kekkei_genkai']%></h2>
+<h2>Nature Type :<%= @naruto['nature_type']%></h2>
+<h2>Story :<%= @naruto['story']%></h2>
+<% unless @naruto['image'].nil?%>
+<img class="feature" src="<%= @naruto['image'] %>" alt="<%= @naruto['name']%>">
+<% end %>
+
+<div class="controls">
+  <a href="/narutos/<%= @naruto['id']%>/edit">Edit</a>
+  <a href="/narutos/<%= @naruto['id']%>/delete">Delete</a>
+
+</div>

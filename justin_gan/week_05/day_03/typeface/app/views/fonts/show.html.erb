@@ -1,0 +1,14 @@
+<h1><%= @font.name %></h1>
+
+<%= image_tag @font.image %>
+<ul>
+  <li><%= link_to @font.category.name, @font.category %></li>
+  <li><%= @font.classification %></li>
+  <li><%= @font.designer %></li>
+  <li><%= @font.year_created %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Font', edit_font_path %>
+  <%= button_to 'Delete Font', @font, :method => 'delete' %>
+</div>

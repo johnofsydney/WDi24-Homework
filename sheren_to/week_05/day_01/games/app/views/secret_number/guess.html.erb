@@ -1,0 +1,10 @@
+
+<h2>You guessed <%= @random_number %></h2>
+
+<p>
+  <% if @random_number == @number %>
+      You guessed it!
+    <% else %>
+      Try again.
+    <% end %>
+</p>

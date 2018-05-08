@@ -1,0 +1,20 @@
+<h1 class="pagetitle">Edit Artwork</h1>
+
+<form action="/artworks/<%= @artwork.id %>" method="post">
+  <input class="editformstyle" type="text" name="name" value="<%= @artwork.name %>" placeholder="Artwork name">
+  <input class="editformstyle" type="text" name="author" value="<%= @artwork.author %>" placeholder="Artist">
+  <input class="editformstyle" type="text" name="year" value="<%= @artwork.year %>" placeholder="Year created">
+  <input class="editformstyle" type="text" name="canvas" value="<%= @artwork.canvas %>" placeholder="Painted on..">
+  <input class="editformstyle" type="url" name="image" value="<%= @artwork.image %>" placeholder="Image http://..">
+
+<select name="artist_id">
+  <!-- allow them to choose nothing if they dont know -->
+  <option disabled>Artist Name</option>
+  <option></option>
+  <% Artist.all.each do |artist| %>
+  <option value="<%= artist.id %>"><%= artist.name %></option>
+  <% end %>
+</select>
+
+  <button class="editbuttonstyle">UPDATE NOW</button>
+</form>

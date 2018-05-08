@@ -1,0 +1,1987 @@
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFonts (20171122105305)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "fonts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "category" text, "classification" text, "designer" text, "year_created" integer)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122105305"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-22 10:57:55.281254"], ["updated_at", "2017-11-22 10:57:55.281254"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFonts (20171122105305)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mDROP TABLE "fonts"[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171122105305"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFonts (20171122105305)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "fonts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "category" text, "classification" text, "designer" text, "year_created" integer, "image" text)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122105305"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20171122191831)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "image" text, "description" text)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122191831"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCategoryIdToFonts (20171122192804)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "fonts" ADD "category_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122192804"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image", "description") VALUES (?, ?, ?)[0m  [["name", "Sans-serif"], ["image", "http://blog.glasscanopy.com/wp-content/uploads/2014/01/SansSerif.jpg"], ["description", ""]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" ORDER BY "fonts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" ORDER BY "fonts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image", "description") VALUES (?, ?, ?)[0m  [["name", "Sans-serif"], ["image", "http://blog.glasscanopy.com/wp-content/uploads/2014/01/SansSerif.jpg"], ["description", "In typography, a sans-serif font is one that doesn't have extending features called \"serifs\" at the end of strokes. They are often used to convey simplicity and modernity or minimalism."]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCategoryIdToFonts (20171122192804)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afonts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text DEFAULT NULL, "category" text DEFAULT NULL, "classification" text DEFAULT NULL, "designer" text DEFAULT NULL, "year_created" integer DEFAULT NULL, "image" text DEFAULT NULL, "category_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "afonts" ("id","name","category","classification","designer","year_created","image","category_id")
+                     SELECT "id","name","category","classification","designer","year_created","image","category_id" FROM "fonts"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE "fonts"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "fonts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text DEFAULT NULL, "category" text DEFAULT NULL, "classification" text DEFAULT NULL, "designer" text DEFAULT NULL, "year_created" integer DEFAULT NULL, "image" text DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "fonts" ("id","name","category","classification","designer","year_created","image")
+                     SELECT "id","name","category","classification","designer","year_created","image" FROM "afonts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "afonts"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171122192804"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20171122191831)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "categories"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171122191831"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFonts (20171122105305)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "fonts"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171122105305"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFonts (20171122105305)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "fonts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "classification" text, "designer" text, "year_created" integer, "image" text)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122105305"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20171122191831)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "image" text, "description" text)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122191831"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCategoryIdToFonts (20171122192804)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "fonts" ADD "category_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122192804"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image", "description") VALUES (?, ?, ?)[0m  [["name", "Sans-serif"], ["image", "http://blog.glasscanopy.com/wp-content/uploads/2014/01/SansSerif.jpg"], ["description", "In typography, a sans-serif font is one that doesn't have extending features called \"serifs\" at the end of strokes. They are often used to convey simplicity and modernity or minimalism."]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mFont Load (3.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (1.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mFont Load (0.1ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "fonts" ("name", "classification", "designer", "year_created", "image", "category_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gill Sans"], ["classification", "Humanist"], ["designer", "Eric Gill"], ["year_created", 1926], ["image", "https://en.wikipedia.org/wiki/Gill_Sans#/media/File:GillSansEG.svg"], ["category_id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" ORDER BY "fonts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" ORDER BY "fonts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 08:08:13 +1100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/justingan/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/justingan/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (6.0ms)
+Completed 200 OK in 32ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:09:11 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  Rendered fonts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1640ms (Views: 1631.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:14:19 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  Rendered fonts/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 42ms
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/fonts/index.html.erb:5: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );
+                              ^
+/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/fonts/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/fonts/index.html.erb:10: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/fonts/index.html.erb:5: syntax error, unexpected keyword_end
+app/views/fonts/index.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/fonts/index.html.erb:10: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:14:36 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 101ms (Views: 96.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:14:39 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.7ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 49ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:16:31 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (9.7ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (193.1ms)
+Completed 200 OK in 490ms (Views: 444.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:17:24 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (2.8ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 133ms (Views: 111.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:17:43 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:17:46 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  Rendered fonts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 74ms (Views: 44.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 08:17:56 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 08:18:30 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.6ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 99ms (Views: 88.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 08:20:00 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.6ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 77ms (Views: 69.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 08:20:18 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:20:20 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  Rendered fonts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:20:22 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  Rendered fonts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 08:20:34 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 72ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-23 08:20:35 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 08:22:42 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (1.0ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 118ms (Views: 103.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:22:51 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.7ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  Rendered fonts/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/fonts/show.html.erb:8: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );
+                              ^
+/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/fonts/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/fonts/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/fonts/show.html.erb:8: syntax error, unexpected keyword_end
+app/views/fonts/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/fonts/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:23:03 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  Rendered fonts/show.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Font:0x00007ff2a845cae8>):
+    1: <h1><%= @font.name %></h1>
+    2: 
+    3: <%= @font.each do |font| %>
+    4:   <%= font.category.image %>
+    5:   <%= font.classification %>
+    6:   <%= font.designer %>
+  
+app/views/fonts/show.html.erb:3:in `_app_views_fonts_show_html_erb___1937011651226030123_70340097861540'
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:23:36 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 153ms (Views: 130.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:24:18 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 102ms (Views: 80.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:24:37 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 60ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:24:53 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:25:38 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.1ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 118ms (Views: 95.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 08:25:49 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 109ms (Views: 100.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 08:44:51 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/new.html.erb within layouts/application (20.7ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (Missing partial fonts/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views"
+):
+    1: <h1>New Font</h1>
+    2: <%= render :partial => 'form' %>
+  
+app/views/fonts/new.html.erb:2:in `_app_views_fonts_new_html_erb__1302626014673492161_70340097837380'
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 08:51:59 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/new.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial fonts/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views"
+):
+    1: <h1>New Font</h1>
+    2: <%= render :partial => 'form' %>
+  
+app/views/fonts/new.html.erb:2:in `_app_views_fonts_new_html_erb__1302626014673492161_70340131986920'
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 08:52:35 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/new.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial fonts/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views"
+):
+    1: <h1>New Font</h1>
+    2: <%= render :partial => 'form' %>
+  
+app/views/fonts/new.html.erb:2:in `_app_views_fonts_new_html_erb__1302626014673492161_70340136357080'
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:16:17 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/_form.html.erb (149.4ms)
+  Rendered fonts/new.html.erb within layouts/application (180.9ms)
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..4)):
+    1: <%= form_for @font do |f| %>
+    2:   <fieldset>
+    3:     <%= label :name %>
+    4:     <%= text_field :name %>
+    5:   </fieldset>
+    6: 
+  
+app/views/fonts/_form.html.erb:3:in `block in _app_views_fonts__form_html_erb__3571149542789882254_70340113563740'
+app/views/fonts/_form.html.erb:1:in `_app_views_fonts__form_html_erb__3571149542789882254_70340113563740'
+app/views/fonts/new.html.erb:2:in `_app_views_fonts_new_html_erb__1302626014673492161_70340099785820'
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:17:02 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/_form.html.erb (730.6ms)
+  Rendered fonts/new.html.erb within layouts/application (737.6ms)
+Completed 500 Internal Server Error in 769ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007ff2a917e118>:0x00007ff2ad15fa20>):
+    1: <%= f.form_for @font do |f| %>
+    2:   <fieldset>
+    3:     <%= f.label :name %>
+    4:     <%= f.text_field :name %>
+  
+app/views/fonts/_form.html.erb:1:in `_app_views_fonts__form_html_erb__3571149542789882254_70340131332940'
+app/views/fonts/new.html.erb:2:in `_app_views_fonts_new_html_erb__1302626014673492161_70340131365420'
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:17:11 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/_form.html.erb (110.1ms)
+  Rendered fonts/new.html.erb within layouts/application (116.1ms)
+Completed 200 OK in 239ms (Views: 230.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:17:35 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  Rendered fonts/_form.html.erb (29.8ms)
+  Rendered fonts/new.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 141ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:20:15 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "fonts"."name", "fonts"."id" FROM "fonts"[0m
+  Rendered fonts/_form.html.erb (85.6ms)
+  Rendered fonts/new.html.erb within layouts/application (94.5ms)
+Completed 200 OK in 206ms (Views: 183.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:20:23 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "fonts"."name", "fonts"."id" FROM "fonts"[0m
+  Rendered fonts/_form.html.erb (58.9ms)
+  Rendered fonts/new.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 155ms (Views: 142.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:20:38 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (92.6ms)
+  Rendered fonts/new.html.erb within layouts/application (98.8ms)
+Completed 200 OK in 256ms (Views: 230.0ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:20:47 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5K9s+4uxYFOjzYJPnusZ8Mwg4Q/6bZE7RhSTWqGKaUCtJ/D7DRWl2H4Ygq9q4TfexNmZvb34ZOPXnOfs5eJU6g==", "font"=>{"name"=>"Futara", "category_id"=>"1", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+No template found for FontsController#create, rendering head :no_content
+Completed 204 No Content in 121ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:22:00 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (26.8ms)
+  Rendered fonts/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 153ms (Views: 105.5ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:22:02 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fdolx4cbOeL9HvJTHFPwMCOR8Tl8Nojmknaf0EESNko0UrnHAb/8aSDL8rPoWd4eK2iJizujfT4D/utmBXoL4A==", "font"=>{"name"=>"Roboto", "category_id"=>"1", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:22:02 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mFont Load (1.9ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:24:58 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (23.7ms)
+  Rendered fonts/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 139ms (Views: 100.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:25:06 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a1uZRYItgWjmv1VmbyyWHPEThkkXxj6hB4jyq2F3feUi0wVFBIlE4ztqVYabJrgy+er++1BTy3mWAIYdJR9ATw==", "font"=>{"name"=>"Futura", "category_id"=>"1", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "fonts" ("name", "classification", "designer", "image", "category_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Futura"], ["classification", ""], ["designer", ""], ["image", ""], ["category_id", 1]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/fonts/2
+Completed 302 Found in 35ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 09:25:06 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (0.5ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 100ms (Views: 92.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:25:42 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (1.8ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 169ms (Views: 148.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 09:25:47 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 105ms (Views: 98.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 09:26:54 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.5ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 429ms (Views: 380.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/fonts/1/edit" for 127.0.0.1 at 2017-11-23 09:27:00 +1100
+Processing by FontsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering fonts/edit.html.erb within layouts/application
+  Rendered fonts/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/1/edit" for 127.0.0.1 at 2017-11-23 09:27:43 +1100
+Processing by FontsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering fonts/edit.html.erb within layouts/application
+  Rendered fonts/_form.html.erb (20.9ms)
+  Rendered fonts/edit.html.erb within layouts/application (35.8ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @font do |f| %>
+    2:   <fieldset>
+    3:     <%= f.label :name %>
+    4:     <%= f.text_field :name %>
+  
+app/views/fonts/_form.html.erb:1:in `_app_views_fonts__form_html_erb__3571149542789882254_70340134918000'
+app/views/fonts/edit.html.erb:2:in `_app_views_fonts_edit_html_erb___1765004520397387320_70340134951680'
+Started GET "/fonts/1/edit" for 127.0.0.1 at 2017-11-23 09:28:21 +1100
+Processing by FontsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/edit.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (26.9ms)
+  Rendered fonts/edit.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 185ms (Views: 126.2ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/fonts/1" for 127.0.0.1 at 2017-11-23 09:28:49 +1100
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for FontsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PATCH "/fonts/1" for 127.0.0.1 at 2017-11-23 09:29:37 +1100
+Processing by FontsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k/eO1rGJEVn3jxwdVlH8Wy7ccJjzT0KogrHNNOLdkLPafxLWNy3U0ipaHP2iW9J1JiUIKrTat3ATObmCprWtGQ==", "font"=>{"name"=>"Gill Sans", "category_id"=>"1", "classification"=>"Humanist", "designer"=>"Eric Gill", "year_created"=>"1926", "image"=>"https://en.wikipedia.org/wiki/Gill_Sans#/media/File:GillSansEG.svg"}, "commit"=>"Update Font", "id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/fonts/1
+Completed 302 Found in 88ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 09:29:37 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 118ms (Views: 111.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/1/edit" for 127.0.0.1 at 2017-11-23 09:30:08 +1100
+Processing by FontsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.9ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/edit.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (38.0ms)
+  Rendered fonts/edit.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 187ms (Views: 146.0ms | ActiveRecord: 2.5ms)
+
+
+Started PATCH "/fonts/1" for 127.0.0.1 at 2017-11-23 09:30:12 +1100
+Processing by FontsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o86OR7e07nCW4myE/Ni+QHgGfhYilDRfrhBRJ53difMNuhPN2x8q3BIfBF+NNa6XXTXOShAJIl7YMSimRdLOWQ==", "font"=>{"name"=>"Gill Sans", "category_id"=>"1", "classification"=>"Humanist", "designer"=>"Eric Gill", "year_created"=>"1926", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/GillSansEG.svg/396px-GillSansEG.svg.png"}, "commit"=>"Update Font", "id"=>"1"}
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "fonts" SET "image" = ? WHERE "fonts"."id" = ?[0m  [["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/GillSansEG.svg/396px-GillSansEG.svg.png"], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/fonts/1
+Completed 302 Found in 493ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 09:30:13 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 80ms (Views: 73.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:30:21 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (26.7ms)
+  Rendered fonts/new.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 141ms (Views: 125.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:30:25 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HAxRc6mXtkEaQ65l+gbZw+8uT6jTjOUu4miebULGiCdVhM1zLzNzyseWroUODPft59c3GpQZEPZz4OrbBq61jQ==", "font"=>{"name"=>"test", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 13ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:30:25 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 94ms (Views: 89.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/3" for 127.0.0.1 at 2017-11-23 09:30:36 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Font with 'id'=3):
+  
+app/controllers/fonts_controller.rb:26:in `show'
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 09:30:42 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (2.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 108ms (Views: 92.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:30:54 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (14.7ms)
+  Rendered fonts/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 85ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:31:02 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvmSk9dQGPNxRkzuTF9RcH+mm5/YYJQJIYQp+4nNkAV7cQ6TUfTdeKyTTA64VX9ed1/jLZ/1YdGwDF1NzaWtrw==", "font"=>{"name"=>"test", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:31:03 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:32:37 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (1.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 267ms (Views: 241.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 09:32:39 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 83ms (Views: 76.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/2/edit" for 127.0.0.1 at 2017-11-23 09:32:41 +1100
+Processing by FontsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/edit.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (18.4ms)
+  Rendered fonts/edit.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 81ms (Views: 73.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/fonts/2" for 127.0.0.1 at 2017-11-23 09:33:04 +1100
+Processing by FontsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lopp+IXEWo0oVmAm5MjLwV9ALYppQ/EYVCd2igCFJKjfAvX4A2CfBvWDYMYQwuXvV7lVOC7WBMDFrwI8RO0ZAg==", "font"=>{"name"=>"Futura", "category_id"=>"1", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>"https://upload.wikimedia.org/wikipedia/commons/5/50/Futura_Specimen.svg"}, "commit"=>"Update Font", "id"=>"2"}
+  [1m[36mFont Load (1.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "fonts" SET "image" = ? WHERE "fonts"."id" = ?[0m  [["image", "https://upload.wikimedia.org/wikipedia/commons/5/50/Futura_Specimen.svg"], ["id", 2]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/fonts/2
+Completed 302 Found in 55ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 09:33:04 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 417ms (Views: 405.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 09:36:13 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (1.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 842ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_categories_path' for #<#<Class:0x00007ff2a91845e0>:0x00007ff2a8d7ae40>
+Did you mean?  new_category_path):
+    14:       <li><%= link_to 'All Fonts', fonts_path %></li>
+    15:       <li><%= link_to 'New Font', new_font_path %></li>
+    16:       <li><%= link_to 'All Font Categories', categories_path %></li>
+    17:       <li><%= link_to 'New Font Category', new_categories_path %></li>
+    18:     </nav>
+    19:     <%= yield %>
+    20:   </body>
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__127526046572328036_70340095726280'
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 09:36:27 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (3.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 158ms (Views: 113.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:36:36 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-23 09:36:38 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:36:40 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (7.7ms)
+  Rendered fonts/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:36:50 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lq/9wyFLWm152O8IkagyuhMSJl1is+2bb/GTuIDU6G/hdGHCPuYTTseixII7BT3amI8iLUvaM53xwtr2Db6HbQ==", "font"=>{"name"=>"test font", "category_id"=>"1", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "fonts" ("name", "classification", "designer", "image", "category_id") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test font"], ["classification", ""], ["designer", ""], ["image", ""], ["category_id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/fonts/3
+Completed 302 Found in 14ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/fonts/3" for 127.0.0.1 at 2017-11-23 09:36:50 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/fonts/3" for 127.0.0.1 at 2017-11-23 09:36:53 +1100
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for FontsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/fonts/3" for 127.0.0.1 at 2017-11-23 09:38:06 +1100
+Processing by FontsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jRS8Wd0kLjQDrVN+Ggr7MCRr8dTplrB5RJ8XKL98qMHEnCBZW4Drv954U57uANUeLJKJZq4DRaHVF2Oe+xSVaw==", "id"=>"3"}
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[31mDELETE FROM "fonts" WHERE "fonts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 87ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:38:07 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 133ms (Views: 126.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 09:38:10 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (12.2ms)
+  Rendered fonts/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 53ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 09:38:13 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tsOh4eDLxv4IMISJHdHancxfiLMRWa0XMcge9LfECH95GD3g/2aP3bZKrwO3fNX9R8KMwzgwcxGv+1e6Oq5nfQ==", "font"=>{"name"=>"test", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 09:38:13 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 10:09:27 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (15.0ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (276.0ms)
+Completed 200 OK in 824ms (Views: 668.6ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 10:10:28 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (6.7ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (184.9ms)
+Completed 200 OK in 888ms (Views: 822.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 10:11:13 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.1ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 157ms (Views: 125.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 10:11:21 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (2.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 238ms (Views: 229.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 10:11:23 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-23 10:11:25 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 10:11:27 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (8.7ms)
+  Rendered fonts/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 68ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 10:15:49 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (6.6ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 225ms (Views: 186.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 19:17:23 +1100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 646ms (Views: 617.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-23 19:17:36 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 176ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:17:39 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (74.3ms)
+  Rendered fonts/new.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 127ms (Views: 119.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 19:17:41 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 19:17:42 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.6ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 86ms (Views: 71.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 19:17:59 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (1.0ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 106ms (Views: 90.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:18:00 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (19.0ms)
+  Rendered fonts/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-11-23 19:18:18 +1100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 65ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-23 19:18:20 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:18:21 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (6.0ms)
+  Rendered fonts/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 73ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 19:18:22 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-23 19:18:25 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 66ms (Views: 30.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:18:32 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (9.7ms)
+  Rendered fonts/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 19:20:04 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RcF8x9UOqw3xoZCvxqKzq3AA5Gzys5lfnzzZnwKEb6WKGuDGyqPiLk/buyVsD7zL+53gHNvaR1kBD5DRj+4Apw==", "font"=>{"name"=>"Roboto", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 46ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 19:20:04 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.6ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 97ms (Views: 91.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-23 19:20:20 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.9ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 143ms (Views: 109.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-23 19:20:34 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:20:36 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (25.0ms)
+  Rendered fonts/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 91ms (Views: 77.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-11-23 19:20:37 +1100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:20:38 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (10.8ms)
+  Rendered fonts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 77ms (Views: 72.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-23 19:20:44 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 62ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:28:00 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (33.4ms)
+  Rendered fonts/new.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 217ms (Views: 92.2ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 19:28:04 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pt6ZB0ahd/GJDjkK3gNcEIegG8nXyHbwm4efx+5Vun1pBQUGWQw+0jd0EoB0rlNwDD0fuf6hqPYFtNaJYz/Vfw==", "font"=>{"name"=>"Roboto", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 11ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-23 19:28:04 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-23 19:28:39 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (29.9ms)
+  Rendered fonts/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 208ms (Views: 132.1ms | ActiveRecord: 10.9ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-23 19:28:43 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0TUUb3NRF85nSyHD1/ZgVpR99LItSvf9uYR/leujHmse7ohubPxe7dkxCkl9W282H+DwwgQjKfsntzbbZslxaQ==", "font"=>{"name"=>"Roboto", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+TypeError (exception class/object expected):
+  
+app/controllers/fonts_controller.rb:12:in `raise'
+app/controllers/fonts_controller.rb:12:in `create'
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 19:28:59 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 19:29:03 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 19:29:30 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 19:29:31 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 19:29:38 +1100
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 19:29:43 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 20:01:02 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 20:01:03 +1100
+  [1m[36mFont Load (3.2ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 20:03:29 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 20:03:35 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 20:03:42 +1100
+Started PUT "/__web_console/repl_sessions/0951a25c3de9368139aabee6b7560958" for 127.0.0.1 at 2017-11-23 20:03:47 +1100
+Started GET "/" for 127.0.0.1 at 2017-11-24 07:54:11 +1100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 599ms (Views: 568.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-24 07:54:20 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (0.6ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (59.9ms)
+Completed 200 OK in 124ms (Views: 97.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-24 07:54:25 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.7ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-24 07:54:27 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (49.6ms)
+  Rendered fonts/new.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 87ms (Views: 82.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 07:54:28 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/new" for 127.0.0.1 at 2017-11-24 07:54:29 +1100
+Processing by FontsController#new as HTML
+  Rendering fonts/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "categories"."name", "categories"."id" FROM "categories"[0m
+  Rendered fonts/_form.html.erb (6.0ms)
+  Rendered fonts/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 72ms (Views: 67.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/fonts" for 127.0.0.1 at 2017-11-24 07:54:33 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RFoH2JQYdbX0Vm4/ZVSLez2ewFU7YsDdbeVz7SSL1aOLgZvZi7U8lkosRbXP+YQbtgPEJRILHtvz1jqjqeG6oQ==", "font"=>{"name"=>"Roboto", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+TypeError (exception class/object expected):
+  
+app/controllers/fonts_controller.rb:12:in `raise'
+app/controllers/fonts_controller.rb:12:in `create'
+Started POST "/fonts" for 127.0.0.1 at 2017-11-24 07:54:43 +1100
+Processing by FontsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RFoH2JQYdbX0Vm4/ZVSLez2ewFU7YsDdbeVz7SSL1aOLgZvZi7U8lkosRbXP+YQbtgPEJRILHtvz1jqjqeG6oQ==", "font"=>{"name"=>"Roboto", "category_id"=>"", "classification"=>"", "designer"=>"", "year_created"=>"", "image"=>""}, "commit"=>"Create Font"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/fonts
+Completed 302 Found in 110ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-24 07:54:43 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (0.9ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 386ms (Views: 368.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 07:54:48 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 59ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:02:33 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 100ms (Views: 84.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:04:23 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 217ms (Views: 186.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:05:19 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (25.5ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"categories"}, missing required keys: [:id]):
+    3: <% @categories.each do |c| %>
+    4:   <%= image_tag c.image %>
+    5:   <ul>
+    6:     <li><%= link_tag c.name, category_path %></li>
+    7:     <li><%= c.description %></li>
+    8:   </ul>
+    9: <% end %>
+  
+app/views/categories/index.html.erb:6:in `block in _app_views_categories_index_html_erb___1272776958712494605_70181345118280'
+app/views/categories/index.html.erb:3:in `_app_views_categories_index_html_erb___1272776958712494605_70181345118280'
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:06:15 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:06:16 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:06:18 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:06:22 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:06:27 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:06:43 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:07:26 +1100
+Started PUT "/__web_console/repl_sessions/f58df796574593189943742a81ceaa66" for 127.0.0.1 at 2017-11-24 08:07:26 +1100
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:11:05 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (6.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (524.5ms)
+Completed 500 Internal Server Error in 583ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x00007fa8bc65aee8>:0x00007fa8c2120b20>
+Did you mean?  category_url):
+    3: <% @categories.each do |c| %>
+    4:   <%= image_tag c.image %>
+    5:   <ul>
+    6:     <li><%= link_tag c.name, category %></li>
+    7:     <li><%= c.description %></li>
+    8:   </ul>
+    9: <% end %>
+  
+app/views/categories/index.html.erb:6:in `block in _app_views_categories_index_html_erb___1272776958712494605_70181393599100'
+app/views/categories/index.html.erb:3:in `_app_views_categories_index_html_erb___1272776958712494605_70181393599100'
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:11:12 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (285.0ms)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x00007fa8bc65aee8>:0x00007fa8bd4bf7b8>
+Did you mean?  category_url):
+    3: <% @categories.each do |c| %>
+    4:   <%= image_tag c.image %>
+    5:   <ul>
+    6:     <li><%= link_tag c.name, category %></li>
+    7:     <li><%= c.description %></li>
+    8:   </ul>
+    9: <% end %>
+  
+app/views/categories/index.html.erb:6:in `block in _app_views_categories_index_html_erb___1272776958712494605_70181358903500'
+app/views/categories/index.html.erb:3:in `_app_views_categories_index_html_erb___1272776958712494605_70181358903500'
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:11:45 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (478.8ms)
+Completed 500 Internal Server Error in 524ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `link_tag' for #<#<Class:0x00007fa8bc65aee8>:0x00007fa8c1a1cce8>
+Did you mean?  link_to):
+    3: <% @categories.each do |category| %>
+    4:   <%= image_tag category.image %>
+    5:   <ul>
+    6:     <li><%= link_tag category.name, category %></li>
+    7:     <li><%= category.description %></li>
+    8:   </ul>
+    9: <% end %>
+  
+app/views/categories/index.html.erb:6:in `block in _app_views_categories_index_html_erb___1272776958712494605_70181389921120'
+app/views/categories/index.html.erb:3:in `_app_views_categories_index_html_erb___1272776958712494605_70181389921120'
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:12:53 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 185ms (Views: 166.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:12:55 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:13:20 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 214ms (Views: 191.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:13:46 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 122ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:14:06 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 102ms (Views: 82.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:14:24 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 119ms (Views: 102.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-11-24 08:14:34 +1100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 47ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 08:14:34 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 47ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:14:38 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:20:59 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (34.2ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 2.6ms)
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/categories/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+ont.image, :class => 'thumb'), image );@output_buffer.safe_a
+                              ^):
+  
+app/views/categories/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:21:07 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/categories/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+ont.image, :class => 'thumb'), font );@output_buffer.safe_ap
+                              ^):
+  
+app/views/categories/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:22:24 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.5ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ? LIMIT ?[0m  [["category_id", 1], ["LIMIT", 11]]
+  Rendered categories/show.html.erb within layouts/application (313.3ms)
+Completed 500 Internal Server Error in 349ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `do' for #<Font::ActiveRecord_Associations_CollectionProxy:0x00007fa8bceaeea0>):
+    3: <%= image_tag @category.image %>
+    4: <%= @category.description %>
+    5: 
+    6: <% @category.fonts.do |font| %>
+    7:   <%= image_tag font.image, font, :class => 'thumb' %>
+    8: <%  %>
+  
+app/views/categories/show.html.erb:6:in `_app_views_categories_show_html_erb___3136957850980555626_70181372873780'
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:22:37 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/categories/show.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/categories/show.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:22:45 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.5ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    4: <%= @category.description %>
+    5: 
+    6: <% @category.fonts.each do |font| %>
+    7:   <%= image_tag font.image, font, :class => 'thumb' %>
+    8: <% end %>
+  
+app/views/categories/show.html.erb:7:in `block in _app_views_categories_show_html_erb___3136957850980555626_70181391164340'
+app/views/categories/show.html.erb:6:in `_app_views_categories_show_html_erb___3136957850980555626_70181391164340'
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:23:08 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/categories/show.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+image, :class => 'thumb') font );@output_buffer.safe_append=
+                              ^):
+  
+app/views/categories/show.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:23:25 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/Users/justingan/Projects/WDi24-Homework/justin_gan/week_05/day_03/typeface/app/views/categories/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+ont.image, :class => 'thumb'), font );@output_buffer.safe_ap
+                              ^):
+  
+app/views/categories/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 08:24:17 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (2.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (1.8ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 297ms (Views: 244.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-24 08:24:24 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (2.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 114ms (Views: 98.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-24 09:06:33 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (3.9ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 181ms (Views: 137.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 09:06:37 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 116ms (Views: 91.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 09:26:28 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 381ms (Views: 331.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 09:27:00 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (2.4ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 539ms (Views: 505.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-24 09:28:07 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.2ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 291ms (Views: 247.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-11-24 09:28:14 +1100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 72ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts" for 127.0.0.1 at 2017-11-24 09:28:21 +1100
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (1.0ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-24 09:30:36 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (1.8ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 195ms (Views: 163.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 09:30:40 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 53ms (Views: 46.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-11-24 09:30:44 +1100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 09:30:45 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 58ms (Views: 53.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 09:30:46 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-24 09:31:09 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 145ms (Views: 122.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-25 19:03:40 +1100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FontsController#index as HTML
+  Rendering fonts/index.html.erb within layouts/application
+  [1m[36mFont Load (1.6ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts"[0m
+  Rendered fonts/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 471ms (Views: 438.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/fonts/1" for 127.0.0.1 at 2017-11-25 19:03:49 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFont Load (10.4ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (134.7ms)
+Completed 200 OK in 352ms (Views: 262.9ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-25 19:03:52 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.3ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 173ms (Views: 154.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/fonts/2" for 127.0.0.1 at 2017-11-25 19:03:55 +1100
+Processing by FontsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFont Load (27.1ms)[0m  [1m[34mSELECT  "fonts".* FROM "fonts" WHERE "fonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering fonts/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered fonts/show.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 505ms (Views: 345.4ms | ActiveRecord: 27.5ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2017-11-25 19:03:58 +1100
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (15.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mFont Load (0.8ms)[0m  [1m[34mSELECT "fonts".* FROM "fonts" WHERE "fonts"."category_id" = ?[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (159.8ms)
+Completed 200 OK in 479ms (Views: 351.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-11-25 19:04:00 +1100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 137ms (Views: 96.7ms | ActiveRecord: 2.9ms)
+
+

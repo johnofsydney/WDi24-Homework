@@ -1,0 +1,14 @@
+<h2>Add a song</h2>
+
+<form action="/songs" method="post">
+  <input type="text" name="name" placeholder="Song name" required="required">
+  <% if @band_name != '' %>
+    <input type="text" name="band_name" placeholder="Band" required="required" value="<%= @band_name %>">
+  <% else  %>
+      <input type="text" name="band_name" placeholder="Band" required="required">
+  <% end  %>
+  <input type="text" name="album" placeholder="Album">
+  <input type="number" name="year" placeholder="Year released" min="1000" max="2017">  <!-- TODO make this max current year -->
+  <input type="url" name="video" placeholder="Video URL">
+  <button>Add song</button>
+</form>

@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+  background-color: #1d1a1a;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#top, #bottom, #left, #right {
+	background: white;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 30px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 30px;
+		}
+
+		#top { top: 0; }
+
+		#bottom { bottom: 0; }
+
+////////////////////////////////TEXT STYLING/////////////////////////////////
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+
+a:hover {
+  border-bottom: white solid 4px;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: inline-block;
+  min-width: 82px;
+  text-align: center;
+}
+
+///////////////////////////////IMAGES STYLING//////////////////////////////////
+
+.thumbnail {
+  max-width: 10em;
+  border: 10px solid white;
+}
+
+img {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}

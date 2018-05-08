@@ -1,0 +1,12 @@
+<h2><%= @title %></h2>
+<p>Written by: <%= @authors.join(', ') %></p>
+
+<div class="wrapper">
+
+  <%= "<img src='#{ @thumbnail }'>" if @buy_link.nil? %>
+
+  <%= "<a href='#{ @buy_link }' target='_blank'><img src='#{ @thumbnail }'></a>" unless @buy_link == nil %>
+
+  <div id="viewerCanvas"></div>
+
+</div>

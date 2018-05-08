@@ -1,0 +1,10 @@
+<h2 class="fronthead">National Parks in the United States of America</h2>
+
+
+<%= @parks.each do |park| %>
+
+<p>
+  <%= link_to park.name, park_path(park.id) %>
+</p>
+
+<% end %>

@@ -1,0 +1,21 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: inline-block;
+  min-width: 82px;
+  text-align: right;
+}
+
+.thumb {
+  max-width: 10em;
+}
+
+.feature {
+  max-width: 30em;
+}

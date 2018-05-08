@@ -1,0 +1,42 @@
+<h2><%= @song.name %></h2>
+
+<main>
+  <table>
+    <tr>
+      <td>Band: </td>
+      <td><a href="/bands/<%= @bands.find_by(id: @song.band_id).to_param %>"><%= @bands.find_by(id: @song.band_id).name  %></a></td>
+    </tr>
+    <% unless @song['album'].nil? || @song['album'].empty?  %>
+    <tr>
+      <td>From album: </td>
+      <td><%= @song.album %></td>
+    </tr>
+    <% end  %>
+    <% unless @song['year'].nil? || @song['year'] == 0  %>
+    <tr>
+      <td>Year released:</td>
+      <td><%= @song.year %></td>
+    </tr>
+  <% end  %>
+  </table>
+</main>
+
+<aside class="side-image">
+<% unless @song['video'].nil? || @song['video'].empty?  %>
+  <% youtube_embed(@song['video']) %>
+  <%= @youtube_str %>
+<% end  %>
+</aside>
+
+<div class="controls">
+  <a href="/songs/<%= @song.to_param %>/edit">
+    <div class="button edit">
+      Edit song info
+    </div>
+  </a>
+  <!-- <a href="/bands/<%= @band.to_param %>/delete" data-name="<%= @band.to_param %>" id="delete"> -->
+    <div class="button" id="delete-button-song" data-name="<%= @song.to_param %>">
+      Delete song
+    </div>
+  <!-- </a> -->
+</div>

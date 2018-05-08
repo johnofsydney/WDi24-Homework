@@ -1,0 +1,9 @@
+<ul>
+  <% @boulders.each do |boulder| %>
+    <li>
+      <a href="boulders/<%= boulder['id'] %>">
+        <%= boulder['name'] %>
+      </a>
+    </li>
+  <% end %>
+</ul>

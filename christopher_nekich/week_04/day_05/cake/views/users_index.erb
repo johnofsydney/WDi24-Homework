@@ -1,0 +1,19 @@
+<% @users.each do |u| %>
+<div class="personlist">
+
+  <div class="person">
+
+    <a href=/users/<%= u["id"] %> ><h1><%= u["name"] %></h1></a>
+    <h2><%= u["username"] %></h2>
+
+    <div class="profile" style="background-image: url(<%= u['image'] %>)">
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<% end %>

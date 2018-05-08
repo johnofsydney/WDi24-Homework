@@ -1,0 +1,24 @@
+
+<%= form_for @month do |f| %>
+
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :days %>
+    <%= f.text_field :days %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </fieldset>
+
+  <fieldset>
+    <label></label>
+    <%= f.submit %>
+  </fieldset>
+
+  <% end %>

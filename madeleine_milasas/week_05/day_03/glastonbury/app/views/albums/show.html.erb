@@ -1,0 +1,21 @@
+<h1><%= @album.name %></h1>
+
+<%= image_tag( @album.image, :class => "feature" ) %>
+
+<% unless @album.band.blank? %>
+  <p>Band: <%= link_to @album.band.name, band_path(@album.band_id) %></p>
+<% end %>
+
+<% unless @album.release_date.nil? %>
+  <p>Released: <%= @album.release_date.strftime "%A %B %e, %Y" %></p>
+<% end %>
+
+<% unless @album.tracklist.blank? %>
+  <p>Highlight tracks: <%= @album.tracklist %></p>
+<% end %>
+
+
+<div class="controls">
+  <%= link_to "Edit album", edit_album_path(@album) %>
+  <%= link_to "Delete album", @album, :method => "delete", :data => { :confirm => "Are you sure you want to delete '#{ @album.name }' from the database?" } %>
+</div>

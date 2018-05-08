@@ -1,0 +1,10 @@
+<h2>Edit band information</h2>
+
+<form action="/bands/<%= @band.to_param %>" method="post">
+  <input type="text" name="name" placeholder="Band name" value="<%= @band['name'] %>">
+  <input type="text" name="country" placeholder="Country of origin" value="<%= @band['country'] %>">
+  <input type="number" name="year" placeholder="Year formed" min="1000" max="2017" value="<%= @band['year'] %>">  <!-- TODO make this max current year -->
+  <input type="text" name="members" placeholder="Band member names" value="<%= @band['members'] %>">
+  <input type="url" name="image" placeholder="Image URL" value="<%= @band['image'] %>">
+  <button>Save changes</button>
+</form>

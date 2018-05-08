@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+/** {
+  border: 1px solid green;
+}*/
+
+/* Styles for the landing page */
+
+header {
+  width: 100%;
+}
+
+.nvidiaContainer {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50%;
+}
+
+.fuckyou {
+  display: block;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+.landingpage {
+  background-color: #353434;
+}
+
+/* HomePage */
+
+.homeheader {
+  width: 1231px;
+  margin-top: -17px;
+  margin-left: -16px;
+  padding-right: 8px;
+}
+
+nav {
+  dispaly: inline-block;
+  text-align: center;
+  background-color: rgba(74, 189, 172, 0.7);
+  height: 67px;
+  line-height: 67px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.a {
+  text-decoration: none;
+  color: rgba(223,220,227,1);
+  font-size: 30px;
+  padding: 10px;
+  margin: 22px;
+}
+
+body {
+  background-color: rgba(74, 189, 172, 0.5);
+  padding: 0;
+  margin: 0;
+  font-family: 'Francois One', sans-serif;
+  color: #332115;
+}
+
+.homeContainer {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 1200px;
+  /* centered */
+  margin: auto;
+  background-color: rgba(223,220,227,1);
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  height: 1430px;
+}
+
+.homeContainerVideos {
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  width: 1200px;
+  /* centered */
+  margin: auto;
+  background-color: rgba(223,220,227,1);
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  height: 1584px;
+}
+
+.linusaward {
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
+  height: 223px;
+  width: 35%;
+}
+
+.quotes {
+  display: inline-block;
+  height: 333px;
+  width: 40%;
+  padding: 2px 2px 0 2px;
+  margin: 2px;
+}
+
+.quoteimages {
+  text-align: center;
+  height: 700px;
+  padding: 22px;
+}
+
+
+h1 {
+  text-align: center;
+  color: rgba(252,74,26,1.5);
+  font-size: 60px;
+}
+
+h2 {
+  color: rgba(252,74,26,0.8);
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+aside {
+  line-height: 2em;
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+  background-color: rgba(247,183,51,0.5);
+  padding: 1em;
+  margin-top: 54px;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;
+}
+
+aside ul li {
+  padding-bottom: 16px;
+}

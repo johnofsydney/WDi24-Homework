@@ -1,0 +1,12 @@
+<h2>edit film</h2>
+
+<form action="<%= film_path(@film.id) %>" method="post">
+  title: <input type="text" name="title" value="<%= @film.title %>" autofocus>
+  year: <input type="number" name="year" value="<%= @film.year %>">
+  director: <input type="text" name="director" value="<%= @film.director %>">
+  synopsis: <input type="text" name="synopsis" value="<%= @film.synopsis %>">
+  language: <input type="text" name="language" value="<%= @film.language %>">
+  genre: <input type="text" name="genre" value="<%= @film.genre %>">
+  image: <input type="text" name="image" value="<%= @film.image %>">
+  <button>edit film</button>
+</form>

@@ -1,0 +1,23 @@
+
+<%= form_for @work do | f | %>
+<fieldset>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</fieldset>
+<fieldset>
+  <%= f.label :material %>
+  <%= f.text_field :material %>
+</fieldset>
+<fieldset>
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+</fieldset>
+<fieldset>
+  <%= f.label :artist_id%>
+  <%= f.select :artist_id, Artist.pluck(:name, :id), :include_blank => true %>
+</fieldset>
+<fieldset>
+  <label></label>
+  <%= f.submit %>
+</fieldset>
+<% end %>

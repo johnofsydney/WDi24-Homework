@@ -1,0 +1,12 @@
+
+<h2>Cuisine list</h2>
+
+<ul>
+  <% @cuisines.each do |cuisine| %>
+    <li>
+      <a href="/cuisines/<%= cuisine['id'] %>">
+        <%= cuisine['cuisine'] %>
+      </a>
+    </li>
+    <% end %>
+</ul>

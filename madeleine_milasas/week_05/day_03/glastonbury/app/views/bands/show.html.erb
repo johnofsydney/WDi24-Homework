@@ -1,0 +1,37 @@
+<h1><%= @band.name %></h1>
+
+<%= image_tag( @band.image, :class => "feature" ) %>
+
+<table>
+  <% unless @band.country.blank? %>
+    <tr>
+      <td>Country of origin:</td>
+      <td><%= @band.country %></td>
+    </tr>
+  <% end %>
+  <% unless @band.year.blank? %>
+  <tr>
+    <td>Year formed:</td>
+    <td><%= @band.year %></td>
+  </tr>
+  <% end %>
+  <% unless @band.members.blank? %>
+  <tr>
+    <td>Members:</td>
+    <td><%= @band.members %></td>
+  </tr>
+  <% end %>
+</table>
+
+<% unless @band.albums.blank? %>
+  <p>Albums:</p>
+  <% @band.albums.each do |a| %>
+    <%= link_to image_tag(a.image, :class => "thumb"), a %>
+  <% end %>
+<% end %>
+
+
+<div class="controls">
+  <%= link_to "Edit band", edit_band_path(@band) %>
+  <%= link_to "Delete band", @band, :method => "delete", :data => { :confirm => "Are you sure you want to delete '#{ @band.name }' from the database?" } %>
+</div>

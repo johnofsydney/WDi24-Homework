@@ -1,0 +1,13 @@
+<h1><%= @player['first_name'] %> <%= @player['last_name'] %> </h1>
+<h2> #<%= @player['jersey'] %> </h2>
+<h2> <%= @player['nationality'] %> </h2>
+<p> <%= @player['position'] %> </p>
+
+<div class="controls">
+  <a href="/players/<%= @player['id']%>/edit">Edit player</a>
+  <a href="/players/<%= @player['id']%>/delete">Delete player</a>
+</div>
+
+<% unless @player['image'].nil? || @player['image'].empty? %>
+ <img class="headshot" src="<%= @player['image'] %>" alt="<%= @player['name']%>">
+<% end %>

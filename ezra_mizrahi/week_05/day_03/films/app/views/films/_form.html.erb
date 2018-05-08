@@ -1,0 +1,26 @@
+<%= form_for @film do |f|  %>
+<fieldset>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :director_id %>
+  <%= f.select :director_id, Director.order(:name).pluck(:name, :id), :include_blank => true %>
+</fieldset>
+
+<fieldset>
+  <label></label>
+  <%= f.submit %>
+</fieldset>
+<% end %>

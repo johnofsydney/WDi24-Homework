@@ -1,0 +1,32 @@
+
+<%= form_for @album do |f| %>
+  <fieldset>
+      <%= f.label :name %>
+      <%= f.text_field :name, :required => true %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :release_date %>
+      <%= f.date_field :release_date %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :tracklist, "Highlight Tracks" %>
+      <%= f.text_field :tracklist %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :image %>
+      <%= f.url_field :image, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :band %>
+    <%= f.select :band_id, Band.order(:name).pluck(:name, :id), :include_blank => true %>
+  </fieldset>
+
+  <fieldset>
+    <label></label>
+    <%= f.submit %>
+  </fieldset>
+<% end %>

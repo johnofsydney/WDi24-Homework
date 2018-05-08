@@ -1,0 +1,128 @@
+/*//////////////////////////////MASTER STYLING//////////////////////////////////*/
+
+body {
+  background-color: #00b8ff;
+  font-family: 'Montserrat', sans-serif;
+  width: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a.nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 5px;
+  padding: 7.15rem;
+}
+
+a.nav:hover {
+  border: none;
+}
+
+#top, #bottom, #left, #right {
+	background: white;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 30px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 30px;
+		}
+
+		#top { top: 0; }
+
+		#bottom { bottom: 0; }
+
+  h1.pageheadings {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+  }
+
+  /*//////////////////////////////SHOW PAGE STYLING////////////////////////////////*/
+
+  .nameheadings {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 34px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  /*border-bottom: 8px white dashed;*/
+  color: white;
+  padding: 0;
+  text-align: center;
+  display: block;
+  }
+
+
+  /*//////////////////////////////INDEX PAGE STYLING////////////////////////////////*/
+
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding: 22px;
+  }
+
+  p {
+  padding-bottom: 30px;
+  color: white;
+  font-weight: 300;
+  font-size: 19px;
+  }
+
+  a:hover {
+    border: 5px solid black;
+  }
+
+#one {
+  position: fixed;
+  vertical-align: bottom;
+  right: 0;
+  bottom: 0;
+  left: 287px;
+}
+
+#two {
+  position: fixed;
+  vertical-align: bottom;
+  right: 0;
+  bottom: 0;
+  left: 532px;
+}
+
+#three {
+  position: absolute;
+  vertical-align: bottom;
+  right: 283px;
+  bottom: 0;
+}
+
+
+#four {
+  position: absolute;
+  vertical-align: bottom;
+  right: 3%;
+  bottom: 0;
+}
+
+#five {
+  position: fixed;
+  vertical-align: bottom;
+  right: 0;
+  bottom: 0;
+  left: 41px;
+}

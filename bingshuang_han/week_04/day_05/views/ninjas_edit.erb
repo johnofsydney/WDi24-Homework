@@ -1,0 +1,11 @@
+<h2>Update Ninja</h2>
+<form  action="/ninjas/<%= @ninja.id%>" method="post">
+
+<input class="first" ctype="text" name="name" placeholder="Name" value="<%= @ninja.name%>">
+<input type="text" name="birthday" placeholder="Birthday" value="<%= @ninja.birthday%>" >
+<input type="text" name="country" placeholder="Country" value = "<%= @ninja.country%>">
+<input type="text" name="nature_type" placeholder="Nature Type" value="<%= @ninja.nature_type%>">
+<input class="links" type="text" name="image" placeholder="http://..." value="<%= @ninja.image%>">
+<input class="story" type="text" name="story" placeholder="Once upon a time..." value="<%= @ninja.story%>">
+<button >Update</button>
+</form>

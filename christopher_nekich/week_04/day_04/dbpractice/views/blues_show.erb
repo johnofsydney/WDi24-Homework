@@ -1,0 +1,16 @@
+
+<h1><%= @blues['name'] %></h1>
+<div class="rating">
+<% @blues['rating'].times do %>
+<img src="https://cdn0.iconfinder.com/data/icons/IS_Christmas/512/christmas_star.png" alt="">
+<% end %>
+
+</div>
+<hr>
+<img src="<%= @blues['image'] %>" alt="" class="showimg">
+<p><%= @blues['description'] %></p>
+
+<div class="controls">
+  <a href="/blues/<%= @blues['id'] %>/edit">Edit</a>
+  <a href="/blues/<%= @blues['id'] %>/delete">Delete</a>
+</div>

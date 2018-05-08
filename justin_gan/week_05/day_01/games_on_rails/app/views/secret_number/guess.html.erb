@@ -1,0 +1,15 @@
+<main class="secret_number">
+
+  <h3 class="heading">Pick a number</h3>
+
+  <div class="content">
+
+    <% (1..10).each do |num| %>
+
+      <a href="secret_number/<%= num %>"><%= num %></a>
+
+    <% end %>
+    
+  </div>
+
+</main>

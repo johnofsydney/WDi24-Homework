@@ -1,0 +1,33 @@
+<h2><%= @cymbal['name'] %></h2>
+
+<p>Maker: <%= @cymbal['maker'] %></p>
+<p>Type: <%= @cymbal['type'] %></p>
+
+<% unless @cymbal['sound'].empty?  %>
+  <p>Sound: <%= @cymbal['sound'] %></p>
+<% end %>
+
+<% unless @cymbal['size'].nil? || @cymbal['size'] <= 0 %>
+  <p>Size: <%= @cymbal['size'] %> inches</p>
+<% end %>
+
+<% unless @cymbal['video'].empty?  %>
+  <% youtube_embed(@cymbal['video']) %>
+  <%= @youtube_str %>
+<% end  %>
+
+<div class="controls">
+
+  <a href="/cymbals/<%= @cymbal['id'] %>/delete">
+    <div class="button">
+      Delete cymbal
+    </div>
+  </a>
+
+  <a href="/cymbals/<%= @cymbal['id'] %>/edit">
+    <div class="button edit">
+      Edit cymbal info
+    </div>
+  </a>
+
+</div>

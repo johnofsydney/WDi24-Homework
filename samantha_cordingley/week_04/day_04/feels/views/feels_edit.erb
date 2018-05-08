@@ -1,0 +1,11 @@
+<h1>I regret what I said.</h1>
+<p>Change it here and no-one will know, except us.</h1>
+
+<form action="/feels/index<%= @feels['id']%>" method="post">
+  Update screen name: <input type="text" name="screenname" value="<%= @feels['screenname']%>">
+  Change the week: <input type="text" name="week" value="<%= @feels['week']%>">
+  Change the day: <input type="text" name="day" value="<%= @feels['day']%>">
+  Re-write your message: <input type="text" name="message" value="<%= @feels['message']%>">
+
+  <button>CHANGE IT NOW</button>
+</form>

@@ -1,0 +1,16 @@
+<h2>All Songs A-Z</h2>
+
+<table>
+<% @songs.each do |s|  %>
+    <tr>
+      <td class="song-list">
+        <a href="/songs/<%= s.to_param %>">
+          <%= s.name %>
+        </a>
+      </td>
+      <td>
+        Band: <a href="bands/<%= s.band.to_param %>"><%= s.band.name %></a>
+      </td>
+    </tr>
+    <% end %>
+</table>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GamePark</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC:200,400,500,600" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/magic">Magic 8 Ball</a>
+    <a href="/secret">Secret Number</a>
+    <a href="/rockps">Rock Paper Scissors</a>
+  </nav>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

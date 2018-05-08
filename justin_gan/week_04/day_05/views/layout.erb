@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boulderest Boulders</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+
+    <div id="container">
+
+      <header>
+
+        <div class="inner header">
+
+          <h1 class="logo">
+            <a href="/">Bouldery Boulders</a>
+          </h1>
+
+          <nav>
+
+            <a href="/boulders">All Boulders</a>
+            <a href="/boulders/new">New Boulder</a>
+            |
+            <a href="/countries">All Countries</a>
+            <a href="/countries/new">Add Country</a>
+
+          </nav>
+
+        </div>
+
+      </header>
+
+      <main id="content">
+
+        <%= yield %>
+
+      </main>
+
+    </div>
+
+  </body>
+</html>

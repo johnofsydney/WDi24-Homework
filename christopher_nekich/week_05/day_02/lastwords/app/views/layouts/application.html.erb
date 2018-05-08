@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lastwords</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="/" class="brand">FLW</a>
+      <a href="/words">Famous Last Words</a>
+      <a href="/words/new">Add New</a>
+
+    </nav>
+    <%= yield %>
+  </body>
+</html>

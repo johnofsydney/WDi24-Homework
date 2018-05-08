@@ -1,0 +1,10 @@
+<h2>Naruto Figure Index <%= @narutos.size%></h2>
+<ul>
+  <% @narutos.each do |naruto| %>
+  <li>
+    <a href="/narutos/<%= naruto['id']%> ">
+    <%= naruto['name']%></a>
+  </li>
+  <% end %>
+
+</ul>

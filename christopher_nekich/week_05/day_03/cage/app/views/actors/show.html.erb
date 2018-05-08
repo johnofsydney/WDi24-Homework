@@ -1,0 +1,22 @@
+<% unless @actor.name == "Others" %>
+<h1><%= @actor.name %></h1>
+<div class="hero" style="background-image: url(https://33hpwq10j9luq8gl43e62q4e-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/Con-Air-1.jpg)"></div>
+<% else %>
+<h1>Films featuring actors inferior to Sir Nicolas Cage</h1>
+<% end %>
+
+
+<div class="scrollbox">
+  <% @actor.movies.each do |m| %>
+    <a class="movbox" href="/movies/<%= m.id %>">
+      <%= image_tag m.cover %>
+      <h6><%= m.title %></h6>
+
+    </a>
+  <% end %>
+
+</div>
+
+
+<!-- <%= link_to 'Edit', edit_actor_path(@actor) %> | -->
+<%= link_to 'Back', actors_path %>

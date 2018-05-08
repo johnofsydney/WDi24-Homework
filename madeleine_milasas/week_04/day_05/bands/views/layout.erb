@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bands & Songs That Are Great</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <nav>
+        <a href="/">Home</a>|
+        <a href="/bands">All Bands</a>|
+        <a href="/songs">All Songs</a>|
+        <a href="/bands/new">Add new band</a>|
+        <a href="/songs/new">Add new song</a>
+    </nav>
+    <div class="container">
+        <%= yield %>
+
+    <footer>
+      &copy; MM MMXVII
+    </footer>
+    </div>
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

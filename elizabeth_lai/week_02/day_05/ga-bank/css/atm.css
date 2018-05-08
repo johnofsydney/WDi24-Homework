@@ -31,7 +31,15 @@
   padding: 10px;
 }
 
-.balance {
+.balanceC {
+  background-color: #E3E3E3;
+  border: 1px solid #676767;
+  font-family: 'Ruluko', sans-serif;
+  font-size: 50px;
+  padding: 25px 0;
+}
+
+.balanceS {
   background-color: #E3E3E3;
   border: 1px solid #676767;
   font-family: 'Ruluko', sans-serif;

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+}
+
+fieldset {
+  border: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav a {
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 30px;
+}
+
+nav {
+  margin-bottom: 40px;
+  height: 30px;
+}
+
+/* ============ HOME PAGE ================ */
+
+.message {
+
+}
+
+
+/* ============= ACTOR INDEX ============= */
+
+
+.view {
+  height: 80vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.act {
+  height: 100%;
+  width: 49%;
+  display: inline-block;
+  line-height: 80vh;
+}
+
+.act:hover {
+  background-color: grey;
+}
+
+
+
+/* ============= INDEX PAGE ============= */
+
+.moviecontainer {
+  margin: 0 auto;
+  width: 85vw;
+  text-align: center;
+}
+
+.moviebox {
+  display: inline-block;
+  width: 180px;
+  height: 300px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.moviebox:hover {
+  width: 200px;
+}
+
+.moviebox img {
+  width: 100%;
+}
+
+.movlink {
+  text-decoration: none;
+}
+
+.movietitle {
+  display: block;
+}
+
+.crazy {
+  margin: 0 auto;
+  width: 800px;
+}
+
+
+.hero {
+  width: 100vw;
+  height: 500px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.scrollbox {
+  height: 120px;
+  overflow-x: scroll;
+}
+
+.movbox {
+  height: 80px;
+  width: 180px;
+  /*background-color: blue;*/
+  display: inline-block;
+  text-align: center;
+  transition: all 1s;
+}
+
+.movbox:hover {
+  height: 100px;
+}
+
+.movbox img {
+  height: 100%;
+}

@@ -1,0 +1,10 @@
+<h2><%= @ninja.name%></h2>
+<p>Birthday: <%= @ninja.birthday%></p>
+<p>Country: <%= @ninja.country%></p>
+<p>Nature Type: <%= @ninja.nature_type%></p>
+<p>Story: <%= @ninja.story%></p>
+<img src="<%= @ninja.image%>" alt="<%= @ninja.name%>">
+<div class="options">
+  <a href="/ninjas/<%= @ninja.id%>/edit">Edit </a>
+  <a href="/ninjas/<%= @ninja.id%>/delete">Delete</a>
+</div>

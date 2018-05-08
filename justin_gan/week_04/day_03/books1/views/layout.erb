@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Books 1</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script type="text/javascript">
+      google.books.load();
+
+      function initialize() {
+        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+        viewer.load('ISBN:<%= @isbn %>');
+      }
+
+      google.books.setOnLoadCallback(initialize);
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>Book Data Fetcher</h1>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>

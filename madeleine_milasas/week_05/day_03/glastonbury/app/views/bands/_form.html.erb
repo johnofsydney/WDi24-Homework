@@ -1,0 +1,32 @@
+
+<%= form_for @band do |f| %>
+  <fieldset>
+      <%= f.label :name %>
+      <%= f.text_field :name, :required => true %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :country %>
+      <%= f.text_field :country %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :year, "Year formed" %>
+      <%= f.text_field :year %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :members %>
+      <%= f.text_field :members %>
+  </fieldset>
+
+  <fieldset>
+      <%= f.label :image %>
+      <%= f.url_field :image, :required => true %>
+  </fieldset>
+
+  <fieldset>
+    <label></label>
+    <%= f.submit %>
+  </fieldset>
+<% end %>

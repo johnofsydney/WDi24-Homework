@@ -1,0 +1,17 @@
+<h2>Chelsea FC Player Index</h2>
+
+<ul>
+  <% @players.each do |player| %>
+<li>
+  <a href="/players/<%= player.id %>">
+    <%= player.first_name %> <%= player.last_name %>
+</li>
+    <% end %>
+</ul>
+
+<div class="index">
+  <a href="/players/new">Add a player</a>
+</div>
+
+
+<!-- how do you sort player list -->

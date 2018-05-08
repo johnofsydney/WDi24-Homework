@@ -1,0 +1,10 @@
+<h2><%= @boulder['name'] %> <%= @boulder['grade'] %></h2>
+<h3><%= @boulder['crag'] %>, <%= @boulder['country'] %></h3>
+<p>First ascent<%= 's' if @boulder['ascensionists'].include? ',' %>
+   by <%= @boulder['ascensionists'] %></p>
+<img class="feature" src="<%= @boulder['image'] %>">
+
+<div class="controls">
+  <a href="/boulders/<%= @boulder['id'] %>/delete">Delete Boulder</a>
+  <a href="/boulders/<%= @boulder['id'] %>/edit">Edit Boulder</a>
+</div>

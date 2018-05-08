@@ -1,0 +1,9 @@
+<h2> <%= @ocean.name %>
+
+  <%= image_tag(@ocean.image, :class => feature) unless @ocean.image.blank? %>
+  <p>Total Area: <%= number_to_human(@ocean.totalarea) %> squared meters</p>
+  <p>Maximum Depth <%= number_to_human(@ocean.maxdepth)%> meters</p>
+  <p>Shore Lenth <%= number_to_human(@ocean.shorelength) %> meters </p>
+
+  <%= link_to 'Edit ocean', ocean_edit_path(@ocean.id) %>
+  <%= button_to 'Destroy ocean', ocean_path(@ocean.id), :method => 'delete' %>

@@ -1,0 +1,9 @@
+<form action="/boulders/<%= @boulder['id'] %>" method="post">
+  <input type="text" name="name" placeholder="Boulder name..." value="<%= @boulder['name'] %>">
+  <input type="text" name="grade" placeholder="Grade..." value="<%= @boulder['grade'] %>">
+  <input type="text" name="crag" placeholder="Crag..." value="<%= @boulder['crag'] %>">
+  <input type="text" name="country" placeholder="Country..." value="<%= @boulder['country'] %>">
+  <input type="text" name="ascensionists" placeholder="First Ascent by?" value="<%= @boulder['ascensionists'] %>">
+  <input type="text" name="image" placeholder="http://..." value="<%= @boulder['image'] %>">
+  <button>Add Boulder</button>
+</form>

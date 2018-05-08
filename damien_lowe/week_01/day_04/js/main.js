@@ -256,7 +256,7 @@ const validateCreditCard = function (str) {
   //Variable to store sum of digits
   let sum = 0;
   //Boolean to check if at least two different numbers
-  let moreThanOne = true;
+  let moreThanOne = false;
   //Remove all the "-" from the string input
   let cardStr = str.replace(/-/gi, "");
 
@@ -370,7 +370,7 @@ const deposit = function (accName, amount) {
       bank[i].balance += amount;
       return `Your new balance is ${bank[i].balance}`;
     } else {
-      return `The account does not exists!`;
+      return `This account does not exist!`;
     };
   };
 };
@@ -390,7 +390,7 @@ const withdraw = function (accName, amount) {
         return `You are way too poor!`;
       };
     } else {
-      return `The account does not exists!`;
+      return `This account does not exists!`;
     };
   };
 };
@@ -409,7 +409,7 @@ const transfer = function (accName1, accName2, amount) {
         return `You are way too poor!`;
       };
     } else {
-      return `The account does not exists!`;
+      return `This account does not exists!`;
     };
   };
 
@@ -420,11 +420,10 @@ const transfer = function (accName1, accName2, amount) {
       bank[i].balance += amount;
       return `${accName2}'s new balance is ${bank[i].balance}`;
     } else {
-      return `The account does not exists!`;
+      return `This account does not exists!`;
     };
   };
 };
-
 
 addAccount("Damien Lowe", 0);
 addAccount("Magnus Carlsen", 1000);

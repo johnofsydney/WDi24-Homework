@@ -1,0 +1,8 @@
+<h1><%= @category.name %></h1>
+
+<%= image_tag @category.image, :class => 'feature' %>
+<p><%= @category.description %></p>
+
+<% @category.fonts.each do |font| %>
+  <%= link_to image_tag(font.image, :class => 'thumb'), font %>
+<% end %>

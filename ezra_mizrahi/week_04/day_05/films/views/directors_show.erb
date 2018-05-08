@@ -1,0 +1,10 @@
+<h2><%= @director.name %></h2>
+
+<% unless @director.image.nil? %>
+  <img class="feature" src="<%= @director.image %>" alt="<%= @director.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/directors/<%= @director.id %>/delete">Delete from database</a>
+  <a href="/directors/<%= @director.id %>/edit">Edit this director</a>
+</div>

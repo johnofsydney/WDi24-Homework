@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto');
+
+body {
+  background-color: grey;
+  color: black;
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+  min-height: 90vh;
+}
+
+nav {
+  text-align: center;
+}
+
+img.feature {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+h1{
+  font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}

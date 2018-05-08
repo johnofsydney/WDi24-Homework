@@ -1,0 +1,10 @@
+
+<h2><%= @country.name %></h2>
+<p>Ninjas: <%= @country.ninja%></p>
+<p>Tag: <%= @country.tag%></p>
+<img src="<%= @country.image%>" alt="<%= @country.name %>">
+<div class="option">
+  <a href="/countries/<%= @country.id%>/edit">Edit</a>
+  <a href="/countries/<%= @country.id%>/delete">Delete</a>
+
+</div>

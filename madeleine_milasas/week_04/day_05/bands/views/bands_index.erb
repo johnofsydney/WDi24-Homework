@@ -1,0 +1,24 @@
+<h2>Bands A-Z <span class="highlight"><%= params[:country] %></span></h2>
+
+<ul class="band-list">
+  <% @bands.each do |b|  %>
+    <li>
+      <a href="/bands/<%= b.to_param %>">
+        <%= b.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<h2>Bands by Country</h2>
+
+<ul class="band-list">
+    <% @countries.each do |b|  %>
+      <% next if b == "" %>
+        <li>
+          <a href="/bands/countries/<%= b %>">
+            <%= b %>
+          </a>
+        </li>
+    <% end %>
+</ul>

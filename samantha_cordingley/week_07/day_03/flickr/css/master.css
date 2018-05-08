@@ -1,0 +1,40 @@
+body {
+  background-color: #e3e3e3;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#siteheading {
+  font-size: 60px;
+  color: navy;
+}
+
+input#query {
+  width: 400px;
+  display: inline-block;
+  height: 150px;
+  -webkit-appearance: none;
+  border: none;
+  style: none;
+  font-size: 40px;
+  font-weight: 300;
+  color: grey;
+  margin-right: 20px;
+  margin-bottom: 62px;
+  padding-left: 10px;
+}
+
+#button {
+  width: 219px;
+  display: inline-block;
+  height: 100px;
+  background-color: navy;
+  color: white;
+  font-size: 40px;
+  border: none;
+}

@@ -1,0 +1,33 @@
+body {
+  background-color: bisque;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+img, #viewerCanvas {
+  display: inline-block;
+}
+
+img {
+  align-self: flex-start;
+  margin-right: 1em;
+  border: 3px solid white;
+}
+
+#viewerCanvas {
+  width: 689px;
+  height: 800px;
+}

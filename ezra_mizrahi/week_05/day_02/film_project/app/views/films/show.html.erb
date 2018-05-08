@@ -1,0 +1,14 @@
+<h2><%= @film.title %></h2>
+
+
+<%= image_tag(@film.image, :class => 'feature') unless @film.image.blank? %>
+
+<p>year: <%= @film.year %> </p>
+<p>director: <%= @film.director %> </p>
+<p>synopsis: <%= @film.synopsis  %> </p>
+<p>language: <%= @film.language %> </p>
+<p>genre: <%= @film.genre %> </p>
+
+<%= link_to 'edit film', film_edit_path(@film.id) %>
+
+<%= button_to 'delete film', film_path(@film.id), :method => 'delete' %>

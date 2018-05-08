@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Games</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+    <a class="nav" href="/">Home</a>
+    <a class="nav" href="/games/magic_8_ball">Magic 8 Ball</a>
+    <a class="nav" href="/games/secret_number">Secret Number</a>
+    <a class="nav" href="/games/rock_paper_scissors">Rock Paper Scissors</a>
+    </nav>
+    <div class="gameboard">
+
+    <%= yield %>
+  </div>
+  </body>
+</html>

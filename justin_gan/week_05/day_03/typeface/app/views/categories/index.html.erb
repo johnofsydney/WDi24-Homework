@@ -1,0 +1,9 @@
+<h1>All Categories</h1>
+
+<% @categories.each do |category| %>
+  <%= image_tag category.image, :class => 'feature' %>
+  <ul>
+    <li><%= link_to category.name, category %></li>
+    <li><%= category.description %></li>
+  </ul>
+<% end %>

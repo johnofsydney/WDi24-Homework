@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja World</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+    <div class="container">
+  <body>
+
+      <h2>Welcome to Ninja World</h2>
+      <nav class="ninja">
+        <a href="/">Home</a>
+        |
+        <a href="/ninjas">All Ninjas</a>
+        |
+        <a href="/ninjas/new">Create new ninja</a>
+      </nav>
+      <nav class="country">
+        <a href="/countries">All Countries</a>
+        |
+        <a href="/countries/new">Create new Country</a>
+      </nav>
+      <div class="ninjaCountry">
+
+        <% @villages.each do |village|%>
+        <li><a href="/ninjas/countries/<%= village%>"> <%= village%></a></li>
+        <% end %>
+      </div>
+
+
+
+      <%= yield%>
+
+
+  </body>
+    <footer>Copyright @ 2017</footer>
+</div>
+
+</html>

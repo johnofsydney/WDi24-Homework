@@ -1,0 +1,8 @@
+<form action="/countries/<%= @country.id %>" method="post">
+  <input type="text" name="name" placeholder="Boulder name..." value="<%= @country.name %>">
+  <input type="text" name="continent" placeholder="Continent..." value="<%= @country.continent %>">
+  <input type="text" name="capital" placeholder="Capital..." value="<%= @country.capital %>">
+  <input type="number" name="area" placeholder="Area..." value="<%= @country.area %>">
+  <input type="number" name="population" placeholder="Population..." value="<%= @country.population %>">
+  <button>Update Country</button>
+</form>

@@ -1,0 +1,11 @@
+<h2>Edit cymbal info</h2>
+
+<form action="/cymbals/<%= @cymbal['id'] %>" method="post">
+  <input type="text" name="maker" placeholder="Maker" value="<%= @cymbal['maker'] %>" required="required">
+  <input type="text" name="name" placeholder="Name" value="<%= @cymbal['name'] %>" required="required">
+  <input type="text" name="type" placeholder="Type e.g. Crash" value="<%= @cymbal['type'] %>" required="required">
+  <input type="text" name="sound" placeholder="Description of sound" value="<%= @cymbal['sound'] %>">
+  <input type="number" name="size" placeholder="Diameter in inches" value="<%= @cymbal['size'] %>" min="4" max="30">
+  <input type="url" name="video" placeholder="Youtube URL, e.g. https://youtube.com..." value="<%= @cymbal['video'] %>">
+  <button>Update</button>
+</form>

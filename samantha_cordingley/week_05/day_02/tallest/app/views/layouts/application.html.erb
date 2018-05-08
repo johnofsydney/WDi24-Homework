@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tallest</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+
+
+  <a class="nav" href="/mountains">SEE</a>
+  <a class="nav" href="/mountains/new">ADD</a>
+
+  <img id="one" src="assets/mountain.png">
+  <img id="two" src="assets/mountain.png">
+  <img id="three" src="assets/mountain.png">
+  <img id="four" src="assets/mountain.png">
+  <img id="five" src="assets/mountain.png">
+
+
+    <%= yield %>
+
+  </body>
+</html>

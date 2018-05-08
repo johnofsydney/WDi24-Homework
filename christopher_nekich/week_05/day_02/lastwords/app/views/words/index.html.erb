@@ -1,0 +1,39 @@
+
+<div class="container">
+  <h1>Famous Last Words</h1>
+
+  <div class="characters">
+    <% @words.each do |w| %>
+      <div id="<%= w.id %>" class="character">
+        <% unless w.image.blank? %>
+        <div class="profile" style="background-image: url(<%= w.image %>)"></div>
+        <% else %>
+        <div class="profile" style="background-image: url(https://pbs.twimg.com/profile_images/479315519729070081/ty2LLr9m.jpeg)"></div>
+        <% end %>
+        <p><strong><%= w.name[0..20] %></strong></p>
+        <%= button_to "X", word_path(w.id), :method => 'delete', :class => "delete" %>
+        <div class="controls">
+          <%= link_to "Edit", word_edit_path(w.id) %>
+
+        </div>
+      </div>
+
+    <% end %>
+  </div>
+
+  <div class="display" style="display: none;">
+    <% @words.each do |w| %>
+    <div class="quotebox <%= w.id %> " style="display: none;">
+      <h3><%= w.name %></h3>
+      <p><%= w.description %></p>
+      <h4> Died: </h4>
+      <p><%= w.died %> at age <%= w.death_age %></p>
+      <h4>Cause of Death:</h4>
+      <p><%= w.died_from %></p>
+      <h3 class="famous">Famous Last Words:</h3>
+      <p><%= w.quote %></p>
+    </div>
+    <% end %>
+
+  </div>
+</div>

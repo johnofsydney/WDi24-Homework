@@ -1,0 +1,10 @@
+<h1>All of the Bands | Glastonbury 2017</h1>
+
+<div class="grid-container">
+  <% @bands.each do |b| %>
+    <div class="box">
+      <%= link_to image_tag( b.image, :class => "thumb" ), b %>
+      <p><%= link_to b.name, band_path(b.id) %></p>
+    </div>
+  <% end %>
+</div>

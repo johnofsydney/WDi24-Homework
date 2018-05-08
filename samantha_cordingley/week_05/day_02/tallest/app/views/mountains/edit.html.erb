@@ -1,0 +1,11 @@
+<h1 class="pageheadings">edit mouNTain.</h1>
+
+<form action="<%= mountain_path(@mountain.id) %>" method="post">
+  Name: <input type="text" name="name" value="<%= @mountain.name %>" placeholder="Mountain name" autofocus required>
+  Range: <input type="text" name="range" value="<%= @mountain.range %>" placeholder="Location range">
+  Image: <input type="url" name="image" value="<%= @mountain.image %>" placeholder="Image">
+  Country: <input type="text" name="country" value="<%= @mountain.country %>" placeholder="Country">
+  Feet: <input type="number" name="feet" value="<%= @mountain.feet %>" placeholder="How many feet">
+
+  <button>Edit MouNTain</button>
+</form>

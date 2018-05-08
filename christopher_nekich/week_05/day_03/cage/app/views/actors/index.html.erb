@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actors</h1>
+
+<div class="view">
+
+  <% @actors.each do |a| %>
+  <a href="/actors/<%= a.id %>" class="act">
+      <h1><%= a.name %></h1>
+  </a>
+  <% end %>
+
+</div>

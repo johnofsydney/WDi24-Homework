@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid {
+  /*TODO: what order is the css loaded in?*/
+  margin-top: 50px;
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+
+  grid-column: span 2;
+}
+
+nav {
+  font-size: 1.25em;
+
+  grid-column: span 2;
+  justify-self: right;
+  align-self: end;
+}
+
+h2 {
+  font-family: 'Scope One', serif;
+  font-size: 3em;
+
+  grid-column: span 4;
+  justify-self: center;
+}
+
+main {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+figure {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 10px;
+}
+
+figure > a > img {
+  align-self: end;
+  /*max-height: 150px;*/
+  filter: saturate(0%);
+}
+
+figure > a > img:hover {
+  align-self: end;
+  filter: saturate(100%);
+  transition: all 400ms ease-in-out;
+}
+
+figure > a {
+  align-self: end;
+}
+
+.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 2fr 2fr;
+  align-items: end;
+  grid-column-gap: 50px;
+}
+
+.show > form {
+  align-self: start;
+}
+
+.feature {
+  grid-row: span 6;
+}
+
+.new > form, .edit > form {
+  display: grid;
+  grid-column: span 4;
+  grid-template-columns: 150px;
+  grid-row-gap: 10px;
+}
+
+.new > form > button, .edit > form > button {
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+a:hover, a:visited:hover {
+  color: aquamarine;
+}
+
+a:visited {
+  color:black;
+}
+
+.cragslist {
+  color: #555;
+  text-decoration: line-through;
+}
+
+a:hover .cragslist, a:visited:hover .cragslist {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.cragslist:before, .cragslist:after {
+  letter-spacing: -5px;
+  content: "\00a0\00a0";
+}
+
+nav a {
+  margin-left: 15px;
+}
+
+.controls > form {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}

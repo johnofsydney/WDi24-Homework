@@ -1,0 +1,13 @@
+<h2>ALL OF THE MOUNTAINS A-Z</h2>
+
+<ul>
+  <% @mountains.each do |m| %>
+    <li>
+      <%= link_to m.name, mountain_path(m.to_param) %>
+    </li>
+  <% end %>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Add a mountain', mountains_new_path, :class => "button" %>
+</div>

@@ -1,0 +1,8 @@
+<form class="" action="/blues/<%= @blues['id'] %>" method="post">
+  <input type="text" name="name" value="<%= @blues['name'] %>">
+  <input type="text" name="hex" value="<%= @blues['hex'] %>">
+  <input type="text" name="image" value="<%= @blues['image'] %>">
+  <input type="text" name="rating" value="<%= @blues['rating'] %>">
+  <textarea type="text" name="description" class="descbox"><%= @blues['description'] %></textarea>
+  <button>Save the Blue</button>
+</form>

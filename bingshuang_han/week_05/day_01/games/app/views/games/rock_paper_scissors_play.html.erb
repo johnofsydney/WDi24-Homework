@@ -1,0 +1,25 @@
+<p>Rock Paper Scissors Game: Machine choose <%= @machine_chose%></p>
+
+<% if params[:throw].downcase == 'rock' %>
+  <% if @machine_chose == 'paper'%>
+  <p>You lose</p>
+  <% else %>
+  <p>You Win!!</p>
+  <% end %>
+<% end%>
+
+<% if params[:throw].downcase =='paper' %>
+  <% if @machine_chose == 'scissor'%>
+  <p>You lose</p>
+  <% else %>
+  <p>You Win!!</p>
+  <% end %>
+<% end%>
+
+<% if params[:throw].downcase == 'scissor' %>
+  <% if @machine_chose == 'rock'%>
+  <p>You lose</p>
+  <% else %>
+  <p>You Win!!</p>
+  <% end %>
+<% end%>

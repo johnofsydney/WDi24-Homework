@@ -1,0 +1,11 @@
+<h2> Edit Ocean </h2>
+
+<form action="<%= ocean_path(@ocean.id) %>" method="post">
+
+Name: <input type="text" name="name" value="<%= @ocean.name %>" autofocus>
+Image: <input type="url" name="image" value="<%= @ocean.image %>">
+Total Area: <input type="number" name="totalarea" value="<%= @ocean.totalarea %>">
+Maximum Depth: <input type="number" name="maxdepth" value="<%= @ocean.maxdepth %>">
+Shore Lenth: <input type="number" name="shorelength" value="<%= @ocean.shorelength %>">
+
+<button>Edit planet</button>

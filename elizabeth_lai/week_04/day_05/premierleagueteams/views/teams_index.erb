@@ -1,0 +1,15 @@
+<h2>Teams in the English Premier League</h2>
+
+<ul>
+  <% @teams.each do |team| %>
+  <li>
+    <a href="/teams/<%= team.id %>">
+      <%= team.name %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+<div class="index">
+  <a href="/teams/new">Add a club</a>
+</div>

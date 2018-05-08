@@ -1,0 +1,40 @@
+<%= form_with(model: movie, local: true) do |f| %>
+  <% if movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+
+      <ul>
+      <% movie.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <fieldset>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :release %>
+    <%= f.text_field :release %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :cover %>
+    <%= f.text_field :cover %>    
+  </fieldset>
+  <fieldset>
+  	<%= f.label :actor_id %>
+  	<%= f.select :actor_id, Actor.pluck(:name, :id), :include_blank => true %>
+  </fieldset>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

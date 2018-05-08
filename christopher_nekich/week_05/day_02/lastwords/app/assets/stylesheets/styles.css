@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|EB+Garamond:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "EB Garamond", sans-serif;
+  font-size: 18px;
+}
+
+input {
+  text-align: center;
+}
+
+input, textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+
+nav {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+.brand {
+  font-weight: 700;
+  margin-left: 20px;
+  margin-right: 80px;
+  font-size: 20px;
+}
+
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.display {
+  background-color: rgba(256,256,256,0.2);
+  width: 100%;
+  height: 330px;
+  overflow-y: scroll;
+  border-radius: 1em;
+  transition: all 2s;
+  margin-top: 20px;
+}
+
+.quotebox {
+  height: 100%;
+  padding: 5px 40px;
+}
+
+.characters {
+  overflow-x: scroll;
+  height: 265px;
+  width: 100%;
+  text-align: left;
+  margin-top: 50px;
+  white-space: nowrap;
+  border: 1px solid grey;
+  padding-top: 10px;
+  border-radius: 2em;
+}
+
+.character {
+  height: 100%;
+  width: 200px;
+  display: inline-block;
+  z-index: 1;
+  margin: 0 30px;
+  text-align: center;
+  position: relative;
+}
+
+.button_to, .delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.character:hover {
+  cursor: pointer;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*.hide {
+  display: none;
+}
+.show {
+  display: block;
+}*/
+
+.quotebox h3 {
+  margin: 10px 0;
+}
+
+.quotebox h4 {
+  margin: 10px 0;
+}
+
+.famous {
+  text-decoration: underline;
+}

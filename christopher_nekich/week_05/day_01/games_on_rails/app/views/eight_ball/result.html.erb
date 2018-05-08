@@ -1,0 +1,5 @@
+  <h2>Q. <%= @question %><% unless @question[-1] == '?' %>?<% end %></h2>
+
+<h1>A. <%= @responses.sample %></h1>
+
+<a href="/eightball">Ask Another Question?</a>

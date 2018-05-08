@@ -1,0 +1,18 @@
+
+
+<form  action="/narutos/<%= @naruto['id']%>" method="post">
+
+<div class="new">
+  <div class="info">
+  <input type="text" name="name" placeholder="Name" value="<%= @naruto['name']%>">
+  <input type="text" name="birthday" placeholder="Birthday" value="<%= @naruto['birthday']%>">
+  <input type="text" name="kekkei_genkai" placeholder="Kekkei Genkai" value="<%= @naruto['kekkei_genkai']%>">
+  <input type="text" name="nature_type" placeholder="Nature Type" value="<%= @naruto['nature_type']%>">
+</div>
+  <input class="long" type="url" name="image" placeholder="http://..." value="<%= @naruto['image']%>">
+  <input class="big" type="text" name="story"  placeholder="story" value="<%= @naruto['story']%>">
+  <button >Update Figure</button>
+
+</div>
+
+</form>

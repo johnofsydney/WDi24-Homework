@@ -1,0 +1,10 @@
+<h2> Edit Animals </h2>
+
+<form action="/animals/<%= @animals['id']%>" method="post">
+  <input type="text" name="name" placeholder="animal name" value="<%= @animals['name'] %>">
+  <input type="text" name="country" placeholder="country" value="<%= @animals['country'] %>">
+  <input type="text" name="population" placeholder="animal population" value="<%= @animals['population'] %>">
+  <input type="url" name="image" placeholder="http://" value="<%= @animals['image'] %>">
+
+  <button> Update animal </button>
+</form>

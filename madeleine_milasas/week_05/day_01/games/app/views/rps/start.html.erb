@@ -1,0 +1,14 @@
+<h2>Rock, Paper, Scissors</h2>
+
+<p>The computer has thought about its move.</p>
+<p>It's on the precipice of revealing its hand.</p>
+
+<p>What's your move?</p>
+
+<div class="options">
+  <%= link_to "Rock", "/rps/rock", :class => "turns" %>
+  <%= link_to "Paper", "/rps/paper", :class => "turns"  %>
+  <%= link_to "Scissors", "/rps/scissors", :class => "turns"  %>
+</div>
+
+<p class="back"><%= link_to "Back to all games", "/" %></p>
